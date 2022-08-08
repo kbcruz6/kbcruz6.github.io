@@ -32,6 +32,42 @@ body{
     border:5px solid rgb(221, 69, 69);
     color:#fff;
     text-align: center;
+    
+}
+.cuadrado {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+    grid-area: header;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes mover {
+    0% {
+        left:20vw;
+
+        }
+    50%{  
+        left:60vw;
+        transform: scale(1.4);
+        opacity: 50%;
+    }
+    100% {
+        left:40vw;
+        color:#fff;
+        transform: scale(1.8);
+        opacity: 80%;
+
+    }
 }
 
 .foto{
