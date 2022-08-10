@@ -1,3 +1,5 @@
+
+
 let cambiar=()=>{
     let titulo=document.querySelector("h1");
     if(titulo.innerHTML=="Bienvenido"){
@@ -6,7 +8,9 @@ let cambiar=()=>{
         titulo.innerHTML="Bienvenido";
     }
 }
+
 let contar=0;
+
 let cont=()=>{
     contar++;
     document.querySelector(".contador").innerHTML=contar;
@@ -25,6 +29,17 @@ document.addEventListener("DOMContentLoaded", function (){document.querySelector
 
 document.querySelector(".contar").onclick=cont;
 document.querySelector(".cero").onclick=zero
+
+
+document.addEventListener("DOMContentLoaded", function (){
+  
+    document.querySelector("form").onsubmit= function(){
+        let name = document.querySelector("#name").value;
+        alert(`Gracias por tus datos ${name}`);
+    }
+
+    }
+);
 
 
 
