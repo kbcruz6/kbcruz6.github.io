@@ -5,12 +5,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="pruebaGit.css">
+       
     </head>
     <body>
         <div class="divCont">
             <h1 class="item header"><div class="cuadrado">Bienvenido</div></h1>
             <div class="foto"></div>
             <div class="item main">
+
+                <button class="boton cambiar"> Click para acomodar el titulo</button><button class="boton contar"> Click para contar en la cajita</button><button class="boton cero"> Click para volver a cero</button><br>
+                <p class="contador">0</p>
+
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta perspiciatis odit recusandae unde ipsam cum eius, culpa voluptatum ullam asperiores velit, reiciendis ipsa? Veritatis quo accusantium minus. Iusto, cum ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum possimus magnam ducimus deserunt suscipit temporibus minus aperiam ea in corrupti aliquid dolore fuga dolorem obcaecati dicta, tenetur repudiandae? Nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat fugiat itaque labore nulla enim, debitis omnis quo eligendi provident. Magni totam consequuntur aliquam repellendus eaque assumenda doloribus illum blanditiis exercitationem.
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta perspiciatis odit recusandae unde ipsam cum eius, culpa voluptatum ullam asperiores velit, reiciendis ipsa? Veritatis quo accusantium minus. Iusto, cum ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum possimus magnam ducimus deserunt suscipit temporibus minus aperiam ea in corrupti aliquid dolore fuga dolorem obcaecati dicta, tenetur repudiandae? Nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat fugiat itaque labore nulla enim, debitis omnis quo eligendi provident. Magni totam consequuntur aliquam repellendus eaque assumenda doloribus illum blanditiis exercitationem.
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta perspiciatis odit recusandae unde ipsam cum eius, culpa voluptatum ullam asperiores velit, reiciendis ipsa? Veritatis quo accusantium minus. Iusto, cum ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nostrum possimus magnam ducimus deserunt suscipit temporibus minus aperiam ea in corrupti aliquid dolore fuga dolorem obcaecati dicta, tenetur repudiandae? Nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat fugiat itaque labore nulla enim, debitis omnis quo eligendi provident. Magni totam consequuntur aliquam repellendus eaque assumenda doloribus illum blanditiis exercitationem.
@@ -29,5 +34,38 @@
             <div class="item footer">Footer Footer Footer Footer Footer Footer </div>
 
         </div>
+        <script>
+            let cambiar=()=>{
+                let titulo=document.querySelector("h1");
+                if(titulo.innerHTML=="Bienvenido"){
+                    titulo.innerHTML="Adios";
+                } else {
+                    titulo.innerHTML="Bienvenido";
+                }
+            }
+            let contar=0;
+            let cont=()=>{
+                contar++;
+                document.querySelector(".contador").innerHTML=contar;
+                if (contar%10===0){
+                    alert(`Llegaste a ${contar}`)
+                }
+            }
+
+            let zero=()=>{
+                contar=0;
+                document.querySelector(".contador").innerHTML=contar;
+            }
+
+            document.addEventListener("DOMContentLoaded", function (){document.querySelector(".cambiar").onclick=cambiar});
+            // con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
+
+            document.querySelector(".contar").onclick=cont;
+            document.querySelector(".cero").onclick=zero
+            
+       
+
+
+        </script>
     </body>
 </html>

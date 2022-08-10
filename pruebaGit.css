@@ -34,6 +34,13 @@ body{
     text-align: center;
     
 }
+.boton{
+    grid-area: main;
+    border: 3px solid black;
+    background-color: brown;
+    color:#fff;
+    margin:10px;
+}
 .cuadrado {
     font-size: 35px;
     display: flex;
@@ -113,4 +120,17 @@ body{
     margin-top: 5px;
     background-color: #911;
     text-align: center;
+}
+
+.contador {
+    text-align: center;
+    display: flex;
+    background-color: #777;
+    color:#fff;
+    border:5px solid #911;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+
 }
