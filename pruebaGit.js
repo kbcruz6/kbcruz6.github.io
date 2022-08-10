@@ -24,7 +24,7 @@ let zero=()=>{
     document.querySelector(".contador").innerHTML=contar;
 }
 
-document.addEventListener("DOMContentLoaded", function (){document.querySelector(".cambiar").onclick=cambiar});
+document.addEventListener("DOMContentLoaded", ()=> {document.querySelector(".cambiar").onclick=cambiar});
 // con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
 
 document.querySelector(".contar").onclick=cont;
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // USANDO BOTONES PARA CAMBIAR COLOR FONDO
 
-// document.addEventListener("DOMContentLoaded", function (){
-//     document.querySelector("#red").onclick=function(){
+// document.addEventListener("DOMContentLoaded", ()=> {
+//     document.querySelector("#red").onclick=()=> {
 //         document.querySelector("body").style.backgroundColor="red";
 //     }
 // }
