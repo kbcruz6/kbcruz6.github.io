@@ -35,11 +35,29 @@ document.addEventListener("DOMContentLoaded", function (){
   
     document.querySelector("form").onsubmit= function(){
         let name = document.querySelector("#name").value;
-        alert(`Gracias por tus datos ${name}`);
+        let apellido = document.querySelector("#apellido").value;
+        alert(`Gracias por tus datos ${name} ${apellido}`);
     }
 
     }
 );
 
 
+// USANDO BOTONES PARA CAMBIAR COLOR FONDO
 
+// document.addEventListener("DOMContentLoaded", function (){
+//     document.querySelector("#red").onclick=function(){
+//         document.querySelector("body").style.backgroundColor="red";
+//     }
+// }
+// )
+
+document.addEventListener("DOMContentLoaded", function (){
+
+    document.querySelectorAll(".color").forEach(function(button){
+        button.onclick=function(){
+            document.querySelector("body").style.backgroundColor=button.dataset.color;
+        }
+    })
+
+});
