@@ -31,9 +31,9 @@ document.querySelector(".contar").onclick=cont;
 document.querySelector(".cero").onclick=zero
 
 
-document.addEventListener("DOMContentLoaded", function (){
+document.addEventListener("DOMContentLoaded", () => {
   
-    document.querySelector("form").onsubmit= function(){
+    document.querySelector("form").onsubmit= ()=> {
         let name = document.querySelector("#name").value;
         let apellido = document.querySelector("#apellido").value;
         alert(`Gracias por tus datos ${name} ${apellido}`);
@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function (){
 // }
 // )
 
-document.addEventListener("DOMContentLoaded", function (){
+document.addEventListener("DOMContentLoaded", ()=> {
 
-    document.querySelectorAll(".color").forEach(function(button){
-        button.onclick=function(){
+    document.querySelectorAll(".color").forEach((button)=>{
+        button.onclick=()=> {
             document.querySelector("body").style.backgroundColor=button.dataset.color;
         }
     })
