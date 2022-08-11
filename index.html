@@ -12,33 +12,35 @@
             <h1 class="item header"><div class="cuadrado">Bienvenido</div></h1>
             <div class="foto"></div>
             <div class="item main">
+                <div class="cronometro" value="0"></div>
 
-                <button class="boton cambiar"> Click para achicar el titulo</button><button class="boton contar"> Click para contar en la cajita</button><button class="boton cero"> Click para volver a cero</button><br>
-                <p class="contador">0</p><br><br>
+                <button class="boton cambiar"> Click para achicar o cambiar el titulo</button><button class="boton contar"> Click para contar en la cajita</button><button class="boton cero"> Click para volver a cero</button><br>
+                <p class="contador">0</p><br>
+
                 <form class="form1">
                     <input required class="fo1" id="name" placeholder="Escribe tu nombre" type="text"><br>
                     <input required class="fo1" id="apellido" placeholder="Escribe tu apellido" type="text"><br>
                     <input required class="fo1" id="mail" placeholder="Escribe tu mail" type="email"><br>
                     <input required class="fo1" id="password" placeholder="Elije una contraseña" type="password"><br>
                     <button class="enviar" type="submit">Enviar</button>
-                </form><br><br>
-                Elegi de que color queres el fondo<br><br>
-                <button class="color" data-color="red">Red</button>
-                <button class="color" data-color="blue">Blue</button>
-                <button class="color" data-color="green">Green</button>
-                <br><br>
-                <button class="color" data-color="black">Mejor volvamos a negro</button>
-                <br><br><br>
-                Tambien podes elegir de la lista:
-                <select class="lista">
-                    <option value="black">Negro</option>
-                    <option value="red">Rojo</option>
-                    <option value="blue">Azul</option>
-                    <option value="green">Verde</option>
-                </select>
-
-                <br><br>
-
+                </form><br>
+                <div class="coloresCont">
+                    Elegi de que color queres el fondo<br><br>
+                    <button class="color" data-color="red">Red</button>
+                    <button class="color" data-color="blue">Blue</button>
+                    <button class="color" data-color="green">Green</button>
+                    <br><br>
+                    <button class="color" data-color="black">Mejor volvamos a negro</button>
+                    <br><br>
+                    Tambien podes elegir de la lista:
+                    <select class="lista">
+                        <option value="black">Negro</option>
+                        <option value="red">Rojo</option>
+                        <option value="blue">Azul</option>
+                        <option value="green">Verde</option>
+                    </select>
+                </div>
+                <br>
                 <h4>Week tasks</h4>
                     <ul id="tasks"></ul>
                     <form class="form2">

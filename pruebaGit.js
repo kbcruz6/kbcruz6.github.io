@@ -108,3 +108,12 @@ document.addEventListener("DOMContentLoaded", ()=> {
 });
 
 
+document.addEventListener("DOMContentLoaded",()=>{
+    let valor=0;
+    let crono=()=>{
+        valor++;
+        document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
+    }
+    setInterval(crono,1000);
+
+})
