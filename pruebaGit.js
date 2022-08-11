@@ -33,10 +33,11 @@ document.querySelector(".cero").onclick=zero
 
 document.addEventListener("DOMContentLoaded", () => {
   
-    document.querySelector("form").onsubmit= ()=> {
+    document.querySelector(".form1").onsubmit= ()=> {
         let name = document.querySelector("#name").value;
         let apellido = document.querySelector("#apellido").value;
         alert(`Gracias por tus datos ${name} ${apellido}`);
+        return false;
     }
 
     }
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //         document.querySelector("body").style.backgroundColor="red";
 //     }
 // }
-// )
+// // )
 
 document.addEventListener("DOMContentLoaded", ()=> {
 
@@ -59,5 +60,35 @@ document.addEventListener("DOMContentLoaded", ()=> {
             document.querySelector("body").style.backgroundColor=button.dataset.color;
         }
     })
+
+});
+
+// APARTE DE ONCLICK ESTAN:
+// onmouseover, onkeydown, onkeyup, onload, onblur
+
+
+// OTRA OPCION PARA EL COLOR (QUE NO ME ANDA)
+
+// document.addEventListener("DOMContentLoaded", ()=> {
+    
+//     document.querySelector("select").onchange=()=>{
+//         document.querySelector("body").style.backgroundColor=this.value;
+//     }
+// });
+
+document.addEventListener("DOMContentLoaded", ()=> {
+
+    document.querySelector(".form2").onsubmit=()=>{
+        let task = document.querySelector("#task").value;
+        
+        let li=document.createElement("LI");
+        li.innerHTML=task;
+
+        document.querySelector("#tasks").appendChild(li);
+        document.querySelector("#task").value="";
+
+
+        return false;
+    };
 
 });
