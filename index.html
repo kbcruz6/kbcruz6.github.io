@@ -16,11 +16,11 @@
                 <button class="boton cambiar"> Click para achicar el titulo</button><button class="boton contar"> Click para contar en la cajita</button><button class="boton cero"> Click para volver a cero</button><br>
                 <p class="contador">0</p><br><br>
                 <form class="form1">
-                    <input  id="name" placeholder="Escribe tu nombre" type="text"><br>
-                    <input  id="apellido" placeholder="Escribe tu apellido" type="text"><br>
-                    <input  id="mail" placeholder="Escribe tu mail" type="email"><br>
-                    <input  id="password" placeholder="Elije una contraseña" type="password"><br>
-                    <input type="submit">
+                    <input required class="fo1" id="name" placeholder="Escribe tu nombre" type="text"><br>
+                    <input required class="fo1" id="apellido" placeholder="Escribe tu apellido" type="text"><br>
+                    <input required class="fo1" id="mail" placeholder="Escribe tu mail" type="email"><br>
+                    <input required class="fo1" id="password" placeholder="Elije una contraseña" type="password"><br>
+                    <button class="enviar" type="submit">Enviar</button>
                 </form><br><br>
                 Elegi de que color queres el fondo<br><br>
                 <button class="color" data-color="red">Red</button>
@@ -29,13 +29,15 @@
                 <br><br>
                 <button class="color" data-color="black">Mejor volvamos a negro</button>
                 <br><br><br>
-                <!-- <select class="lista">
-                    <option value="black">black</option>
-                    <option value="red">red</option>
-                    <option value="blue">blue</option>
-                    <option value="green">green</option>
-                </select> -->
-                <!-- <br><br> -->
+                Tambien podes elegir de la lista:
+                <select class="lista">
+                    <option value="black">Negro</option>
+                    <option value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                </select>
+
+                <br><br>
 
                 <h4>Week tasks</h4>
                     <ul id="tasks"></ul>

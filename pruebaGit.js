@@ -33,19 +33,32 @@ document.querySelector(".cero").onclick=zero
 
 document.addEventListener("DOMContentLoaded", () => {
   
+    // document.querySelector("#name").onkeyup=()=>{
+    //     if (document.querySelector("#name").value.length >0){
+    //         document.querySelector(".enviar").disabled=false;
+    //     }else{
+    //         document.querySelector(".enviar").disabled=true;
+    //     }
+    // }
+
     document.querySelector(".form1").onsubmit= ()=> {
         let name = document.querySelector("#name").value;
         let apellido = document.querySelector("#apellido").value;
         alert(`Gracias por tus datos ${name} ${apellido}`);
+
+        // document.querySelector("#name").value="";
+        // document.querySelector("#apellido").value="";
+        // document.querySelector("#mail").value="";
+        // document.querySelector("#password").value="";
+
+        document.querySelectorAll(".fo1").forEach((input)=>{
+            input.value="";})
         return false;
     }
 
     }
 );
-
-
 // USANDO BOTONES PARA CAMBIAR COLOR FONDO
-
 // document.addEventListener("DOMContentLoaded", ()=> {
 //     document.querySelector("#red").onclick=()=> {
 //         document.querySelector("body").style.backgroundColor="red";
@@ -69,12 +82,13 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 // OTRA OPCION PARA EL COLOR (QUE NO ME ANDA)
 
-// document.addEventListener("DOMContentLoaded", ()=> {
+document.addEventListener("DOMContentLoaded", ()=> {
     
-//     document.querySelector("select").onchange=()=>{
-//         document.querySelector("body").style.backgroundColor=this.value;
-//     }
-// });
+    document.querySelector("select").onchange=function (){
+        console.log("hola",this.value);
+        document.querySelector("body").style.backgroundColor=this.value;
+    }
+});
 
 document.addEventListener("DOMContentLoaded", ()=> {
 
@@ -92,3 +106,5 @@ document.addEventListener("DOMContentLoaded", ()=> {
     };
 
 });
+
+
