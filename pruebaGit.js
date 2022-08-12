@@ -128,30 +128,30 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 
 // COTIZACION CRYPTO
-document.addEventListener("DOMContentLoaded", function(){
+// document.addEventListener("DOMContentLoaded", function(){
 
-    document.querySelector(".formCurrency").onsubmit= function(){
+//     document.querySelector(".formCurrency").onsubmit= function(){
 
     
-        fetch("http://api.coinlayer.com/api/live?access_key=d9d0204688e6313ef596dcb1c7baccaf")
-        .then(response => response.json())
-        .then(data=>{
-            const currency = document.querySelector("#currency").value;
-            const rate=data.rates[currency];
-            // document.querySelector("#valor").innerHTML=`el ${rate}`;
+//         fetch("http://api.coinlayer.com/api/live?access_key=d9d0204688e6313ef596dcb1c7baccaf")
+//         .then(response => response.json())
+//         .then(data=>{
+//             const currency = document.querySelector("#currency").value;
+//             const rate=data.rates[currency];
+//             // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
-            if (rate  !== undefined){
-                document.querySelector("#result").innerHTML=`La cotización de hoy es de: ${rate.toFixed(3)} ${currency}/USD`;
-                }else {
-                 document.querySelector("#result").innerHTML=`Crypto invalida.`;
-                }
+//             if (rate  !== undefined){
+//                 document.querySelector("#result").innerHTML=`La cotización de hoy es de: ${rate.toFixed(3)} ${currency}/USD`;
+//                 }else {
+//                  document.querySelector("#result").innerHTML=`Crypto invalida.`;
+//                 }
 
-            console.log(data);
-            document.querySelector("#currency").value="";
-        });
-    return false;
-    };    
-});
+//             console.log(data);
+//             document.querySelector("#currency").value="";
+//         });
+//     return false;
+//     };    
+// });
 
 // COTIZACION FIAT
 
