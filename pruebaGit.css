@@ -153,7 +153,7 @@ body{
 
 }
 
-form, .coloresCont, h4{
+form, .coloresCont, h4, h3, li{
     margin:10px auto;
     /* display: flex; */
     justify-content: center;
@@ -162,4 +162,8 @@ form, .coloresCont, h4{
 }
 .numerito{
     font-size: 30px;
+}
+#result{
+    color: green;
+    text-shadow: 10px solid black;
 }
