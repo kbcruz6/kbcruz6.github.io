@@ -163,7 +163,7 @@ form, .coloresCont, h4, h3, li{
 .numerito{
     font-size: 30px;
 }
-#result{
+#result, #resultFiat{
     color: green;
     text-shadow: 10px solid black;
 }

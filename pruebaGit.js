@@ -1,5 +1,18 @@
 
 
+// CRONOMETRO TIEMPO EN WEB
+document.addEventListener("DOMContentLoaded",()=>{
+    let valor=0;
+    let crono=()=>{
+        valor++;
+        document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
+    }
+    setInterval(crono,1000);
+
+})
+
+
+// BOTON CAMBIAR TITULO
 let cambiar=()=>{
     let titulo=document.querySelector("h1");
     if(titulo.innerHTML=="Bienvenido"){
@@ -9,6 +22,7 @@ let cambiar=()=>{
     }
 }
 
+// CONTADOR
 let contar=0;
 
 let cont=()=>{
@@ -18,7 +32,7 @@ let cont=()=>{
         alert(`Llegaste a ${contar}`)
     }
 }
-
+// VOLVER A CERO
 let zero=()=>{
     contar=0;
     document.querySelector(".contador").innerHTML=contar;
@@ -31,6 +45,7 @@ document.querySelector(".contar").onclick=cont;
 document.querySelector(".cero").onclick=zero
 
 
+// FORMULARIO
 document.addEventListener("DOMContentLoaded", () => {
   
     // document.querySelector("#name").onkeyup=()=>{
@@ -58,7 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 );
-// USANDO BOTONES PARA CAMBIAR COLOR FONDO
+
+
+//BOTONES PARA CAMBIAR COLOR FONDO
+
 // document.addEventListener("DOMContentLoaded", ()=> {
 //     document.querySelector("#red").onclick=()=> {
 //         document.querySelector("body").style.backgroundColor="red";
@@ -80,7 +98,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 // onmouseover, onkeydown, onkeyup, onload, onblur
 
 
-// OTRA OPCION PARA EL COLOR (QUE NO ME ANDA)
+// OPCION LISTA PARA EL COLOR FONDO
 
 document.addEventListener("DOMContentLoaded", ()=> {
     
@@ -90,6 +108,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     }
 });
 
+// TASKS
 document.addEventListener("DOMContentLoaded", ()=> {
 
     document.querySelector(".form2").onsubmit=()=>{
@@ -108,16 +127,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 });
 
 
-document.addEventListener("DOMContentLoaded",()=>{
-    let valor=0;
-    let crono=()=>{
-        valor++;
-        document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
-    }
-    setInterval(crono,1000);
-
-})
-
+// COTIZACION CRYPTO
 document.addEventListener("DOMContentLoaded", function(){
 
     document.querySelector(".formCurrency").onsubmit= function(){
@@ -137,8 +147,36 @@ document.addEventListener("DOMContentLoaded", function(){
                 }
 
             console.log(data);
-
+            document.querySelector("#currency").value="";
         });
     return false;
     };    
 });
+
+// COTIZACION FIAT
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    document.querySelector(".formFiat").onsubmit= function(){
+
+    
+        fetch("https://api.currencyfreaks.com/latest?apikey=7baca61f4a374730860a40de70723582")
+        .then(response => response.json())
+        .then(data=>{
+            const fiat = document.querySelector("#fiat").value;
+            const rate=data.rates[fiat];
+            // document.querySelector("#valor").innerHTML=`el ${rate}`;
+
+            if (rate !== undefined){
+                document.querySelector("#resultFiat").innerHTML=`1 USD son ${rate} ${fiat}.`;
+                }else {
+                 document.querySelector("#resultFiat").innerHTML=`Moneda invalida.`;
+                }
+
+            console.log(data);
+            document.querySelector("#fiat").value="";
+        });
+    return false;
+    };    
+});
+
