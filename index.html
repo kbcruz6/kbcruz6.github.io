@@ -5,32 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="pruebaGit.css">
-        <script>
-            document.addEventListener("DOMContentLoaded", function(){
-
-document.querySelector(".formCurrency").onsubmit= function(){
-
-
-    fetch("http://api.coinlayer.com/api/live?access_key=d9d0204688e6313ef596dcb1c7baccaf")
-    .then(response => response.json())
-    .then(data=>{
-        const currency = document.querySelector("#currency").value;
-        const rate=data.rates[currency];
-        // document.querySelector("#valor").innerHTML=`el ${rate}`;
-
-        if (rate  !== undefined){
-            document.querySelector("#result").innerHTML=`La cotización de hoy es de: ${rate.toFixed(3)} ${currency}/USD`;
-            }else {
-             document.querySelector("#result").innerHTML=`Crypto invalida.`;
-            }
-
-        console.log(data);
-        document.querySelector("#currency").value="";
-    });
-return false;
-};    
-});
-        </script>
+        
     </head>
     <body>
         <div class="divCont">
@@ -78,7 +53,7 @@ return false;
                     </form><br><br>
 
     <!-- COTIZACION CRIPTO -->
-                    <h3>Cotizacion crypto hoy</h3>
+                    <!-- <h3>Cotizacion crypto hoy</h3>
                     <ul>Ejemplo sigla:
                         <li>Bitcoin: BTC</li>
                         <li>Ethereum: ETH</li>
@@ -91,10 +66,10 @@ return false;
                          </form>
                   <h4 id="result"></h4><br>
                   <br>
-              
+               -->
 
     <!-- COTIZACION FIAT -->
-                      <h3>Cotizacion monedas fiat hoy</h3>
+                      <h3>Cotizacion hoy</h3>
                       <ul>Ejemplo sigla:
                         <li>Euro: EUR</li>
                         <li>Libra: GBP</li>
