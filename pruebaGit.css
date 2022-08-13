@@ -177,8 +177,14 @@ a{
 }
 
 #logoJust{
+    display: inline-block;
     width: 100px;
     height: 80px;
+    float: left;
+    margin-right: 15px;
+}
+.justTitulo{
+    display: block;
 }
 
 button {
