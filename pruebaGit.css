@@ -167,3 +167,23 @@ body{
     color: green;
     text-shadow: 10px solid black;
 }
+
+a{
+    color:red;
+}
+
+#codigo{
+    margin-left: 40px;
+}
+
+#logoJust{
+    width: 100px;
+    height: 80px;
+}
+
+button {
+    cursor:pointer;
+}
+button:active {
+    cursor:pointer;
+}
