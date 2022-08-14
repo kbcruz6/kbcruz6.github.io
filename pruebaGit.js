@@ -148,7 +148,10 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 //             console.log(data);
 //             document.querySelector("#currency").value="";
-//         });
+//          })
+//           .catch(error =>{
+//             console.log("Error",error);
+//          });
 //     return false;
 //     };    
 // });
@@ -175,6 +178,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
             console.log(data);
             document.querySelector("#fiat").value="";
+        })
+        .catch(error =>{
+            console.log("Error",error);
         });
     return false;
     };    
