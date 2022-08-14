@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 //         fetch("http://api.coinlayer.com/api/live?access_key=d9d0204688e6313ef596dcb1c7baccaf")
 //         .then(response => response.json())
 //         .then(data=>{
-//             const currency = document.querySelector("#currency").value;
+//             const currency = document.querySelector("#currency").value.toUpperCase();
 //             const rate=data.rates[currency];
 //             // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function(){
         fetch("https://api.currencyfreaks.com/latest?apikey=7baca61f4a374730860a40de70723582")
         .then(response => response.json())
         .then(data=>{
-            const fiat = document.querySelector("#fiat").value;
+            const fiat = document.querySelector("#fiat").value.toUpperCase();
             const rate=data.rates[fiat];
             // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
