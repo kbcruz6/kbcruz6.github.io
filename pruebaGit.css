@@ -190,3 +190,24 @@ button {
 button:active {
     cursor:pointer;
 }
+
+
+li{
+    animation-name: borrando;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    
+}
+
+@keyframes borrando {
+
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.listita{
+    margin-right: 3px;
+}

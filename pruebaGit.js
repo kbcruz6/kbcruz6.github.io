@@ -70,7 +70,6 @@ let zero=()=>{
     document.querySelector(".contador").innerHTML=contar;
 }
 
-document.addEventListener("DOMContentLoaded", ()=> {document.querySelector(".cambiar").onclick=cambiar});
 // con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
 
 document.querySelector(".contar").onclick=cont;
@@ -148,14 +147,30 @@ document.addEventListener("DOMContentLoaded", ()=> {
         
         let li=document.createElement("LI");
         li.innerHTML=task;
+        li.className="listita";
+
+        let borrar=document.createElement("BUTTON");
+        borrar.innerHTML=(`Borrar`);
+        borrar.className="borrame";
 
         document.querySelector("#tasks").appendChild(li);
         document.querySelector("#task").value="";
 
-
+        document.querySelector(".listita").appendChild(borrar);
         return false;
     };
 
+});
+
+document.addEventListener("click", event=>{
+    const element =event.target;
+    if (element.className === "borrame"){
+        element.parentElement.style.animationPlayState="running";
+        element.parentElement.addEventListener("animationend",()=>{
+            element.parentElement.remove();
+        });
+    }
+    return false;
 });
 
 
