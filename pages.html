@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Single Page</title>
+        <title>Hidden Pages</title>
         <style>
             div {
                 display: none;
@@ -9,7 +9,7 @@
         </style>
         <script>
 
-            function showPage(){
+            function showPage(page){
                 document.querySelectorAll("div").forEach(div=>{
 
                 div.style.display=" none";
@@ -26,6 +26,7 @@
         </script>
     </head>
     <body>
+        <h1>Paginas ocultas..</h1>
         <button data-page="page1">Page 1</button>
         <button data-page="page2">Page 2</button>
         <button data-page="page3">Page 3</button>
