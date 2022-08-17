@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
          li.className="listita";
 
          let borrar=document.createElement("BUTTON");
-         borrar.innerHTML=(`Borrar`);
+         borrar.innerHTML=(`x`);
          borrar.className="borrame";
          borrar.style.marginLeft="10px";
 
@@ -161,7 +161,9 @@ document.addEventListener("DOMContentLoaded", ()=> {
          document.querySelector("#task").value="";
 
          document.querySelector(".listita").appendChild(borrar);
+
          li.className="";
+
          return false;
 
          });
