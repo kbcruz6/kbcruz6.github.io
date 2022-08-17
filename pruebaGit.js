@@ -139,50 +139,59 @@ document.addEventListener("DOMContentLoaded", ()=> {
     }
 });
 
-// TASKS
+// LISTA SUPER
 document.addEventListener("DOMContentLoaded", ()=> {
-
     document.querySelector(".form2").onsubmit=()=>{
-
         document.querySelectorAll("#task").forEach((task)=>{
-
-         task = document.querySelector("#task").value;
-        
+         task = document.querySelector("#task").value; 
          let li=document.createElement("LI");
          li.innerHTML=task;
          li.className="listita";
-
          let borrar=document.createElement("BUTTON");
          borrar.innerHTML=(`x`);
          borrar.className="borrame";
          borrar.style.marginLeft="10px";
-
          document.querySelector("#tasks").appendChild(li);
          document.querySelector("#task").value="";
-
          document.querySelector(".listita").appendChild(borrar);
-
-         li.className="";
-
+         li.className="";   
          return false;
-
          });
-
         return false;
     };
-
 });
+// document.querySelector(".cambiar").onclick=()=>{
+//     if (borrar.parentElement.style.animationPlayState=== "paused"){
+//         borrar.parentElement.style.animationPlayState="running";
+//     } else {
+//         borrar.parentElement.style.animationPlayState="paused";
+//     }
+// }
 
+// // BRIAN YU
 document.addEventListener("click", event=>{
-    const element =event.target;
+    const element = event.target;
     if (element.className === "borrame"){
+
         element.parentElement.style.animationPlayState="running";
         element.parentElement.addEventListener("animationend",()=>{
             element.parentElement.remove();
-        });
-    }
+        })
+    }   
     return false;
 });
+
+
+// document.addEventListener("DOMContentLoaded",function(){
+
+//     document.querySelector(".borrame").onclick=()=>{
+//         if (borrar.parentElement.style.animationPlayState=== "paused"){
+//             borrar.parentElement.style.animationPlayState="running";
+//         } else {
+//             borrar.parentElement.style.animationPlayState="paused";
+//         }
+//     };
+// });
 
 
 // COTIZACION CRYPTO

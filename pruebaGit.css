@@ -195,8 +195,8 @@ button:active {
 li{
     animation-name: borrando;
     animation-duration: 1s;
-    animation-play-state: paused;
-    
+    animation-play-state:paused;
+    animation-fill-mode: both;
 }
 
 @keyframes borrando {
@@ -205,9 +205,24 @@ li{
         opacity: 1;
     }
     100%{
-        opacity: 0;
+        opacity: 0.5;
+        text-decoration: line-through;
     }
 }
-.listita{
-    margin-right: 3px;
+/* 
+.rehacer{
+    animation-name: desborrando;
+    animation-duration: 1s;
+    animation-play-state:paused;
+    animation-fill-mode: both;
 }
+
+@keyframes desborrando {
+    0% {opacity:0.5;
+    text-decoration:line-through;
+    }
+    100%{
+        opacity:1;
+        text-decoration: none;
+    }
+} */
