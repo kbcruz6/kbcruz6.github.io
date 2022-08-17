@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function(){
             // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
             if (rate !== undefined){
-                document.querySelector("#resultFiat").innerHTML=`1 USD son ${rate} ${fiat}.`;
+                document.querySelector("#resultFiat").innerHTML=`1 USD son ${Number(rate).toFixed(2)} ${fiat}.`;
                 }else {
                  document.querySelector("#resultFiat").innerHTML=`Moneda invalida.`;
                 }
