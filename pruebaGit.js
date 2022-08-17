@@ -143,20 +143,29 @@ document.addEventListener("DOMContentLoaded", ()=> {
 document.addEventListener("DOMContentLoaded", ()=> {
 
     document.querySelector(".form2").onsubmit=()=>{
-        let task = document.querySelector("#task").value;
+
+        document.querySelectorAll("#task").forEach((task)=>{
+
+         task = document.querySelector("#task").value;
         
-        let li=document.createElement("LI");
-        li.innerHTML=task;
-        li.className="listita";
+         let li=document.createElement("LI");
+         li.innerHTML=task;
+         li.className="listita";
 
-        let borrar=document.createElement("BUTTON");
-        borrar.innerHTML=(`Borrar`);
-        borrar.className="borrame";
+         let borrar=document.createElement("BUTTON");
+         borrar.innerHTML=(`Borrar`);
+         borrar.className="borrame";
+         borrar.style.marginLeft="10px";
 
-        document.querySelector("#tasks").appendChild(li);
-        document.querySelector("#task").value="";
+         document.querySelector("#tasks").appendChild(li);
+         document.querySelector("#task").value="";
 
-        document.querySelector(".listita").appendChild(borrar);
+         document.querySelector(".listita").appendChild(borrar);
+         li.className="";
+         return false;
+
+         });
+
         return false;
     };
 
@@ -220,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function(){
             if (rate !== undefined){
                 document.querySelector("#resultFiat").innerHTML=`1 USD son ${Number(rate).toFixed(2)} ${fiat}.`;
                 }else {
-                 document.querySelector("#resultFiat").innerHTML=`Moneda invalida.`;
+                 document.querySelector("#resultFiat").innerHTML=`Moneda inválida.`;
                 }
 
             console.log(data);
