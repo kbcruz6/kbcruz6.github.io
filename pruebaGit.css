@@ -51,22 +51,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#000;
+    color:#fff;
     grid-area: header;
     width: 100px;
     height: 80px;
     position:relative;
     animation-name: mover;
     animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-
+    animation-iteration-count: infinite;
 }
 
 @keyframes mover {
     0% {
-        opacity: 10%;
-
+        opacity: 80%;
         }
     /* 50%{  
      

@@ -29,14 +29,30 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 // BOTON CAMBIAR TITULO
-let cambiar=()=>{
-    let titulo=document.querySelector("h1");
-    if(titulo.innerHTML=="Bienvenido"){
-        titulo.innerHTML="Adios";
-    } else {
-        titulo.innerHTML="Bienvenido";
+
+// let cambiar=()=>{
+//     let titulo=document.querySelector("h1");
+//     if(titulo.innerHTML=="Bienvenido"){
+//         titulo.innerHTML="Adios";
+//     } else {
+//         titulo.innerHTML="Bienvenido";
+//     }
+// }
+
+document.addEventListener("DOMContentLoaded", function(){
+    const h1=document.querySelector(".cuadrado");
+    h1.style.animationPlayState="paused";
+
+    document.querySelector(".cambiar").onclick=()=>{
+        if (h1.style.animationPlayState=== "paused"){
+            h1.style.animationPlayState="running";
+        } else {
+            h1.style.animationPlayState="paused";
+        }
     }
-}
+});
+
+
 
 // CONTADOR
 let contar=0;
