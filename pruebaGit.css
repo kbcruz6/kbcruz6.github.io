@@ -197,23 +197,37 @@ li{
     animation-duration: 2s;
     animation-play-state:paused;
     animation-fill-mode: fowards;
+    text-decoration: none;
+
 }
 
 @keyframes borrando {
 
-    0% {
+    1% {
         opacity: 1;
         height: 100%;
         margin-bottom: 3px;
+        line-height: 100%;
+        padding: 3px;
+        text-decoration:line-through;
     }
-    75%{
+    
+    50%{
         opacity: 0;
         height: 100%;
         margin-bottom: 3px;
+        line-height: 100%;
+        padding: 3px;
+        text-decoration: line-through;
+
     }
     100%{
         opacity: 0;
         height: 0%;
         margin-bottom: 0px;
+        line-height: 0%;
+        padding: 0px;
+        text-decoration: line-through;
+
     }
 }
