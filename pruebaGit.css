@@ -194,35 +194,26 @@ button:active {
 
 li{
     animation-name: borrando;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-play-state:paused;
-    animation-fill-mode: both;
+    animation-fill-mode: fowards;
 }
 
 @keyframes borrando {
 
     0% {
         opacity: 1;
+        height: 100%;
+        margin-bottom: 3px;
+    }
+    75%{
+        opacity: 0;
+        height: 100%;
+        margin-bottom: 3px;
     }
     100%{
-        opacity: 0.5;
-        text-decoration: line-through;
+        opacity: 0;
+        height: 0%;
+        margin-bottom: 0px;
     }
 }
-/* 
-.rehacer{
-    animation-name: desborrando;
-    animation-duration: 1s;
-    animation-play-state:paused;
-    animation-fill-mode: both;
-}
-
-@keyframes desborrando {
-    0% {opacity:0.5;
-    text-decoration:line-through;
-    }
-    100%{
-        opacity:1;
-        text-decoration: none;
-    }
-} */
