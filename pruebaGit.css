@@ -198,7 +198,11 @@ li{
     animation-play-state:paused;
     animation-fill-mode: fowards;
     text-decoration: none;
-
+    height: 100%;
+    margin-bottom: 5px;
+    line-height: 100%;
+    padding: 5px;
+    font-size: 15px;
 }
 
 @keyframes borrando {
@@ -206,19 +210,21 @@ li{
     1% {
         opacity: 1;
         height: 100%;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         line-height: 100%;
-        padding: 3px;
+        padding: 5px;
         text-decoration:line-through;
+        font-size: 15px;
     }
     
     50%{
         opacity: 0;
         height: 100%;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         line-height: 100%;
-        padding: 3px;
+        padding: 5px;
         text-decoration: line-through;
+        font-size: 15px;
 
     }
     100%{
@@ -228,6 +234,7 @@ li{
         line-height: 0%;
         padding: 0px;
         text-decoration: line-through;
+        font-size: 0px;
 
     }
 }
