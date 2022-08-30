@@ -264,3 +264,42 @@ document.addEventListener("DOMContentLoaded", function(){
     //     }
     // }
 
+// TEXTURAS
+
+const zona=document.querySelector(".main");
+zona.addEventListener("dragover",(e)=>{
+    e.preventDefault();
+});
+zona.addEventListener("drop",(e)=>{
+    let n=e.dataTransfer.getData("textura");
+    zona.style.background=`url("textura${n}.jpg")`;
+});
+
+for (let i=1; i < document.querySelector(".texturas").children.length + 1; i++){
+   document.querySelector(`.textura${i}`).addEventListener("dragstart",(e)=>transferirTextura(i,e));
+};
+
+const transferirTextura=(n,e)=>{
+    e.dataTransfer.setData("textura",n)
+};
+
+// RELOJ
+
+const addZeros=n=>{
+    if (n.toString().length<2) return "0".concat(n);
+    return n; 
+}
+
+const actualizarHora=()=>{
+    const time= new Date();
+    let hora=addZeros(time.getHours());
+    let min=addZeros(time.getMinutes());
+    let seg=addZeros(time.getSeconds());
+
+    document.querySelector(".hora").textContent=hora;
+    document.querySelector(".min").textContent=min;
+    document.querySelector(".seg").textContent=seg;
+
+}
+actualizarHora();
+setInterval(actualizarHora,1000);
