@@ -303,3 +303,32 @@ const actualizarHora=()=>{
 }
 actualizarHora();
 setInterval(actualizarHora,1000);
+
+
+// GEOLOCATION
+// const geolocation=navigator.geolocation;
+
+// const posicion=(pos)=>{
+//     console.log(`Longitud: ${pos.coords.longitude}`);
+//     console.log(`Latitud: ${pos.coords.latitude}`);
+//     console.log(pos)
+// }
+
+// geolocation.getCurrentPosition(posicion);
+
+
+// LEER ARCHIVO DE TEXTO Y MOSTRAR EN CONSOLA EL CONTENIDO
+
+// const archivo=document.getElementById("archivo");
+// archivo.addEventListener("change",(e)=>{
+//     leerArchivo(archivo.files[0]);
+// });
+
+// const leerArchivo=ar=>{
+//     const reader= new FileReader();
+//     reader.readAsText(ar);
+//     reader.addEventListener("load",(e)=>{
+//         let resultado=(e.currentTarget.result);
+//         console.log(JSON.parse(resultado));
+//     })
+// };
