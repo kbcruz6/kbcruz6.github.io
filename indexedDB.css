@@ -6,7 +6,9 @@ body, h2, div, input, button{
     text-align: center;
 }
 .nombres{
-    margin:40px;
+    max-width: 600px;
+    margin:auto;
+    margin-top: 40px;
 }
 .nombre{
     display: grid;
