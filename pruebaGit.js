@@ -332,3 +332,20 @@ setInterval(actualizarHora,1000);
 //         console.log(JSON.parse(resultado));
 //     })
 // };
+
+const $imagen = document.querySelector("#codigo"),
+		    $boton = document.querySelector("#btnDescargar");
+		new QRious({
+			element: $imagen,
+			value: "https://www.instagram.com/mariamartaw/", // La URL o el texto
+			size: 150,
+			backgroundAlpha: "#fff", // 0 para fondo transparente
+			foreground: "#000", // Color del QR
+			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+		});
+		$boton.onclick = () => {
+			const enlace = document.createElement("a");
+			enlace.href = $imagen.src;
+			enlace.download = "Código QR instagram MMW.png";
+			enlace.click();
+		}
