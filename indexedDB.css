@@ -47,4 +47,5 @@ body, h2, div, input, button{
 .nombre h2{
     padding: 6px;
     color: #48e;
+    outline-color: #48e;
 }

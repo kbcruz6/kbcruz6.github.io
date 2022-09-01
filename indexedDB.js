@@ -21,9 +21,18 @@ IDBRequest.addEventListener("error",()=>{
 document.getElementById("add").addEventListener("click",()=>{
     let nombre=document.getElementById("nombre").value;
     if (nombre.length > 0){
-        addObjeto({nombre});
-        leerObjetos();
+        if (document.querySelector(".posible") != undefined){
+            if (confirm("Hay elementos sin guardar, quieres continuar?")){
+                addObjeto({nombre});
+                leerObjetos();
+            }
+        } else {
+            addObjeto({nombre});
+            leerObjetos();
+        }
+        
     }
+    document.getElementById("nombre").value="";
 })
 
 
