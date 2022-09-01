@@ -20,21 +20,14 @@ IDBRequest.addEventListener("error",()=>{
 
 // AGREGAR OBJETO, pongo en consola addObjeto({nombre:"Roberto"})
 const addObjeto=objeto=>{
-    const db=IDBRequest.result;
-    const IDBtransaction=db.transaction("nombres","readwrite");
-    const objectStore=IDBtransaction.objectStore("nombres");
-    objectStore.add(objeto);
-    IDBtransaction.addEventListener("complete",()=>{
-        console.log("objeto agregado correctamente");
-    })
+    const IDBData=getIDBData("readwrite","objeto agregado correctamente");
+    IDBData.add(objeto);
 }
 
 // LEER OBJETOS, pongo en consola leerObjetos();
 const leerObjetos =()=>{
-    const db=IDBRequest.result;
-    const IDBtransaction=db.transaction("nombres","readonly");
-    const objectStore=IDBtransaction.objectStore("nombres");
-    const cursor=objectStore.openCursor();
+    const IDBData=getIDBData("readonly");
+    const cursor=IDBData.openCursor();
     cursor.addEventListener("success",()=>{
         if (cursor.result){
             console.log(cursor.result.value);
@@ -45,22 +38,23 @@ const leerObjetos =()=>{
 
 // MODIFICAR OBJETOS, pongo en consola modificarObjeto(3,{nombre:"Peperulo"})
 const modificarObjeto=(key,objeto)=>{
-    const db=IDBRequest.result;
-    const IDBtransaction=db.transaction("nombres","readwrite");
-    const objectStore=IDBtransaction.objectStore("nombres");
-    objectStore.put(objeto,key);
-    IDBtransaction.addEventListener("complete",()=>{
-        console.log("objeto modificado correctamente");
-    })
+    const IDBData=getIDBData("readwrite","objeto modificado correctamente");
+    IDBData.put(objeto,key);
 }
 
 // ELIMINAR OBJETOS, pongo en consola eliminarObjeto(4)
 const eliminarObjeto=(key)=>{
+    const IDBData=getIDBData("readwrite","objeto eliminado correctamente");
+    IDBData.delete(key);
+}
+
+// Funcion getIDBData para simplificar la obtencion de datos, esas primeras 3 lineas que se repiten en todas las funciones
+const getIDBData =(mode,msg)=>{
     const db=IDBRequest.result;
-    const IDBtransaction=db.transaction("nombres","readwrite");
+    const IDBtransaction=db.transaction("nombres",mode);
     const objectStore=IDBtransaction.objectStore("nombres");
-    objectStore.delete(key);
     IDBtransaction.addEventListener("complete",()=>{
-        console.log("objeto eliminado correctamente");
+        console.log(msg);
     })
+    return objectStore;
 }
