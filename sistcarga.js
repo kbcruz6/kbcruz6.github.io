@@ -51,12 +51,25 @@ const cargarPublicaciones= async num=>{
     console.log(arr);
     const documentFragment=document.createDocumentFragment();
     for (let i=0;i<num;i++){
-        let newPublicacion=createPublicationCode(arr[contador].nombre,arr[contador].contenido)
-        documentFragment.appendChild(newPublicacion);
-        contador++;
-        if(i==num-1) observer.observe(newPublicacion);
+        if (arr[contador] != undefined){
+            const newPublicacion=createPublicationCode(arr[contador].nombre,arr[contador].contenido)
+            documentFragment.appendChild(newPublicacion);
+            contador++;
+            if(i==num-1) observer.observe(newPublicacion);
+        }else {
+            if (publicaciones.lastElementChild.id !=="nomore"){
+                let noMore=document.createElement("h3");
+                noMore.textContent="No hay mas publicaciones";
+                noMore.id="nomore"
+                documentFragment.appendChild(noMore);
+                publicaciones.appendChild(documentFragment);
+                break;
+            }
+            
+        }
+        
     }
     publicaciones.appendChild(documentFragment);
 }
 
-cargarPublicaciones(1);
+cargarPublicaciones(4);
