@@ -87,6 +87,7 @@ p{
     font-size: 10px;
     justify-content: left;
     text-align: justify;
+    color: #ADF0D1;
 }
 a{
     color: #ADF0D1;
@@ -154,49 +155,108 @@ a{
 #lkdn-icon, #mail-icon{
     font-size: 40px;
 }
+#lkdn-icon:hover{
+    opacity: 0.6;
+}
+#mail-icon:hover{
+    opacity: 0.6;
+}
+
 
 .studies{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: auto 5px;
+    margin-top: 10px;
     border-bottom: 2px solid #00203F;
     border-left: 2px solid #00203F;
 }
 .uni-cont{
-    margin: 5px 10px;
+    margin: 5px 5px;
     margin-top: 22px;
     bottom: 0px;
-    padding: 0px 5px;
+    padding: 0px 2px;
+    text-align: left;
+    /* border-bottom: 1px solid #00203F; */
+    /* border-right: 1px solid #00203F; */
+    /* display: inline-block; */
+}
+.uni{
+    margin:5px 5px;
+    margin-bottom: 25px;
+    padding: 0px 2px;
+    text-align: left;
+    color: #1d60a3;
+}
+
+.work{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5px;
+    margin-top: 30px;
+    border-bottom: 2px solid #00203F;
+    border-left: 2px solid #00203F;
+}
+.position{
+    margin: 5px 5px;
+    margin-top: 22px;
+    bottom: 0px;
+    padding: 0px 2px;
     text-align: left;
     border-bottom: 1px solid #00203F;
     font-weight: 780;
+    display: inline-block;
 }
-.uni{
-    margin:5px 10px;
-    padding: 0px 5px;
+.employer{
+    margin:5px 15px;
+    padding: 0px 2px;
     text-align: left;
     font-weight: 550;
+    display: inline-block;
+    color: #1d60a3;
+    font-size: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.eng-cont{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 0px 5px;
+    margin: 15px 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+#industrial{
+    display: inline-block;
+    padding: 0;
+    margin: 0px 5px;
+    font-size: 15px;
+    text-align: left;
+}
+.dev-cont{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 0px 5px;
+    margin: 15px 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+#developer{
+    display: inline-block;
+    padding: 0;
+    margin: 0px 5px;
+    font-size: 15px;
+    text-align: left;
+}
 
 
 
@@ -209,4 +269,19 @@ a{
     font-size: 15px;
   }
 
+  .studies, .work{
+    font-size: 15px;
+  }
+  .position{
+    font-size: 11px;
+  }
+  #developer, #industrial{
+    font-size: 12px;
+  }
+  .employer{
+    font-size: 9px;
+  }
+  #dev-icon,#eng-icon{
+    font-size: 12px;
+  }
 }
