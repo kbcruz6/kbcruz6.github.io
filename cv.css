@@ -32,7 +32,7 @@ body{
     color:#ADF0D1;
     background-color: #00203F;
     margin-top: 5px;
-    max-width: 250px;
+    max-width: 395px;
 }
 .main{
     grid-area: main;
@@ -262,6 +262,41 @@ a{
 
 
 @media screen and (max-width:400px) {
+  
+    .cont{
+        background-color: #ADF0D1;
+        margin:10px;
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-rows: repeat(3,1fr);
+        height: 100vh;
+    }  
+    .aside{
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+    }
+    
+    .main{
+        grid-column: 1/span 2;
+        grid-row: 5/span 8;
+    }
+
+    .img{
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        min-width: 100px;
+        max-width: 120px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    img{
+        width: 80%;
+        margin: auto;
+        border-radius: 50%;
+    }
+
   h1{
     font-size: 20px;
   }
