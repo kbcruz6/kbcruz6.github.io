@@ -32,6 +32,7 @@ body{
     color:#ADF0D1;
     background-color: #00203F;
     margin-top: 5px;
+    max-width: 250px;
 }
 .main{
     grid-area: main;
@@ -96,13 +97,109 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
 }
-.redes li{
+.redes ul li{
     display: inline-block;
-    width: 50px;
+    margin: 0 5px;
     text-align: center;
 }
+.redes ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.phone-cont{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    display: inline-block;
+    padding: 0;
+    margin: 3px;
+}
+
+.address-cont{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px 3px; */
+}
+.address{
+    display: inline-block;
+    padding: 0;
+    margin: 10px 5px;
+    margin-bottom: 0px;
+    font-size: 8px;
+}
+
+.bd-cont{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.bd{
+    display: inline-block;
+    padding: 0;
+    margin: 10px 5px;
+    font-size: 8px;
+}
+#ad-icon,#bd-icon{
+    font-size: 13px;
+}
+#lkdn-icon, #mail-icon{
+    font-size: 40px;
+}
+
+.studies{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #00203F;
+    border-left: 2px solid #00203F;
+}
+.uni-cont{
+    margin: 5px 10px;
+    margin-top: 22px;
+    bottom: 0px;
+    padding: 0px 5px;
+    text-align: left;
+    border-bottom: 1px solid #00203F;
+    font-weight: 780;
+}
+.uni{
+    margin:5px 10px;
+    padding: 0px 5px;
+    text-align: left;
+    font-weight: 550;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:400px) {
   h1{
