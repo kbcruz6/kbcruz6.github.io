@@ -31,13 +31,17 @@ body{
     grid-area: aside;
     color:#ADF0D1;
     background-color: #00203F;
+    margin: auto;
     margin-top: 5px;
-    max-width: 395px;
+    max-width: 400px;
+    min-width: 280px;
 }
 .main{
     grid-area: main;
     color: #00203F;
     background-color: #ADF0D1;
+    margin:auto 5px;
+    max-width: 700px;
 }
 h1{
     margin:auto;
@@ -45,14 +49,14 @@ h1{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 .img{
     flex: 1;
     padding: 10px;
     display: flex;
     min-width: 100px;
-    max-width: 150px;
+    max-width: 250px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -70,11 +74,12 @@ h3{
     text-align: center;
     border-bottom:1px solid #ADF0D1;
     border-left: 1px solid #ADF0D1;
-    font-size: 13px;
+    font-size: 25px;
     padding: 5px;
+    display: block;
 }
 h4{
-    font-size: 10px;
+    font-size: 18px;
     align-items: center;
     margin:5px auto;
     text-align: center;
@@ -84,7 +89,7 @@ p{
     font-size: 10px;
 }
 .descripcion{
-    font-size: 10px;
+    font-size: 15px;
     justify-content: left;
     text-align: justify;
     color: #ADF0D1;
@@ -122,13 +127,13 @@ a{
     margin: 3px;
 }
 
-.address-cont{
+/* .address-cont{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    /* margin: 10px 3px; */
-}
+    /* margin: 10px 3px; }*/
+/* 
 .address{
     display: inline-block;
     padding: 0;
@@ -148,10 +153,11 @@ a{
     padding: 0;
     margin: 10px 5px;
     font-size: 8px;
-}
+} */
+/* 
 #ad-icon,#bd-icon{
     font-size: 13px;
-}
+} */
 #lkdn-icon, #mail-icon{
     font-size: 40px;
 }
@@ -172,6 +178,7 @@ a{
     margin-top: 10px;
     border-bottom: 2px solid #00203F;
     border-left: 2px solid #00203F;
+    font-size: 40px;
 }
 .uni-cont{
     margin: 5px 5px;
@@ -189,10 +196,12 @@ a{
     padding: 0px 2px;
     text-align: left;
     color: #1d60a3;
+    font-size: 15px;
+
 }
 
 .work{
-    display: flex;
+    display: block;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -200,6 +209,8 @@ a{
     margin-top: 30px;
     border-bottom: 2px solid #00203F;
     border-left: 2px solid #00203F;
+    font-size: 30px;
+
 }
 .position{
     margin: 5px 5px;
@@ -209,16 +220,17 @@ a{
     text-align: left;
     border-bottom: 1px solid #00203F;
     font-weight: 780;
-    display: inline-block;
+    font-size: 20px;
+    /* display: inline-block; */
 }
 .employer{
     margin:5px 15px;
     padding: 0px 2px;
     text-align: left;
     font-weight: 550;
-    display: inline-block;
+    /* display: inline-block; */
     color: #1d60a3;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .eng-cont{
@@ -238,6 +250,8 @@ a{
     margin: 0px 5px;
     font-size: 15px;
     text-align: left;
+    font-size: 20px;
+
 }
 .dev-cont{
     display: flex;
@@ -256,12 +270,14 @@ a{
     margin: 0px 5px;
     font-size: 15px;
     text-align: left;
+    font-size: 20px;
+
 }
 
 
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
   
     .cont{
         background-color: #ADF0D1;
@@ -285,8 +301,8 @@ a{
         flex: 1;
         padding: 10px;
         display: flex;
-        min-width: 100px;
-        max-width: 120px;
+        min-width: 150px;
+        max-width: 250px;
         align-items: center;
         justify-content: center;
         margin: auto;
@@ -298,23 +314,23 @@ a{
     }
 
   h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   .skills{
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .studies, .work{
-    font-size: 15px;
+    font-size: 25px;
   }
   .position{
-    font-size: 11px;
+    font-size: 13px;
   }
   #developer, #industrial{
-    font-size: 12px;
+    font-size: 20px;
   }
   .employer{
-    font-size: 9px;
+    font-size: 11px;
   }
   #dev-icon,#eng-icon{
     font-size: 12px;
