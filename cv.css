@@ -362,13 +362,15 @@ a{
     font-size: 25px;
   }
   .position{
-    font-size: 15px;
+    font-size: 20px;
   }
   #developer, #industrial{
     font-size: 20px;
   }
   .employer{
-    font-size: 13px;
+    font-size: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
   #dev-icon,#eng-icon{
     font-size: 12px;
