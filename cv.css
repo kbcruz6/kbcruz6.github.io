@@ -138,6 +138,9 @@ a{
     padding: 0;
     margin: 3px;
 }
+#phone-icon{
+    font-size:20px;
+}
 .proyectos{
     display: flex;
     text-align: center;
