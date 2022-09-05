@@ -77,6 +77,8 @@ img{
     width: 80%;
     margin: auto;
     border-radius: 50%;
+    opacity: 0;
+    animation: carga 1s forwards 0.68s;
 }
 h3{
     margin: 15px auto;
@@ -96,9 +98,18 @@ h4{
     margin:5px auto;
     text-align: center;
     justify-content: center;
+    opacity: 0;
+    animation: carga 1s forwards 0.68s;
+
+}
+h5{
+    opacity: 0;
+    animation: carga 1s forwards 0.68s;
 }
 p{
     font-size: 10px;
+    opacity: 0;
+    animation: carga 1s forwards 0.68s;
 }
 .descripcion{
     font-size: 15px;
@@ -140,6 +151,8 @@ a{
 }
 #phone-icon{
     font-size:20px;
+    opacity: 0;
+    animation: carga 1s forwards 0.68s;
 }
 .proyectos{
     display: flex;
@@ -182,6 +195,8 @@ a{
 } */
 #lkdn-icon, #mail-icon{
     font-size: 40px;
+    opacity: 0;
+    animation: carga 1s forwards 0.68s;
 }
 #lkdn-icon:hover{
     opacity: 0.6;
@@ -221,9 +236,6 @@ a{
     font-size: 15px;
 
 }
-/* h5{
-   
-} */
 .work{
     display: block;
     text-align: center;
