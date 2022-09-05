@@ -195,14 +195,13 @@ a{
 } */
 #lkdn-icon, #mail-icon{
     font-size: 40px;
-    opacity: 0;
-    animation: carga 1s forwards 0.68s;
+
 }
 #lkdn-icon:hover{
-    opacity: 0.6;
+    opacity: 0.5;
 }
 #mail-icon:hover{
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 
