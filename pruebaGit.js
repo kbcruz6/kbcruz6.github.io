@@ -299,6 +299,7 @@ const actualizarHora=()=>{
     document.querySelector(".hora").textContent=hora;
     document.querySelector(".min").textContent=min;
     document.querySelector(".seg").textContent=seg;
+    document.querySelector(".relojj").innerHTML=`<br>Hora actual GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
 
 }
 actualizarHora();

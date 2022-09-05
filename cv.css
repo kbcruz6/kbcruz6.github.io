@@ -126,6 +126,13 @@ a{
     padding: 0;
     margin: 3px;
 }
+.proyectos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
 /* .address-cont{
     display: flex;
