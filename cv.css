@@ -1,5 +1,15 @@
 *{
     font-family: sans-serif;    
+    animation: carga 1s forwards 0.5s;
+}
+@keyframes carga {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
 body{
     background-color: #ADF0D1;
