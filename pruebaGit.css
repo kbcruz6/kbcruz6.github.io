@@ -295,3 +295,12 @@ li{
     display: block;
     margin: auto;
 }
+.CV{
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin: 10px auto;
+}
