@@ -12,6 +12,7 @@
     
 }
 body{
+    opacity: 0;
     background-color: #ADF0D1;
     animation: carga 1s forwards 0.5s;
     
