@@ -91,28 +91,33 @@ actualizarHora();
 setInterval(actualizarHora,1000);
 
 
-// NACIMIENTO
-
-// let start = Date.now()
-
-// doSomethingForALongTime()
-// let end = Date.now()
-// let elapsed = end - start // tiempo transcurrido en milisegundos
-
-
 const nacimiento=()=>{
-    const hoy=new Date();
-    // const kb=new Date(679604755);
 
-    let year=(hoy.getTime(1662491155))-(hoy.getTime(679604755));
-    let month=(hoy.getUTCMonth());
-    let day=(hoy.getUTCDay());
-    let hora=addZeros(hoy.getHours());
-    let min=addZeros(hoy.getMinutes());
-    let seg=addZeros(hoy.getSeconds());
-    
+    let fecha1=new Date("7/15/1991");
+    let fecha2=new Date();
 
-    document.querySelector(".relojj").innerHTML=`<br>Mi edad exacta es: <br>${year} años, ${month} mes,${day} días, ${hora} horas,${min} minutos y ${seg} segundos`;
+    let years=Math.abs(fecha1.getFullYear()-fecha2.getFullYear());
+    let months=(fecha2.getMonth()-fecha1.getMonth());
+    let days=(fecha2.getDate()-fecha1.getDate());
+    let meses="meses";
+    let dias="días";
+    let todayDate = new Date().toLocaleDateString();
+
+    if (months<0){
+        years=years-1;
+        months=months+12;
+    }
+    if (days<0){
+        months=months-1;
+        days=days+30;
+    }
+    if (months==1){
+        meses="mes"
+    } if (dias==1){
+        dias="día"
+    }
+
+    document.querySelector(".birth").innerHTML=`<br>Edad exacta al día de hoy (${todayDate}):<br><br> ${years} años, ${months} ${meses}, ${days} ${dias}`;
 
 }
 nacimiento();

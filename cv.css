@@ -178,7 +178,9 @@ a{
     margin: 10px 5px;
     margin-bottom: 0px;
 }
-
+.address-cont:hover{
+    opacity: 0.58;
+}
 .bd-cont{
     display: flex;
     text-align: center;
@@ -192,9 +194,14 @@ a{
     margin: 10px 5px;
     margin-bottom: 0px;
 }
+.age{
+    font-size: 17px;
+}
 
 #ad-icon,#bd-icon{
     font-size: 20px;
+    margin-right: 7px;
+    margin-bottom: 0px;
 }
 #lkdn-icon, #mail-icon{
     font-size: 40px;
