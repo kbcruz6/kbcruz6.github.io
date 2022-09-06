@@ -30,14 +30,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 // BOTON CAMBIAR TITULO
 
-// let cambiar=()=>{
-//     let titulo=document.querySelector("h1");
-//     if(titulo.innerHTML=="Bienvenido"){
-//         titulo.innerHTML="Adios";
-//     } else {
-//         titulo.innerHTML="Bienvenido";
-//     }
-// }
 
 document.addEventListener("DOMContentLoaded", function(){
     const h1=document.querySelector(".cuadrado");
@@ -74,6 +66,59 @@ let zero=()=>{
 
 document.querySelector(".contar").onclick=cont;
 document.querySelector(".cero").onclick=zero
+
+
+// RELOJ
+
+const addZeros=n=>{
+    if (n.toString().length<2) return "0".concat(n);
+    return n; 
+}
+
+const actualizarHora=()=>{
+    const time= new Date();
+    let hora=addZeros(time.getHours());
+    let min=addZeros(time.getMinutes());
+    let seg=addZeros(time.getSeconds());
+
+    document.querySelector(".hora").textContent=hora;
+    document.querySelector(".min").textContent=min;
+    document.querySelector(".seg").textContent=seg;
+    document.querySelector(".relojj").innerHTML=`<br>Hora actual GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
+
+}
+actualizarHora();
+setInterval(actualizarHora,1000);
+
+
+// NACIMIENTO
+
+// let start = Date.now()
+
+// doSomethingForALongTime()
+// let end = Date.now()
+// let elapsed = end - start // tiempo transcurrido en milisegundos
+
+
+const nacimiento=()=>{
+    const hoy=new Date();
+    // const kb=new Date(679604755);
+
+    let year=(hoy.getTime(1662491155))-(hoy.getTime(679604755));
+    let month=(hoy.getUTCMonth());
+    let day=(hoy.getUTCDay());
+    let hora=addZeros(hoy.getHours());
+    let min=addZeros(hoy.getMinutes());
+    let seg=addZeros(hoy.getSeconds());
+    
+
+    document.querySelector(".relojj").innerHTML=`<br>Mi edad exacta es: <br>${year} años, ${month} mes,${day} días, ${hora} horas,${min} minutos y ${seg} segundos`;
+
+}
+nacimiento();
+setInterval(nacimiento,1000);
+
+
 
 
 // FORMULARIO
@@ -113,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //         document.querySelector("body").style.backgroundColor="red";
 //     }
 // }
-// // )
+
 
 document.addEventListener("DOMContentLoaded", ()=> {
 
@@ -283,27 +328,6 @@ const transferirTextura=(n,e)=>{
     e.dataTransfer.setData("textura",n)
 };
 
-// RELOJ
-
-const addZeros=n=>{
-    if (n.toString().length<2) return "0".concat(n);
-    return n; 
-}
-
-const actualizarHora=()=>{
-    const time= new Date();
-    let hora=addZeros(time.getHours());
-    let min=addZeros(time.getMinutes());
-    let seg=addZeros(time.getSeconds());
-
-    document.querySelector(".hora").textContent=hora;
-    document.querySelector(".min").textContent=min;
-    document.querySelector(".seg").textContent=seg;
-    document.querySelector(".relojj").innerHTML=`<br>Hora actual GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
-
-}
-actualizarHora();
-setInterval(actualizarHora,1000);
 
 
 // GEOLOCATION
