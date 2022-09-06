@@ -140,6 +140,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 });
 
 // LISTA SUPER
+
 document.addEventListener("DOMContentLoaded", ()=> {
     document.querySelector(".form2").onsubmit=()=>{
         document.querySelectorAll("#task").forEach((task)=>{
@@ -168,7 +169,6 @@ document.addEventListener("DOMContentLoaded", ()=> {
 //     }
 // }
 
-// // BRIAN YU
 document.addEventListener("click", event=>{
     const element = event.target;
     if (element.className === "borrame"){
