@@ -188,21 +188,27 @@ a{
     align-items: center;
     margin: 10px 3px; 
 }
-.bd{
+.age{
     display: inline-block;
     padding: 0;
     margin: 10px 5px;
     margin-bottom: 0px;
     font-size: 16px;
 }
-.age{
-    font-size: 16px;
+.bd{
+    font-size: 17px;
 }
-
-#ad-icon,#bd-icon{
+#bd-icon{
+    font-size: 17px;
+    margin-right: 7px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#ad-icon{
     font-size: 20px;
     margin-right: 7px;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 #lkdn-icon, #mail-icon{
     font-size: 40px;
