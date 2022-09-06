@@ -11,7 +11,7 @@ const dates=()=>{
     let todayDate = new Date().toLocaleDateString();
 
 
-    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs is:<br>`;
+    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:<br>`;
 }
 const age=()=>{
 
