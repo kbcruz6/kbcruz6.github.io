@@ -193,9 +193,10 @@ a{
     padding: 0;
     margin: 10px 5px;
     margin-bottom: 0px;
+    font-size: 16px;
 }
 .age{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #ad-icon,#bd-icon{
@@ -387,4 +388,5 @@ a{
   #dev-icon,#eng-icon{
     font-size: 12px;
   }
+
 }
