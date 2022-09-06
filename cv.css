@@ -164,19 +164,19 @@ a{
     text-decoration: none;
 }
 
-/* .address-cont{
+.address-cont{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    /* margin: 10px 3px; }*/
-/* 
+    margin: 10px 3px; 
+}
+
 .address{
     display: inline-block;
     padding: 0;
     margin: 10px 5px;
     margin-bottom: 0px;
-    font-size: 8px;
 }
 
 .bd-cont{
@@ -184,17 +184,18 @@ a{
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 10px 3px; 
 }
 .bd{
     display: inline-block;
     padding: 0;
     margin: 10px 5px;
-    font-size: 8px;
-} */
-/* 
+    margin-bottom: 0px;
+}
+
 #ad-icon,#bd-icon{
-    font-size: 13px;
-} */
+    font-size: 20px;
+}
 #lkdn-icon, #mail-icon{
     font-size: 40px;
 
