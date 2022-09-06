@@ -11,14 +11,19 @@
     }
     
 }
+:root{
+    --color1:#ADF0D1;
+    --color2:#00203F;
+    --color3:#1d60a3;
+} 
 body{
     opacity: 0;
-    background-color: #ADF0D1;
+    background-color: var(--color1);
     animation: carga 1s forwards 0.5s;
     
 }
 .cont{
-    background-color: #ADF0D1;
+    background-color: var(--color1);
     margin:10px;
     display: grid;
     grid-template-areas:
@@ -41,8 +46,8 @@ body{
 
 .aside{
     grid-area: aside;
-    color:#ADF0D1;
-    background-color: #00203F;
+    color: var(--color1);
+    background-color: var(--color2);
     margin: auto;
     margin-top: 5px;
     max-width: 400px;
@@ -51,7 +56,7 @@ body{
 .main{
     grid-area: main;
     color: #00203F;
-    background-color: #ADF0D1;
+    background-color: var(--color1);
     margin:auto 5px;
     max-width: 700px;
 }
@@ -86,8 +91,8 @@ h3{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom:1px solid #ADF0D1;
-    border-left: 1px solid #ADF0D1;
+    border-bottom:1px solid var(--color1);
+    border-left: 1px solid var(--color1);
     font-size: 25px;
     padding: 5px;
     display: block;
@@ -117,10 +122,10 @@ p{
     font-size: 15px;
     justify-content: left;
     text-align: justify;
-    color: #ADF0D1;
+    color: var(--color1);
 }
 a{
-    color: #ADF0D1;
+    color: var(--color1);
 }
 
 .redes{
@@ -229,8 +234,8 @@ a{
     align-items: center;
     margin: auto 5px;
     margin-top: 0px;
-    border-bottom: 2px solid #00203F;
-    border-left: 2px solid #00203F;
+    border-bottom: 2px solid var(--color2);
+    border-left: 2px solid var(--color2);
     font-size: 40px;
 }
 .uni-cont{
@@ -239,16 +244,14 @@ a{
     bottom: 0px;
     padding: 0px 2px;
     text-align: left;
-    /* border-bottom: 1px solid #00203F; */
-    /* border-right: 1px solid #00203F; */
-    /* display: inline-block; */
+ 
 }
 .uni{
     margin:5px 5px;
     margin-bottom: 25px;
     padding: 0px 2px;
     text-align: left;
-    color: #1d60a3;
+    color: var(--color3);
     font-size: 15px;
 
 }
@@ -261,8 +264,8 @@ a{
     margin-top: 30px;
     margin-bottom: 20px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #00203F;
-    border-left: 2px solid #00203F;
+    border-bottom: 2px solid var(--color2);
+    border-left: 2px solid var(--color2);
     font-size: 40px;
 
 }
@@ -272,7 +275,7 @@ a{
     margin-bottom: 25px;
     padding: 0px 2px;
     text-align: left;
-    border-bottom: 1px solid #00203F;
+    border-bottom: 1px solid var(--color2);
     font-weight: 780;
     font-size: 20px;
     /* display: inline-block; */
@@ -286,7 +289,7 @@ a{
     text-align: justify;
     font-weight: 550;
     /* display: inline-block; */
-    color: #1d60a3;
+    color: var(--color3);
     font-size: 15px;
 }
 
@@ -337,7 +340,7 @@ a{
 @media screen and (max-width:450px) {
   
     .cont{
-        background-color: #ADF0D1;
+        background-color: var(--color1);
         margin:10px;
         display: grid;
         grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;

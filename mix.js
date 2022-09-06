@@ -80,18 +80,21 @@ const actualizarHora=()=>{
     let hora=addZeros(time.getHours());
     let min=addZeros(time.getMinutes());
     let seg=addZeros(time.getSeconds());
+    let todayDate = new Date().toLocaleDateString();
+
 
     document.querySelector(".hora").textContent=hora;
     document.querySelector(".min").textContent=min;
     document.querySelector(".seg").textContent=seg;
     document.querySelector(".relojj").innerHTML=`<br>Hora actual GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
+    document.querySelector(".birth").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:<br>`;
 
 }
 actualizarHora();
 setInterval(actualizarHora,1000);
 
 
-const nacimiento=()=>{
+const age=()=>{
 
     let fecha1=new Date("7/15/1991");
     let fecha2=new Date();
@@ -99,9 +102,8 @@ const nacimiento=()=>{
     let years=Math.abs(fecha1.getFullYear()-fecha2.getFullYear());
     let months=(fecha2.getMonth()-fecha1.getMonth());
     let days=(fecha2.getDate()-fecha1.getDate());
-    let meses="meses";
-    let dias="días";
-    let todayDate = new Date().toLocaleDateString();
+    let meses="months";
+    let dias="days";
 
     if (months<0){
         years=years-1;
@@ -112,16 +114,15 @@ const nacimiento=()=>{
         days=days+30;
     }
     if (months==1){
-        meses="mes"
+        meses="month"
     } if (dias==1){
-        dias="día"
-    }
+        dias="day"
+    } 
 
-    document.querySelector(".birth").innerHTML=`<br>Edad exacta al día de hoy (${todayDate}):<br><br> ${years} años, ${months} ${meses}, ${days} ${dias}`;
-
+    document.querySelector(".age").innerHTML=`${years} years, ${months} ${meses}, ${days} ${dias}`
 }
-nacimiento();
-setInterval(nacimiento,1000);
+age();
+
 
 
 
@@ -211,13 +212,6 @@ document.addEventListener("DOMContentLoaded", ()=> {
         return false;
     };
 });
-// document.querySelector(".cambiar").onclick=()=>{
-//     if (borrar.parentElement.style.animationPlayState=== "paused"){
-//         borrar.parentElement.style.animationPlayState="running";
-//     } else {
-//         borrar.parentElement.style.animationPlayState="paused";
-//     }
-// }
 
 document.addEventListener("click", event=>{
     const element = event.target;
