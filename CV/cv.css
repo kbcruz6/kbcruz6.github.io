@@ -216,14 +216,16 @@ a{
     margin-bottom: 0px;
     margin-top: 0px;
 }
-#lkdn-icon, #mail-icon{
+#lkdn-icon, #mail-icon, #gh-icon{
     font-size: 40px;
-
 }
 #lkdn-icon:hover{
     opacity: 0.5;
 }
 #mail-icon:hover{
+    opacity: 0.5;
+}
+#gh-icon:hover{
     opacity: 0.5;
 }
 
