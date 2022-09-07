@@ -293,6 +293,7 @@ body{
     color: var(--color1);
     border-bottom: 2px solid var(--color2);
     border-radius: 4px;
+    padding: 4px;
 }
 #task::placeholder{
     border: none;
@@ -350,7 +351,9 @@ body{
     background-color: var(--color3);
     color: var(--color1);
     border-bottom: 2px solid var(--color2);
-    margin-left: 13px;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 4px;
 }
 .formFiat input:hover{
     background-color: var(--color2);
