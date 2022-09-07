@@ -104,13 +104,13 @@ body{
     border: 3px solid transparent;
     background-color: var(--color3);
     color:var(--color1);
-    margin:10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 30px;
     border-radius: 4px;
+    margin-top: 10px;
 }
 .boton:hover, .CV:hover{
     background-color: var(--color2);
@@ -119,8 +119,8 @@ body{
 /* --------------------------CV */
 .CV{
     text-decoration: none;
-    width: 300px;
-
+    width: fit-content;
+    padding: 5px 10px;
 }
 
 /* --------------------------CONTADOR Y CRONOMETRO */
@@ -135,7 +135,7 @@ body{
     border-radius: 4px;
     width: 100px;
     height: 50px;
-    margin:5px auto;
+    /* margin:5px auto; */
 
 }
 .cronometro{
@@ -400,17 +400,23 @@ body{
 
 #logoJust{
     /* display: inline-block; */
-    width: 100px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     float: left;
     margin-right: 15px;
     border:2px solid var(--color2);
+    margin-bottom: 10px;
 }
 .justTitulo{
     display: block;
     color: var(--color2);
 }
-
+#codigo{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--color2);
+}
 button {
     cursor:pointer;
 }
@@ -425,8 +431,11 @@ h3,ul,li{
     border: 2px solid var(--color2);
     outline: none;
     font-family: monospace;
-    margin-left: 10px;
     border-radius: 4px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 #btnDescargar:hover{
     background-color: var(--color4);
@@ -525,6 +534,29 @@ li{
         grid-template-rows: repeat(5,1fr);
         height: 100vh;
     }  
+    .header{
+        grid-column: 1/span 1;
+        grid-row: 1/2;
+    }
+    .foto{
+        grid-column: 1/span 1;
+        grid-row: 2/3;
+    }
+    .main{
+        grid-column: 1/span 1;
+        grid-row: 3/4;
+       
+    }
+    .aside{
+        grid-column: 1/span 1;
+        grid-row: 4/5;
+        margin-top: 25px;
+    }
+    .footer{
+        grid-column: 1/span 1;
+        grid-row: 5/6;
+    }
+
     .reloj-cont{
         display:flex;
         text-align: center;
@@ -587,27 +619,27 @@ li{
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-left: 20px;
+        height: 150px;
+        width: 150px;
     }
-    .header{
-        grid-column: 1/span 1;
-        grid-row: 1/2;
+    .boton, .CV, .contador{
+        grid-area: main;
+        border: 3px solid transparent;
+        background-color: var(--color3);
+        color:var(--color1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        border-radius: 4px;
+        margin: auto;
+        margin-top: 10px;
     }
-    .foto{
-        grid-column: 1/span 1;
-        grid-row: 2/3;
+    .contador{
+        border: 2px solid var(--color2);
+        border-radius: 4px;
     }
-    .main{
-        grid-column: 1/span 1;
-        grid-row: 3/4;
-       
-    }
-    .aside{
-        grid-column: 1/span 1;
-        grid-row: 4/5;
-        margin-top: 25px;
-    }
-    .footer{
-        grid-column: 1/span 1;
-        grid-row: 5/6;
-    }
-    }
+
+}

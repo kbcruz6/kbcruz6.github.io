@@ -341,6 +341,10 @@ const transferirTextura=(n,e)=>{
 //     })
 // };
 
+
+
+// JUST
+
 const $imagen = document.querySelector("#codigo"),
 		    $boton = document.querySelector("#btnDescargar");
 		new QRious({
