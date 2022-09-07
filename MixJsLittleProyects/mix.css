@@ -513,3 +513,101 @@ li{
     text-align: center;
     font-size: 20px;
 }
+
+
+@media screen and (max-width:450px) {
+  
+    .divCont{
+        /* background-color: var(--color1); */
+        margin:10px;
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-rows: repeat(5,1fr);
+        height: 100vh;
+    }  
+    .reloj-cont{
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .reloj, h3, .relojj{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .birth-cont{
+        display: flexbox;
+        height: 80px;
+        margin: auto;
+    }
+    .birth, .age{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .form1{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .form2{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contFiat ul li{
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        margin: auto;
+        margin-left: 30px;
+    }
+    .formFiat{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .texturas, .texturasTitle{
+        margin: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display:none;
+    }
+    #codigo{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header{
+        grid-column: 1/span 1;
+        grid-row: 1/2;
+    }
+    .foto{
+        grid-column: 1/span 1;
+        grid-row: 2/3;
+    }
+    .main{
+        grid-column: 1/span 1;
+        grid-row: 3/4;
+       
+    }
+    .aside{
+        grid-column: 1/span 1;
+        grid-row: 4/5;
+        margin-top: 25px;
+    }
+    .footer{
+        grid-column: 1/span 1;
+        grid-row: 5/6;
+    }
+    }
