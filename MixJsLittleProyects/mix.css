@@ -313,6 +313,7 @@ body{
 .form2 button{
     background-color: var(--color1);
     border: 2px dashed var(--color2);
+    color: var(--color2);
     outline: none;
     font-family: monospace;
     margin-left: 10px;
@@ -363,6 +364,7 @@ body{
 .formFiat button{
     background-color: var(--color1);
     border: 2px dashed var(--color2);
+    color: var(--color2);
     outline: none;
     font-family: monospace;
     margin-left: 10px;
