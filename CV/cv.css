@@ -162,14 +162,19 @@ a{
     opacity: 0;
     animation: carga 1s forwards 0.68s;
 }
-.proyectos{
-    display: flex;
+.mix{
+    margin-top: 10px;
+    display: block;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+.mix a{
     text-decoration: none;
 }
-
+.mix a:hover{
+    opacity: 0.5;
+}
 .address-cont{
     display: flex;
     text-align: center;
@@ -185,7 +190,10 @@ a{
     margin-bottom: 0px;
 }
 .address-cont:hover{
-    opacity: 0.58;
+    opacity: 0.5;
+}
+.address a{
+    text-decoration: none;
 }
 .bd-cont{
     display: flex;
