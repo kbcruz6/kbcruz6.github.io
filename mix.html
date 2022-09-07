@@ -35,7 +35,7 @@
                     <div class="age"></div></div>
                 <br><br><br>
     <!-- FORMULARIO -->
-                <form class="form1">Completa tus datos:<br>
+                <form class="form1"><h4 class="form1-tit">Completa tus datos:</h4><br>
                     <input required class="fo1" id="name" placeholder="Escribe tu nombre" type="text"><br>
                     <input required class="fo1" id="apellido" placeholder="Escribe tu apellido" type="text"><br>
                     <input required class="fo1" id="mail" placeholder="Escribe tu mail" type="email"><br>
@@ -46,14 +46,14 @@
     <!-- COLORES -->
                 <div class="coloresCont">
                     Elegi de que color queres el fondo<br><br>
-                    <button class="color" data-color="red">Red</button>
-                    <button class="color" data-color="blue">Blue</button>
-                    <button class="color" data-color="green">Green</button>
-                    <button class="color" data-color="black">Mejor volvamos a negro</button>
+                    <button class="color rojo" data-color="red">Red</button>
+                    <button class="color azul" data-color="blue">Blue</button>
+                    <button class="color verde" data-color="green">Green</button>
+                    <button class="color" data-color="#00203F">Mejor volvamos al azul oscuro</button>
                     <br><br>
                     Tambien podes elegir de la lista:
                     <select class="lista">
-                        <option value="black">Negro</option>
+                        <option value="#00203F">Azul oscuro</option>
                         <option value="red">Rojo</option>
                         <option value="blue">Azul</option>
                         <option value="green">Verde</option>
@@ -62,7 +62,7 @@
                 <br><br>
 
     <!-- LISTA SUPER -->
-                <h3>Lista supermercado</h3>
+                <h3 class="liSuper">Lista supermercado</h3>
                     <ul id="tasks"></ul>
                     <form class="form2">
                         <input id="task" placeholder="Nuevo elemento" type="text" required>
@@ -86,18 +86,20 @@
                -->
 
     <!-- COTIZACION FIAT -->
-                      <h3>Cotizacion hoy vs USD, Ejemplo sigla:</h3>
+                <h3>Cotizacion hoy vs USD, Ejemplo sigla:</h3>
+                    <div class="contFiat">
                       <ul>
-                        <li>Euro: EUR</li>
-                        <li>Libra: GBP</li>
-                        <li>Yen japonés: JPY</li>
-                        <li>Peso argentino (oficial):  ARS</li>
+                         <li>Euro: EUR</li>
+                         <li>Libra: GBP</li>
+                         <li>Yen japonés: JPY</li>
+                         <li>Peso argentino (oficial):  ARS</li>
                       </ul>
-                      <form class="formFiat">
-                         <input id="fiat" placeholder="Escriba la sigla" type="text">
-                         <button type="submit">Consultar</button>
-                      </form>
-               <h4 id="resultFiat"></h4><br>
+                        <form class="formFiat">
+                             <input id="fiat" placeholder="Escriba la sigla" type="text">
+                             <button type="submit">Consultar</button>
+                        </form>
+                        <h4 id="resultFiat"></h4>
+                    </div><br>
               <!-- <br> -->
 
     <!-- TEXTURA FONDO CON DRAG -->

@@ -9,21 +9,21 @@ body{
     --color1:#ADF0D1;
     --color2:#00203F;
     --color3:#174f87;
+    --color4:#6dc49b;
 } 
 .divCont{
     background-color: var(--color2);
     margin: 10px;
     display: grid;
-    grid-template-areas: "header header header header header header"
-    "foto foto foto foto foto foto"
-    "main main main main main aside"
-    "main main main main main aside"
-    "main main main main main aside"
-    "main main main main main aside"
-    "main main main main main aside"
-    "main main main main main aside"
-    "main main main main main aside"
-    "footer footer footer footer footer footer";
+    grid-template-areas: "header header header header  header"
+    "foto foto foto foto foto"
+    "main main main aside aside"
+    "main main main aside aside"
+    "main main main aside aside"
+    "main main main aside aside"
+    "main main main aside aside"
+    "main main main aside aside"
+    "footer footer footer footer footer";
     grid-template-rows: repeat(auto-fill, 1fr);
     height: 100vh;
 }
@@ -35,112 +35,22 @@ body{
     border:5px solid var(--color1);
     color:var(--color1);
     text-align: center;
-    /* position:absolute; */
     display: flex;
     justify-content: center;
 }
-.boton, .CV{
-    grid-area: main;
-    border: 3px solid transparent;
-    background-color: var(--color3);
-    color:var(--color1);
-    margin:10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 30px;
-}
-.boton:hover, .CV:hover{
-    background-color: var(--color2);
-}
-
-.CV{
-    text-decoration: none;
-    width: 300px;
-
-}
-.contador, .cronometro {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color3);
-    color:var(--color1);
-    border:5px solid var(--color2);
-    width: 100px;
-    height: 50px;
-    margin:5px auto;
-
-}
-.cronometro{
-    width: 300px;
-}
-.reloj{
-    background:linear-gradient(var(--color2), var(--color3));
-    border:2px solid var(--color2);
-    display: inline-flex;
-    border-radius: 4px;
-}
-.reloj div{
-    color:var(--color1);
-    padding: 5px 7px;
-    font-size: 20px;
-    font-family: monospace;
-    border: 1px solid var(--color2);
-}
-.relojj {
-    color:var(--color3);
-    padding: 5px 7px;
-    font-size: 20px;
-    font-family: monospace;
-    display: block;
-    margin: auto;
-}
-.birth-cont{
-    background-color: var(--color2);
-    color:var(--color1);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 80px;
-}
-.birth,.age{
-    padding: 10px;
-    margin: auto;
-}
-.cuadrado {
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#fff;
-    grid-area: header;
-    width: 100px;
-    height: 80px;
-    position:relative;
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
 @keyframes mover {
     0% {
         opacity: 80%;
+        transform: scale(1.8);
         }
-    /* 50%{  
-     
-        transform: scale(1.4);
-        opacity: 50%;
-    } */
+
     100% {
 
         color:var(--color1);
-        transform: scale(1.8);
         opacity: 80%;
 
     }
+
 }
 
 .foto{
@@ -173,6 +83,7 @@ body{
     color:var(--color2);
     margin-top: 5px;
     background-color: var(--color1);
+
 }
 .aside{
     grid-area: aside;
@@ -181,13 +92,278 @@ body{
     margin-top: 5px;
 }
 
+/* --------------------------BOTONES ARRIBA*/
+.boton, .CV{
+    grid-area: main;
+    border: 3px solid transparent;
+    background-color: var(--color3);
+    color:var(--color1);
+    margin:10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+}
+.boton:hover, .CV:hover{
+    background-color: var(--color2);
+}
+
+/* --------------------------CV */
+.CV{
+    text-decoration: none;
+    width: 300px;
+
+}
+
+/* --------------------------CONTADOR Y CRONOMETRO */
+.contador, .cronometro {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color3);
+    color:var(--color1);
+    border:5px solid var(--color2);
+    width: 100px;
+    height: 50px;
+    margin:5px auto;
+
+}
+.cronometro{
+    width: 300px;
+}
+
+/* --------------------------RELOJ 1 */
+.reloj{
+    background:linear-gradient(var(--color2), var(--color3));
+    border:2px solid var(--color2);
+    display: inline-flex;
+    border-radius: 4px;
+}
+.reloj div{
+    color:var(--color1);
+    padding: 5px 7px;
+    font-size: 20px;
+    font-family: monospace;
+    border: 1px solid var(--color2);
+}
+
+/* --------------------------RELOJ 2*/
+.relojj {
+    color:var(--color3);
+    padding: 5px 7px;
+    font-size: 20px;
+    font-family: monospace;
+    display: block;
+    margin: auto;
+}
+
+/* --------------------------AGE */
+.birth-cont{
+    background-color: var(--color2);
+    color:var(--color1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+}
+.birth,.age{
+    padding: 10px;
+    margin: auto;
+}
+.cuadrado {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--color1);
+    grid-area: header;
+    width: 100px;
+    height: 80px;
+    position:relative;
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+/* --------------------------FORMULARIO */
+
+.form1{
+    color:var(--color1);
+    background-color: var(--color3);
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+.form1 input{
+    color: var(--color1);
+    margin-bottom: 5px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color1);
+}
+.form1 input::placeholder{
+    color:var(--color1);
+    opacity: 0.5;
+}
+.form1 input:hover{
+    background-color: var(--color2);
+}
+.form1 input:focus::placeholder{
+    opacity: 0;
+    
+}
+.form1 input:focus{
+    background-color: var(--color2);
+}
+.form1-tit{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+.form1 button{
+    outline: none;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
+    font-family: monospace;
+    margin: 10px;
+}
+.form1 button:hover{
+    background-color: var(--color4);
+}
+
+/* --------------------------COLORES */
+
+.coloresCont{
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--color2);
+}
+.coloresCont button, select{
+    border: none;
+    outline: none;
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 3px 6px;
+}
+.coloresCont button:hover,select:hover{
+    background-color: var(--color2);
+}
+.coloresCont .rojo:hover{
+    background-color: red;
+    color: #fff;
+}
+.coloresCont .azul:hover{
+    background-color: blue;
+    color: #fff;
+}
+.coloresCont .verde:hover{
+    background-color:green;
+    color: #fff;
+}
+
+/* --------------------------LISTA SUPER */
+
+#task{
+    border: none;
+    outline: none;
+    background-color: var(--color3);
+    color: var(--color1);
+    border-bottom: 2px solid var(--color2);
+}
+#task::placeholder{
+    border: none;
+    outline: none;
+    background-color: var(--color3);
+    color: var(--color1);
+    opacity: 0.5;
+}
+#task:hover{
+    background-color: var(--color2);
+}
+#task:focus::placeholder{
+    opacity: 0;
+    color: var(--color1);
+}
+.form2 button{
+    background-color: var(--color1);
+    border: 2px dashed var(--color2);
+    outline: none;
+    font-family: monospace;
+    margin-left: 10px;
+}
+.form2 button:hover{
+    background-color: var(--color4);
+}
+/* --------------------------COTIZACION FIAT */
+.contFiat li{
+    list-style: none;
+}
+.contFiat li::before{
+    content: "\1F525 ";
+    margin: 0px;
+    color: var(--color2);
+    font-size:20px;
+}
+.contFiat ul{
+    margin: 0px;
+    padding: 0px;
+}
+.formFiat input{
+    border: none;
+    outline: none;
+    background-color: var(--color3);
+    color: var(--color1);
+    border-bottom: 2px solid var(--color2);
+    margin-left: 13px;
+}
+.formFiat input:hover{
+    background-color: var(--color2);
+}
+
+.formFiat button{
+    background-color: var(--color1);
+    border: 2px dashed var(--color2);
+    outline: none;
+    font-family: monospace;
+    margin-left: 10px;
+}
+
+.formFiat input:focus::placeholder{
+    opacity: 0;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+.formFiat input::placeholder{
+    color: var(--color1);
+    opacity: 0.5;
+}
+.formFiat button:hover{
+    background-color: var(--color4);
+}
+
+
 .numerito{
     font-size: 30px;
 }
 #result, #resultFiat{
     color: green;
-    text-shadow: 10px solid black;
+    margin-left: 13px;
+    background-color: var(--color4);
+    text-align: center;
 }
+
+
+/* --------------------------COTIZACION FIAT */
+
 
 #codigo{
     margin-left: 40px;
