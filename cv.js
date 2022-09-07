@@ -1,17 +1,9 @@
-const addZeros=n=>{
-    if (n.toString().length<2) return "0".concat(n);
-    return n; 
-}
 
-const dates=()=>{
-    const time= new Date();
-    let hora=addZeros(time.getHours());
-    let min=addZeros(time.getMinutes());
-    let seg=addZeros(time.getSeconds());
+const today=()=>{
     let todayDate = new Date().toLocaleDateString();
+    let todayTime = new Date().toLocaleTimeString();
 
-
-    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:<br>`;
+    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${todayTime} hs:<br>`;
 }
 const age=()=>{
 
@@ -40,5 +32,5 @@ const age=()=>{
 
     document.querySelector(".age").innerHTML=`${years} years, ${months} ${meses}, ${days} ${dias}`
 }
-setInterval(dates,1000);
+setInterval(today,1000);
 age(); 
