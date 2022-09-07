@@ -139,6 +139,8 @@ body{
 }
 .cronometro{
     width: 300px;
+    visibility: hidden;
+    display: none;
 }
 
 /* --------------------------RELOJ 1 */
