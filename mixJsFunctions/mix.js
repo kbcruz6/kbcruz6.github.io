@@ -1,22 +1,6 @@
 
-// // BOTONES ELECCION
 
-// function showPage(page){
-//     document.querySelectorAll("div").forEach(div=>{
-
-//     div.style.display= "none";
-//     })
-//     document.querySelector(`#${page}`).style.display="block";
-// }
-// document.addEventListener("DOMContentLoaded", function(){
-//     document.querySelectorAll("button").forEach(button=>{
-//         button.onclick=function(){
-//             showPage(this.dataset.page); 
-//         }
-//     });
-// });
-
-// CRONOMETRO TIEMPO EN WEB
+// CRONOMETER WEB TIME
 document.addEventListener("DOMContentLoaded",()=>{
     let valor=0;
     let crono=()=>{
@@ -28,7 +12,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 })
 
 
-// BOTON CAMBIAR TITULO
+// CHANGE HEADER BUTTON
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -46,17 +30,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-// CONTADOR
+// COUNTER
 let contar=0;
 
 let cont=()=>{
     contar++;
     document.querySelector(".contador").innerHTML=contar;
     if (contar%10===0){
-        alert(`Llegaste a ${contar}`)
+        alert(`Congratulations! You reach ${contar}!`)
     }
 }
-// VOLVER A CERO
+// BACK TO ZERO
 let zero=()=>{
     contar=0;
     document.querySelector(".contador").innerHTML=contar;
@@ -68,7 +52,7 @@ document.querySelector(".contar").onclick=cont;
 document.querySelector(".cero").onclick=zero
 
 
-// RELOJ
+// CLOCKs
 
 const addZeros=n=>{
     if (n.toString().length<2) return "0".concat(n);
@@ -86,7 +70,7 @@ const actualizarHora=()=>{
     document.querySelector(".hora").textContent=hora;
     document.querySelector(".min").textContent=min;
     document.querySelector(".seg").textContent=seg;
-    document.querySelector(".relojj").innerHTML=`<br>Hora actual GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
+    document.querySelector(".relojj").innerHTML=`<br>Now time GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
     document.querySelector(".birth").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:<br>`;
 
 }
@@ -127,7 +111,7 @@ age();
 
 
 
-// FORMULARIO
+// FORM
 document.addEventListener("DOMContentLoaded", () => {
   
     // document.querySelector("#name").onkeyup=()=>{
@@ -157,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 );
 
 
-//BOTONES PARA CAMBIAR COLOR FONDO
+//COLOURS
 
 // document.addEventListener("DOMContentLoaded", ()=> {
 //     document.querySelector("#red").onclick=()=> {
@@ -180,7 +164,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 // onmouseover, onkeydown, onkeyup, onload, onblur
 
 
-// OPCION LISTA PARA EL COLOR FONDO
+// COLOUR LIST
 
 document.addEventListener("DOMContentLoaded", ()=> {
     
@@ -190,7 +174,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     }
 });
 
-// LISTA SUPER
+// SUPER LIST
 
 document.addEventListener("DOMContentLoaded", ()=> {
     document.querySelector(".form2").onsubmit=()=>{
@@ -267,7 +251,7 @@ document.addEventListener("click", event=>{
 //     };    
 // });
 
-// COTIZACION FIAT
+// FIAT COTIZATION 
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -282,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function(){
             // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
             if (rate !== undefined){
-                document.querySelector("#resultFiat").innerHTML=`1 USD son ${Number(rate).toFixed(2)} ${fiat}.`;
+                document.querySelector("#resultFiat").innerHTML=`1 USD are ${Number(rate).toFixed(2)} ${fiat}.`;
                 }else {
                  document.querySelector("#resultFiat").innerHTML=`Moneda inválida.`;
                 }

@@ -87,7 +87,7 @@ body{
     margin-top: 5px;
     background-color: var(--color1);
     border-radius: 4px;
-
+    text-align: justify;
 }
 .aside{
     grid-area: aside;
@@ -95,6 +95,7 @@ body{
     color:var(--color1);
     margin-top: 5px;
     border-radius: 4px;
+    text-align: justify;
 }
 
 /* --------------------------BOTONES ARRIBA*/
@@ -318,7 +319,18 @@ body{
 .form2 button:hover{
     background-color: var(--color4);
 }
-/* --------------------------COTIZACION FIAT */
+.borrame{
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    outline: none;
+    font-family: monospace;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+.borrame:hover{
+    background-color: var(--color4);
+}
+/* --------------------------FIAT COTIZATION  */
 .contFiat li{
     list-style: none;
 }
@@ -379,7 +391,7 @@ body{
 }
 
 
-/* --------------------------COTIZACION FIAT */
+/* --------------------------JUST */
 
 
 #codigo{
@@ -392,6 +404,7 @@ body{
     height: 80px;
     float: left;
     margin-right: 15px;
+    border:2px solid var(--color2);
 }
 .justTitulo{
     display: block;
@@ -407,7 +420,17 @@ button:active {
 h3,ul,li{
     color: var(--color2);
 }
-
+#btnDescargar{
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    outline: none;
+    font-family: monospace;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+#btnDescargar:hover{
+    background-color: var(--color4);
+}
 
 li{
     animation:borrando 2s forwards;
