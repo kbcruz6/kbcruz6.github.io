@@ -46,6 +46,9 @@ body{
 #lang-icon{
     font-size: 25px;
 }
+#lang-icon:hover{
+    opacity: 0.5;
+}
 .aside{
     grid-area: aside;
     color: var(--color1);
