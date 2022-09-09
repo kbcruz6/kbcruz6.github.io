@@ -3,11 +3,19 @@
     <head>
         <title>CV Agustín Cruz</title>
         <meta charset="utf-8">
+         <!-- BOOTSTRAP -->
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+        <!--  -->
+        
         <link rel="stylesheet" type="text/css" href="cv.css">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="icon" type="image/png" href="ac.png">
         <script src="https://kit.fontawesome.com/55ea4aa555.js" crossorigin="anonymous"></script>
-        
+       
     </head>
     <body>  
       <div class="cont">
@@ -80,6 +88,71 @@
     <!-- WORK -->
             <div class="work-cont">
                 <h2 class="work">Work Experience</h2>
+                
+<!-- COLLAPSE BOOTSTRAP -->
+
+<!-- POSITION 1 -->
+<div class="con-collapse">
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+        Sales Supervisor<br>(2021-2022)</button>
+        <!-- ▼ -->
+    </p>
+    <div class="collapse show" id="collapseExample1">
+        <div class="card card-body">
+            I worked as a Sales Supervisor for the most important beverage company of Latin América: Cervecería y Maltería Quilmes (ABInBev). I was leading a team of 10 to accomplish sales objectives and solving daily issues with the clients.<br><br>
+            Location: Neuquén, Argentina.
+        </div>
+    </div>
+    <!-- POSITION 2 -->
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+        Team Leader<br>(2014-2020)</button>
+    </p>
+    <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+            While I worked at the Montage Deer Valley Hotel & Resort (5 stars & 5 diamonds by Forbes), I started as a server assistant and after 2 month I became a server, and right away a Team Leader for Yama Sushi, Vista Lounge & Apex Patio Restaurants. Following the highest standards of service, to provide a wonderful experience to the guests and customers.<br><br>
+            Location: Park City, Utah, United States.
+        </div>
+    </div>
+    <!-- POSITION 3 -->
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+        Assembly and logistics Supervisor<br>(2015-2018)</button>
+    </p>
+    <div class="collapse" id="collapseExample3">
+        <div class="card card-body">
+            IDEA annual congress is the most important businessmen congress in Argentina, where most powerful people of the country attend to debate about business and economy. They receive gifts from more than 50 different sponsors, and I was in charge of making it happen for 4 years, leading a team of 10, to assembly more than 1500 bags with gifts, and a subsequent delivery to every hotel room of each participant, where nothing can fail.
+            <br><br>Location: Mar del Plata, Argentina.
+        </div>
+    </div>
+    <!-- POSITION 4 -->
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+        Promotional campaign Supervisor<br>(2017-2018)</button>
+    </p>
+    <div class="collapse" id="collapseExample4">
+        <div class="card card-body">
+            In 2017-2018 summer I supervise a team of 6 great persons in a Promotional Campaing for the worlwide known company Danone in the main summer city of the country.
+            <br><br>Location: Mar del Plata, Argentina.
+        </div>
+    </div>
+    <!-- POSITION 5 -->
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+        Private classes on PC management<br>(2008-2018)</button>
+    </p>
+    <div class="collapse" id="collapseExample5">
+        <div class="card card-body">
+            For more than 10 years, since I was 17 years old until I have 27, while I was at school, and after in university, I gave private classes on PC management for elderly people, helping them to learn how to use social media, emails, videocalls, and different computer stuff, with a lot of patience and dedication.
+            <br><br>Location: Mar del Plata, Argentina.
+        </div>
+    </div>
+</div>
+
+
+<!--END COLLAPSE BOOTSTRAP -->
+<div class="sin-collapse">
         <!-- POSITION 1 -->
                 <h3 class="position">Sales Supervisor - (2021-2022)</h3>
                     <h5 class="employer">
@@ -109,12 +182,12 @@
                     </h5>
 
         <!-- POSITION 5 -->
-                <!-- <h3 class="position">Hydration station Supervisor - (2017)</h3>
+                <h3 class="position">Hydration station Supervisor - (2017)</h3>
                     <h5 class="employer">
                         Company: Coke / Ironman triathlon
                         Location: Mar del Plata, Argentina
                         People in charge: 51 (6 promoter & 45 volunteers)
-                    </h5>  -->
+                    </h5> 
 
         <!-- POSITION 6 -->
                 <h3 class="position">Private classes on PC management
@@ -123,6 +196,7 @@
                         For more than 10 years, since I was 17 years old until I have 27, while I was at school, and after in university, I gave private classes on PC management for elderly people, helping them to learn how to use social media, emails, videocalls, and different computer stuff, with a lot of patience and dedication.
                         <br><br>Location: Mar del Plata, Argentina.
                     </h5>        
+                </div>
             </div>
         </div>
         <!-- <footer class="footer"></footer> -->
