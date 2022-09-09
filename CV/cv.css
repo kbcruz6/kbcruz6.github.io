@@ -457,5 +457,42 @@ h1{
 .con-collapse{
     display: contents;
 }
+/* 
+.wrap-toggle{
+    padding: 5rem;
+}
 
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #003d79;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.switch::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    left: 5px;
+    top: 5px;
+    transition: all 0.4s;
+}
+
+input[type="checkbox"]:checked + .switch::after{
+    transform: translate(30px);
+    background-color:#00203F ;
+}
+
+input[type="checkbox"]:checked + .switch{
+    background-color: #013f7d;
+}
+
+.offscreen{
+    display: none;
+} */
 }
