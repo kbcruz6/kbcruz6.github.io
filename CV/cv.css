@@ -449,7 +449,7 @@ h1{
     color: var(--color2);
     text-align: justify;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom:30px;
 }
 .sin-collapse{
     display: none;
