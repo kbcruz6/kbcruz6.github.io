@@ -10,7 +10,7 @@ body{
     --color2:#00203F;
     --color3:#174f87;
     --color4:#6dc49b;
-    --color5:#012c56;
+    --color5:#02305d;
 } 
 .dark{
     --color1:#ECE2d0;
@@ -66,18 +66,21 @@ body{
     border-radius: 4px;
  
 }
-
+h4{
+    color: var(--color1);
+    margin-bottom: 20px;
+}
 /* --------------------------BOTONES*/
 .botones-cont{
     background-color: var(--color3);
-    padding: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     max-width: 300px;
     margin-right: 20px;
-
+    margin-bottom: 20px;
+    padding: 20px;
 }
 .boton, .CV, .cronometro{
     border: 3px solid transparent;
@@ -104,7 +107,7 @@ body{
     justify-content: center;
     background-color: var(--color3);
     color:var(--color1);
-    border:5px solid var(--color2);
+    border:3px solid var(--color2);
     border-radius: 4px;
     width: 100px;
     margin:auto;
@@ -113,13 +116,31 @@ body{
 /* -----------------------------------RELOJES CONT */
 .relojes-cont{
     background-color: var(--color3);
-    padding: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     max-width: 300px;
     margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+/* --------------------------AGE */
+.bd-cont{
+    color:var(--color1);
+    border: 3px solid var(--color2);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: 18px 10px;
+    padding: 2px;
+}
+.bd,.age{
+    font-size: 15px;
+    margin: auto;
 }
 /* --------------------------RELOJ 1 */
 .reloj1-cont{
@@ -127,61 +148,53 @@ body{
     padding: 5px 7px;
     font-size: 20px;
     font-family: monospace;
-    border: 2px solid var(--color2);
+    border: 3px solid var(--color2);
     border-radius: 4px;
+    margin: 18px 10px;
 }
 .reloj1{
-    background:linear-gradient(var(--color2), var(--color3));
-    border:2px solid var(--color2);
+    background:linear-gradient(var(--color2), var(--color5));
+    border:3px solid var(--color2);
     display: inline-flex;
     border-radius: 4px;
     padding: 4px;
+    margin:auto;
 }
 
 
 /* --------------------------RELOJ 2*/
 .reloj2 {
     color:var(--color1);
-    border: 2px solid var(--color2);
+    border: 3px solid var(--color2);
     border-radius: 4px;
     font-size: 15px;
     font-family: monospace;
-    margin: 5px auto;
+    margin: 18px 10px;
 }
 
-/* --------------------------AGE */
-.bd-cont{
-    background-color: var(--color2);
-    color:var(--color1);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    padding: 5px;
-}
-.bd,.age{
-    font-size: 15px;
-}
+
 
 /* --------------------------FORMULARIO */
-
-.form1{
-    color:var(--color1);
+.form-cont{
     background-color: var(--color3);
-    width: 250px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 5px 0px;
     border-radius: 4px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 20px;
 }
 .form1 input{
     color: var(--color1);
-    margin-bottom: 5px;
+    margin: 7px 5px;
     outline: none;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--color1);
+    width: 250px;
 }
 .form1 input::placeholder{
     color:var(--color1);
@@ -193,15 +206,9 @@ body{
 }
 .form1 input:focus::placeholder{
     opacity: 0;
-    
 }
 .form1 input:focus{
     background-color: var(--color2);
-}
-.form1-tit{
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding: 0;
 }
 .form1 button{
     outline: none;
@@ -209,7 +216,11 @@ body{
     color: var(--color2);
     border: none;
     font-family: monospace;
-    margin: 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin: 28px 10px;
+    margin-top: 30px;
     border-radius: 4px;
 }
 .form1 button:hover{
@@ -491,10 +502,9 @@ li{
 }
 
 
-@media screen and (max-width:450px) {
+/* @media screen and (max-width:450px) {
   
     .divCont{
-        /* background-color: var(--color1); */
         margin:10px;
         display: grid;
         grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
@@ -561,7 +571,6 @@ li{
     .contFiat ul li{
         align-items: center;
         justify-content: center;
-        /* text-align: center; */
         margin: auto;
         margin-left: 30px;
     }
@@ -609,4 +618,4 @@ li{
         border-radius: 4px;
     }
 
-}
+} */

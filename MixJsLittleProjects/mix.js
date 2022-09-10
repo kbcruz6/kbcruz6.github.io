@@ -69,8 +69,8 @@ const actualizarHora=()=>{
 
     document.querySelector(".hora").textContent=`${hora}: `;
     document.querySelector(".min").textContent=`${min}: `;
-    document.querySelector(".seg").textContent=`${seg}: hs `;
-    document.querySelector(".reloj2").innerHTML=`GMT-3 Time v2 (dif js code): <br>${hora}:${min}:${seg} hs`;
+    document.querySelector(".seg").textContent=`${seg} hs `;
+    document.querySelector(".reloj2").innerHTML=`GMT-3 Time v2 (dif JS code): <br>${hora}:${min}:${seg} hs`;
     document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:`;
 
 }
