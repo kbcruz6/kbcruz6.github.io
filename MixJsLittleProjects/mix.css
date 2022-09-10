@@ -19,12 +19,18 @@ body{
     --color4:#fe7167;
     --color5:#820d2a;
 }
+button {
+    cursor:pointer;
+}
+button:active {
+    cursor:pointer;
+}
 .divCont{
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 90%;
 }
 
 .header{
@@ -509,53 +515,66 @@ select{
 }
 /* -----------------------------------------------JUST */
 
-#codigo{
-    margin-left: 40px;
+.just-cont{
+    background-color: var(--color3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 20px;
+}
+.just-cont p{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: var(--color1);
+    font-size: 15px;
+}
+.just-cont a{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: var(--color1);   
+}
+.just-cont a:hover{
+    color: var(--color4);
 }
 
 #logoJust{
-    /* display: inline-block; */
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 60px;
     float: left;
     margin-right: 15px;
     border:2px solid var(--color2);
-    margin-bottom: 10px;
-}
-.justTitulo{
-    display: block;
-    color: var(--color2);
-}
-#codigo{
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border: 2px solid var(--color2);
-}
-button {
-    cursor:pointer;
-}
-button:active {
-    cursor:pointer;
-}
-h3,ul,li{
-    color: var(--color2);
-}
-#btnDescargar{
-    background-color: var(--color1);
-    border: 2px solid var(--color2);
-    outline: none;
-    font-family: monospace;
-    border-radius: 4px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-#btnDescargar:hover{
-    background-color: var(--color4);
+    margin-bottom: 0px;
 }
 
+#codigo{
+    margin:10px auto;
+    border: 2px solid var(--color2);
+}
+
+#btnDescargar{
+    display: inline-block;
+    outline: none;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: none;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#btnDescargar:hover{
+    background-color: var(--color5);
+}
+
+
+/* ------------------------------------------ANIMACION BORRAR DE LISTA */
 li{
     animation:borrando 2s forwards;
     animation-play-state:paused;
@@ -565,6 +584,7 @@ li{
     padding: 5px;
     font-size: 15px;
 }
+
 
 @keyframes borrando {
 
@@ -591,7 +611,7 @@ li{
         margin: 0px;
     }
 }
-
+/* ------------------------------------------------MOBILE */
 
 @media screen and (max-width:450px) {
  .texture-cont{

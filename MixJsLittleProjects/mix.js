@@ -1,15 +1,15 @@
 
 
 // CRONOMETER WEB TIME
-document.addEventListener("DOMContentLoaded",()=>{
-    let valor=0;
-    let crono=()=>{
-        valor++;
-        document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
-    }
-    setInterval(crono,1000);
+// document.addEventListener("DOMContentLoaded",()=>{
+//     let valor=0;
+//     let crono=()=>{
+//         valor++;
+//         document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
+//     }
+//     setInterval(crono,1000);
 
-})
+// })
 
 
 // CHANGE HEADER BUTTON
@@ -344,14 +344,15 @@ const transferirTextura=(n,e)=>{
 
 
 // JUST
+document.addEventListener("DOMContentLoaded",function(){
 
-const $imagen = document.querySelector("#codigo"),
+    const $imagen = document.querySelector("#codigo"),
 		    $boton = document.querySelector("#btnDescargar");
 		new QRious({
 			element: $imagen,
 			value: "https://www.instagram.com/mariamartaw/", // La URL o el texto
 			size: 150,
-			backgroundAlpha: "#fff", // 0 para fondo transparente
+			backgroundAlpha: "", // 0 para fondo transparente
 			foreground: "#000", // Color del QR
 			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
 		});
@@ -360,4 +361,6 @@ const $imagen = document.querySelector("#codigo"),
 			enlace.href = $imagen.src;
 			enlace.download = "Código QR instagram MMW.png";
 			enlace.click();
-		}
+}
+
+})
