@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    const h1=document.querySelector(".cuadrado");
+    const h1=document.querySelector(".header");
     h1.style.animationPlayState="paused";
 
     document.querySelector(".cambiar").onclick=()=>{

@@ -10,7 +10,15 @@ body{
     --color2:#00203F;
     --color3:#174f87;
     --color4:#6dc49b;
+    --color5:#012c56;
 } 
+.dark{
+    --color1:#ECE2d0;
+    --color2:#6E0D25;
+    --color3:#a42f27;
+    --color4:#fe7167;
+    --color5:#820d2a;
+}
 .divCont{
     background-color: var(--color2);
     margin: 10px;
@@ -31,18 +39,15 @@ body{
     border-radius: 4px;
     width: 100%;
     height: 80px;
+    animation: mover infinite 1s ease;
 }
 @keyframes mover {
     0% {
         opacity: 80%;
-        transform: scale(1.8);
         }
-
     100% {
-
-        color:var(--color1);
         opacity: 80%;
-
+        transform: scale(0.68);
     }
 
 }
@@ -50,7 +55,7 @@ body{
 .foto{
     grid-area: foto;
     width: 100%;
-    height: 200px;
+    height:100px;
     background-image:url(https://wallpaperaccess.com/full/3259894.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -61,65 +66,38 @@ body{
     border-radius: 4px;
  
 }
-.foto2 {
-    grid-area: main;
-    width: 100%;
-    height: 250px;
-    background-image:url(https://wallpaperaccess.com/full/3259894.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: fixed;
-    margin-top: 5px;
-    border-radius: 4px;
- 
-}
-.main {
-    grid-area: main;
-    color:var(--color2);
-    margin-top: 5px;
-    background-color: var(--color1);
-    border-radius: 4px;
-    text-align: justify;
-}
-.aside{
-    grid-area: aside;
-    background-color: var(--color2);
-    color:var(--color1);
-    margin-top: 5px;
-    border-radius: 4px;
-    text-align: justify;
-    padding-right: 3px;
-}
 
 /* --------------------------BOTONES ARRIBA*/
-.boton, .CV{
-    grid-area: main;
-    border: 3px solid transparent;
+.botoncitos{
     background-color: var(--color3);
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    max-width: 300px;
+}
+.boton, .CV, .cronometro{
+    border: 3px solid transparent;
+    background-color: var(--color2);
     color:var(--color1);
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 4px;
-    margin-top: 10px;
+    margin: 10px auto;
+    padding: 4px 10px;
+    text-decoration: none;
+
 }
 .boton:hover, .CV:hover{
-    background-color: var(--color2);
-}
-
-/* --------------------------CV */
-.CV{
-    text-decoration: none;
-    width: fit-content;
-    padding: 5px 10px;
+    background-color: var(--color5);
 }
 
 /* --------------------------CONTADOR Y CRONOMETRO */
-.contador, .cronometro {
-    text-align: center;
+.contador{
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     background-color: var(--color3);
@@ -127,15 +105,7 @@ body{
     border:5px solid var(--color2);
     border-radius: 4px;
     width: 100px;
-    height: 50px;
-    margin: 10px 0px;
-    /* margin:5px auto; */
-
-}
-.cronometro{
-    width: 300px;
-    visibility: hidden;
-    display: none;
+    margin:auto;
 }
 
 /* --------------------------RELOJ 1 */
@@ -178,21 +148,6 @@ body{
     padding: 10px;
     margin: auto;
 }
-.cuadrado {
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:var(--color1);
-    grid-area: header;
-    width: 100px;
-    height: 80px;
-    position:relative;
-    animation-name: mover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
 
 /* --------------------------FORMULARIO */
 
@@ -377,7 +332,6 @@ body{
 .formFiat button:hover{
     background-color: var(--color4);
 }
-
 
 .numerito{
     font-size: 30px;

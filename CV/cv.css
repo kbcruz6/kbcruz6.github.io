@@ -131,6 +131,8 @@ body{
     min-width: 280px;
     height: 100%;
     padding: 20px;
+    border-radius: 4px;
+
 }
 .main{
     grid-area: main;
@@ -138,6 +140,8 @@ body{
     background-color: var(--color1);
     margin:0px 5px;
     max-width: 700px;
+    border-radius: 4px;
+
 }
 h1{
     margin:auto;
