@@ -211,8 +211,8 @@ h4{
 }
 .form1 button{
     outline: none;
-    background-color: var(--color1);
-    color: var(--color2);
+    background-color: var(--color2);
+    color: var(--color1);
     border: none;
     font-family: monospace;
     font-size: 20px;
@@ -223,7 +223,7 @@ h4{
     border-radius: 4px;
 }
 .form1 button:hover{
-    background-color: var(--color4);
+    background-color: var(--color5);
 }
 
 /* --------------------------COLORES */
@@ -312,15 +312,15 @@ select{
 .form2 button{
     display: inline-block;
     outline: none;
-    background-color: var(--color1);
-    color: var(--color2);
+    background-color: var(--color2);
+    color: var(--color1);
     border: none;
     font-family: monospace;
     font-size: 15px;
     border-radius: 4px;
 }
 .form2 button:hover{
-    background-color: var(--color4);
+    background-color: var(--color5);
 }
 .list-cont ul{
     color: var(--color1);
@@ -357,66 +357,91 @@ select{
     background-color: var(--color5);
 }
 /* --------------------------FIAT COTIZATION  */
-.contFiat li{
+
+.fiat-cont{
+    background-color: var(--color3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 20px;
+}
+.fiat-cont h4{
+    font-size: 20px;
+}
+.fiat-cont li{
     list-style: none;
     color:var(--color1);
+    text-align: left;
+    margin: 10px 5px;
 }
-.contFiat li::before{
+.fiat-cont li::before{
     content: "\1F525 ";
     margin: 0px;
     color: var(--color1);
     font-size:20px;
 }
-.contFiat ul{
+.fiat-cont ul{
     margin: 0px;
     padding: 0px;
 }
 .formFiat input{
-    border: none;
-    outline: none;
-    background-color: var(--color3);
     color: var(--color1);
-    border-bottom: 2px solid var(--color1);
-    margin-left: 5px;
-    border-radius: 4px;
-    padding: 4px;
+    margin: 10px 5px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color1);
+    width: 150px;
+    display: inline-block;
+}
+.formFiat input::placeholder{
+    color:var(--color1);
+    opacity: 0.5;
 }
 .formFiat input:hover{
     background-color: var(--color2);
-}
-
-.formFiat button{
-    background-color: var(--color1);
-    border: 2px dashed var(--color2);
-    color: var(--color2);
-    outline: none;
-    font-family: monospace;
-    margin-left: 10px;
     border-radius: 4px;
 }
-
 .formFiat input:focus::placeholder{
     opacity: 0;
-    color: var(--color1);
+}
+.formFiat input:focus{
     background-color: var(--color2);
 }
-
-.formFiat input::placeholder{
+.formFiat button{
+    display: inline-block;
+    outline: none;
+    background-color: var(--color2);
     color: var(--color1);
-    opacity: 0.5;
+    border: none;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 4px;
 }
 .formFiat button:hover{
-    background-color: var(--color4);
+    background-color: var(--color5);
+}
+.formFiat input:focus::placeholder{
+    opacity: 0;
+}
+.formFiat input:focus{
+    background-color: var(--color2);
 }
 
 .numerito{
     font-size: 30px;
 }
 #result, #resultFiat{
-    color: green;
-    margin-left: 13px;
+    color: var(--color3);
     background-color: var(--color4);
     text-align: center;
+    margin: auto 10px;
+    margin-top: 10px;
 }
 
 
