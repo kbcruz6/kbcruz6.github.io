@@ -67,8 +67,8 @@ body{
  
 }
 
-/* --------------------------BOTONES ARRIBA*/
-.botoncitos{
+/* --------------------------BOTONES*/
+.botones-cont{
     background-color: var(--color3);
     padding: 10px;
     text-align: center;
@@ -76,6 +76,8 @@ body{
     align-items: center;
     border-radius: 4px;
     max-width: 300px;
+    margin-right: 20px;
+
 }
 .boton, .CV, .cronometro{
     border: 3px solid transparent;
@@ -94,7 +96,7 @@ body{
     background-color: var(--color5);
 }
 
-/* --------------------------CONTADOR Y CRONOMETRO */
+/* --------------------------CONTADOR */
 .contador{
     display: flex;
     text-align: center;
@@ -108,45 +110,57 @@ body{
     margin:auto;
 }
 
-/* --------------------------RELOJ 1 */
-.reloj{
-    background:linear-gradient(var(--color2), var(--color3));
-    border:2px solid var(--color2);
-    display: inline-flex;
+/* -----------------------------------RELOJES CONT */
+.relojes-cont{
+    background-color: var(--color3);
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
+    max-width: 300px;
+    margin-right: 20px;
 }
-.reloj div{
+/* --------------------------RELOJ 1 */
+.reloj1-cont{
     color:var(--color1);
     padding: 5px 7px;
     font-size: 20px;
     font-family: monospace;
-    border: 1px solid var(--color2);
+    border: 2px solid var(--color2);
+    border-radius: 4px;
+}
+.reloj1{
+    background:linear-gradient(var(--color2), var(--color3));
+    border:2px solid var(--color2);
+    display: inline-flex;
+    border-radius: 4px;
+    padding: 4px;
 }
 
+
 /* --------------------------RELOJ 2*/
-.relojj {
-    color:var(--color3);
-    padding: 5px 7px;
-    font-size: 20px;
+.reloj2 {
+    color:var(--color1);
+    border: 2px solid var(--color2);
+    border-radius: 4px;
+    font-size: 15px;
     font-family: monospace;
-    display: block;
-    margin: auto;
+    margin: 5px auto;
 }
 
 /* --------------------------AGE */
-.birth-cont{
+.bd-cont{
     background-color: var(--color2);
     color:var(--color1);
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 80px;
     border-radius: 4px;
+    padding: 5px;
 }
-.birth,.age{
-    padding: 10px;
-    margin: auto;
+.bd,.age{
+    font-size: 15px;
 }
 
 /* --------------------------FORMULARIO */

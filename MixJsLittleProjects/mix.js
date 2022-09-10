@@ -67,11 +67,11 @@ const actualizarHora=()=>{
     let todayDate = new Date().toLocaleDateString();
 
 
-    document.querySelector(".hora").textContent=hora;
-    document.querySelector(".min").textContent=min;
-    document.querySelector(".seg").textContent=seg;
-    document.querySelector(".relojj").innerHTML=`<br>Now time GMT-3 (v2): <br>${hora}:${min}:${seg} hs`;
-    document.querySelector(".birth").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:<br>`;
+    document.querySelector(".hora").textContent=`${hora}: `;
+    document.querySelector(".min").textContent=`${min}: `;
+    document.querySelector(".seg").textContent=`${seg}: hs `;
+    document.querySelector(".reloj2").innerHTML=`GMT-3 Time v2 (dif js code): <br>${hora}:${min}:${seg} hs`;
+    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:`;
 
 }
 actualizarHora();
