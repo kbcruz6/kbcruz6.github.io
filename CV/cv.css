@@ -18,6 +18,12 @@
     --color4:#6dc49b;
 
 } 
+.dark{
+    --color1:#ECE2d0;
+    --color2:#6E0D25;
+    --color3:#a42f27;
+    --color4:#fe7167;
+}
 body{
     opacity: 0;
     background-color: var(--color1);
@@ -45,11 +51,61 @@ body{
 .item{
     padding: 10px;
 }
+
+/* --------------------------------LANG */
 #lang-icon{
-    font-size: 25px;
+    font-size: 28px;
 }
 #lang-icon:hover{
-    opacity: 0.9;
+    opacity: 0.5;
+}
+
+/*---------------------------------TOGGLE  */
+.wrap-toggle{
+    float: right;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background-color: var(--color3);
+    border-radius: 40px;
+    cursor: pointer;
+}
+.switch::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: var(--color4);
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s;
+}
+
+input[type="checkbox"]:checked + .switch::after{
+    transform: translate(23px);
+    background-color:var(--color1) ;
+}
+
+input[type="checkbox"]:checked + .switch{
+    background-color: var(--color4);
+}
+
+.offscreen{
+    display: none;
+}
+
+/* ------------------------------------------------ */
+
+.sin-collapse{
+    display: contents;
+}
+.con-collapse{
+    display: none;
 }
 .aside{
     grid-area: aside;
@@ -66,9 +122,8 @@ body{
     grid-area: main;
     color: #00203F;
     background-color: var(--color1);
-    margin-left: 5px;
-    margin-right: 5px;
-    max-width: 800px;
+    margin:0px 5px;
+    max-width: 700px;
 }
 h1{
     margin:auto;
@@ -137,6 +192,9 @@ p{
 a{
     color: var(--color1);
 }
+a:hover{
+    color:var(--color1);
+}
 
 .redes{
     display: flex;
@@ -182,7 +240,7 @@ a{
     text-decoration: none;
 }
 .mix a:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .address-cont{
     display: flex;
@@ -199,7 +257,7 @@ a{
     margin-bottom: 0px;
 }
 .address-cont:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 .address a{
     text-decoration: none;
@@ -237,16 +295,16 @@ a{
     font-size: 40px;
 }
 #lkdn-icon:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 #mail-icon:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 #gh-icon:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 #pdf-icon:hover{
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 
@@ -356,10 +414,6 @@ a{
     font-size: 20px;
 
 }
-.con-collapse{
-    display: none;
-}
-
 
 
 @media screen and (max-width:450px) {
@@ -375,13 +429,14 @@ a{
 .aside{
     grid-column: 1/span 2;
     grid-row: 1/span 1;
+    /* margin-bottom: 0px; */
     padding: 20px;
 }
     
 .main{
     grid-column: 1/span 2;
     grid-row: 5/span 8;
-    margin-top: 5px;
+    margin-top: 25px;
     padding: 10px;
 }
 
@@ -428,23 +483,24 @@ h1{
     margin-top: 35px;
     font-size: 15px;
 }
+
 .btn-primary {
     width: 100%;
     --bs-btn-color: #fff;
-    background-color: #00203F;
+    background-color: var(--color2);
     color:var(--color1);
-    --bs-btn-border-color: #013c78;
+    --bs-btn-border-color: var(--color3);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #013c78;
-    --bs-btn-hover-border-color: #013c78;
+    --bs-btn-hover-bg: var(--color3);
+    --bs-btn-hover-border-color: var(--color3);
     --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #013c78;
-    --bs-btn-active-border-color: #013c78;
+    --bs-btn-active-bg: var(--color3);
+    --bs-btn-active-border-color: var(--color3);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #013c78;
-    --bs-btn-disabled-border-color: #013c78;
+    --bs-btn-disabled-bg: var(--color3);
+    --bs-btn-disabled-border-color: var(--color3);
   }
 .card-body{
     background-color: var(--color4);
@@ -459,42 +515,4 @@ h1{
 .con-collapse{
     display: contents;
 }
-/* 
-.wrap-toggle{
-    padding: 5rem;
-}
-
-.switch{
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-    background-color: #003d79;
-    border-radius: 40px;
-    cursor: pointer;
-}
-.switch::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 30px;
-    background-color: #fff;
-    left: 5px;
-    top: 5px;
-    transition: all 0.4s;
-}
-
-input[type="checkbox"]:checked + .switch::after{
-    transform: translate(30px);
-    background-color:#00203F ;
-}
-
-input[type="checkbox"]:checked + .switch{
-    background-color: #013f7d;
-}
-
-.offscreen{
-    display: none;
-} */
 }

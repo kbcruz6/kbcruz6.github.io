@@ -34,3 +34,12 @@ const age=()=>{
 }
 setInterval(today,1000);
 age(); 
+
+// PALETA DE COLORES
+
+let paleta=document.getElementById("toggle");
+let body=document.body;
+
+paleta.addEventListener("click",function(){
+    body.classList.toggle("dark");
+});
