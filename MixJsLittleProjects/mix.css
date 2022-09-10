@@ -445,8 +445,69 @@ select{
 }
 
 
-/* --------------------------JUST */
+/* ---------------------------------------------TEXTURAS */
+.texture-cont{
+    background-color: var(--color3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 20px;
+}
+.texture-cont h4{
+    font-size: 20px;
+}
+.texturas{
+    display: inline-block;
+    margin: 5px;
+    padding: 0px;
+    border:2px solid var(--color2);
+    border-radius: 5px;
+    user-select: none;
+    width: 250px;
+}
+.texturas div{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    user-select: all;
+}
+.texturas div:active{
+    opacity: 0.55;
+}
+.textura1{
+    background: url("textura1.jpg");
+    border: 1px solid var(--color1);
 
+}
+.textura2{
+    background: url("textura2.jpg");
+    border: 1px solid var(--color1);
+
+}
+.textura3{
+    background: url("textura3.jpg");
+    border: 1px solid var(--color1);
+
+}
+.textura4{
+    background-color: var(--color3);
+    border: 1px solid #fff;
+}
+
+.zona{
+    border: 2px solid var(--color2);
+    height: 100px;
+    border-radius: 4px;
+    width: 250px;
+    margin: 15px auto;
+}
+/* -----------------------------------------------JUST */
 
 #codigo{
     margin-left: 40px;
@@ -529,52 +590,6 @@ li{
         padding: 0px;
         margin: 0px;
     }
-}
-.texturas{
-    display: inline-block;
-    margin: auto;
-    border:1px solid var(--color2);
-    border-radius: 5px;
-    user-select: none;
-}
-.texturas div{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 6px;
-    user-select: all;
-}
-.texturas div:active{
-    opacity: 0.55;
-}
-.textura1{
-    background: url("textura1.jpg");
-    border: 1px solid #fff;
-
-}
-.textura2{
-    background: url("textura2.jpg");
-    border: 1px solid #fff;
-
-}
-.textura3{
-    background: url("textura3.jpg");
-    border: 1px solid #fff;
-
-}
-.textura4{
-    background-color: var(--color2);
-    border: 1px solid #fff;
-}
-
-
-.footer{
-    color:var(--color2);
-    grid-area: footer;
-    margin-top: 5px;
-    background-color: var(--color3);
-    text-align: center;
-    font-size: 20px;
 }
 
 

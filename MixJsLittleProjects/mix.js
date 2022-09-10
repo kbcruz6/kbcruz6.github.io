@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // TEXTURAS
 
-const zona=document.querySelector(".main");
+const zona=document.querySelector(".zona");
 zona.addEventListener("dragover",(e)=>{
     e.preventDefault();
 });
