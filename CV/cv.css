@@ -343,7 +343,6 @@ a:hover{
     bottom: 0px;
     padding: 0px 2px;
     text-align: left;
- 
 }
 .uni{
     margin:5px 5px;
@@ -407,8 +406,8 @@ a:hover{
     display: inline-block;
     padding: 0;
     margin: 0px 5px;
-    font-size: 15px;
     text-align: left;
+    font-weight: 780;
     font-size: 20px;
 
 }
@@ -427,8 +426,8 @@ a:hover{
     display: inline-block;
     padding: 0;
     margin: 0px 5px;
-    font-size: 15px;
     text-align: left;
+    font-weight: 780;
     font-size: 20px;
 
 }
