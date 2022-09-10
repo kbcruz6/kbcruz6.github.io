@@ -63,14 +63,11 @@ body{
 }
 
 /*---------------------------------TOGGLE  */
-.wrap-toggle1{
-    float: right;
-}
-.wrap-toggle2{
+.wrap-toggle1, .wrap-toggle2{
     float: right;
 }
 
-.switch1{
+.switch1, .switch2{
     position: relative;
     display: inline-block;
     width: 50px;
@@ -79,27 +76,8 @@ body{
     border-radius: 40px;
     cursor: pointer;
 }
-.switch2{
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 26px;
-    background-color: var(--color3);
-    border-radius: 40px;
-    cursor: pointer;
-}
-.switch1::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 30px;
-    background-color: var(--color4);
-    left: 3px;
-    top: 3px;
-    transition: all 0.4s;
-}
-.switch2::after{
+
+.switch1::after, .switch2::after{
     content: "";
     position: absolute;
     width: 20px;

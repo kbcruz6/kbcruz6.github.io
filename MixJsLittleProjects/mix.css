@@ -14,30 +14,23 @@ body{
 .divCont{
     background-color: var(--color2);
     margin: 10px;
-    display: grid;
-    grid-template-areas: "header header header header  header"
-    "foto foto foto foto foto"
-    "main main main aside aside"
-    "main main main aside aside"
-    "main main main aside aside"
-    "main main main aside aside"
-    "main main main aside aside"
-    "main main main aside aside"
-    "footer footer footer footer footer";
-    grid-template-rows: repeat(auto-fill, 1fr);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
     height: 100vh;
 }
-.item{
-    padding: 20px;
-}
+
 .header{
-    grid-area: header;
     border:5px solid var(--color1);
     color:var(--color1);
     text-align: center;
+    justify-content: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     border-radius: 4px;
+    width: 100%;
+    height: 80px;
 }
 @keyframes mover {
     0% {
