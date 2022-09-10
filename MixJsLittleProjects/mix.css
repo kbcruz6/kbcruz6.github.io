@@ -61,20 +61,6 @@ button:active {
 
 }
 
-.foto{
-    grid-area: foto;
-    width: 80%;
-    height:100px;
-    background-image:url(https://wallpaperaccess.com/full/3259894.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    display: block;
- 
-}
 h4{
     color: var(--color1);
     margin-bottom: 20px;
@@ -610,9 +596,6 @@ li{
 
 @media screen and (max-width:450px) {
  .texture-cont{
-    display: none;
- }
- .foto{
     display: none;
  }
 }
