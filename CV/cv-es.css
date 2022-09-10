@@ -49,6 +49,12 @@ body{
 #lang-icon:hover{
     opacity: 0.5;
 }
+.sin-collapse{
+    display: contents;
+}
+.con-collapse{
+    display: none;
+}
 .aside{
     grid-area: aside;
     color: var(--color1);
@@ -63,7 +69,7 @@ body{
     grid-area: main;
     color: #00203F;
     background-color: var(--color1);
-    margin:auto 5px;
+    margin:0px 5px;
     max-width: 700px;
 }
 h1{
@@ -420,5 +426,37 @@ h1{
 .bd{
     margin-top: 35px;
     font-size: 15px;
+}
+
+.btn-primary {
+    width: 100%;
+    --bs-btn-color: #fff;
+    background-color: #00203F;
+    color:var(--color1);
+    --bs-btn-border-color: #013c78;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #013c78;
+    --bs-btn-hover-border-color: #013c78;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #013c78;
+    --bs-btn-active-border-color: #013c78;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #013c78;
+    --bs-btn-disabled-border-color: #013c78;
+  }
+.card-body{
+    background-color: var(--color4);
+    color: var(--color2);
+    text-align: justify;
+    align-items: center;
+    margin-bottom:30px;
+}
+.sin-collapse{
+    display: none;
+}
+.con-collapse{
+    display: contents;
 }
 }
