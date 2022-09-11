@@ -16,12 +16,17 @@
 
     <!-- MAIL FORM -->
         <div class="form-cont">
-            <form class="form1"><h4>Complete your info:</h4>
-                <input required class="fo1" id="name" placeholder="Write your name" type="text">
-                <input required class="fo1" id="apellido" placeholder="Write your last name" type="text">
-                <input required class="fo1" id="mail" placeholder="Write your email" type="email">
-                <input required class="fo1" id="password" placeholder="Choose a password" type="password">
-                <button class="enviar" type="submit">Submit</button>
+            <form class="form1" action="https://formsubmit.co/agustintcruz@gmail.com" method="POST"><h4>Contact me:</h4>
+                <input required class="fo1" name="name" id="name" placeholder="Name" type="text">
+                <!-- <input required class="fo1" name="lastName" id="apellido" placeholder="Last Name" type="text"> -->
+                <input required class="fo1" name="email" id="mail" placeholder="Email" type="email">
+                <input required class="fo1" id="subject" placeholder="Subject" type="text" name="subject">
+                <textarea required class="fo1" id="comments" placeholder="Write your consult here" name="comments" cols="15" rows="5"></textarea>
+
+                <!-- <input required class="fo1" id="password" placeholder="Choose a password" type="password"> -->
+                <input class="enviar" type="submit" value="Submit">
+                <input type="hidden" name="_next" value="https://kbcruz6.github.io/MixJsLittleProjects/mix.html">
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
             </form>
     </div>
 
@@ -125,7 +130,7 @@
                  </div>
                  <div class="zona"></div>
             </div>
-            
+
     <!-- RANDOM STUFF BUTTONS -->
         <div class="botones-cont"><h4>Random stuff:</h4>
             <button class="boton cambiar">Let's move the header, or stop it..</button>
