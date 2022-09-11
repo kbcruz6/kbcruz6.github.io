@@ -48,6 +48,7 @@ button:active {
     width: 80%;
     height: 80px;
     animation: mover infinite 1s ease;
+    animation-play-state: paused;
     margin: 20px;
 }
 @keyframes mover {
