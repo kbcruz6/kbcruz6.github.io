@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert(`Gracias por tu consulta ${name}!`);
         document.querySelectorAll(".fo1").forEach((input)=>{
             input.value="";})
-        return false;
+        // return false;
     }
 
     }
