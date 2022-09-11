@@ -1,117 +1,6 @@
 
 
-// CRONOMETER WEB TIME
-// document.addEventListener("DOMContentLoaded",()=>{
-//     let valor=0;
-//     let crono=()=>{
-//         valor++;
-//         document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
-//     }
-//     setInterval(crono,1000);
-
-// })
-
-
-// CHANGE HEADER BUTTON
-
-
-document.addEventListener("DOMContentLoaded", function(){
-    const h1=document.querySelector(".header");
-    h1.style.animationPlayState="paused";
-
-    document.querySelector(".cambiar").onclick=()=>{
-        if (h1.style.animationPlayState=== "paused"){
-            h1.style.animationPlayState="running";
-        } else {
-            h1.style.animationPlayState="paused";
-        }
-    }
-});
-
-
-
-// COUNTER
-let contar=0;
-
-let cont=()=>{
-    contar++;
-    document.querySelector(".contador").innerHTML=contar;
-    if (contar%10===0){
-        alert(`Congratulations! You reach ${contar}!`)
-    }
-}
-// BACK TO ZERO
-let zero=()=>{
-    contar=0;
-    document.querySelector(".contador").innerHTML=contar;
-}
-
-// con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
-
-document.querySelector(".contar").onclick=cont;
-document.querySelector(".cero").onclick=zero
-
-
-// CLOCKs
-
-const addZeros=n=>{
-    if (n.toString().length<2) return "0".concat(n);
-    return n; 
-}
-
-const actualizarHora=()=>{
-    const time= new Date();
-    let hora=addZeros(time.getHours());
-    let min=addZeros(time.getMinutes());
-    let seg=addZeros(time.getSeconds());
-    let todayDate = new Date().toLocaleDateString();
-
-
-    document.querySelector(".hora").textContent=`${hora}: `;
-    document.querySelector(".min").textContent=`${min}: `;
-    document.querySelector(".seg").textContent=`${seg} hs `;
-    document.querySelector(".reloj2").innerHTML=`GMT-3 Time v2 (dif JS code): <br>${hora}:${min}:${seg} hs`;
-    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:`;
-
-}
-actualizarHora();
-setInterval(actualizarHora,1000);
-
-
-const age=()=>{
-
-    let fecha1=new Date("7/15/1991");
-    let fecha2=new Date();
-
-    let years=Math.abs(fecha1.getFullYear()-fecha2.getFullYear());
-    let months=(fecha2.getMonth()-fecha1.getMonth());
-    let days=(fecha2.getDate()-fecha1.getDate());
-    let meses="months";
-    let dias="days";
-
-    if (months<0){
-        years=years-1;
-        months=months+12;
-    }
-    if (days<0){
-        months=months-1;
-        days=days+30;
-    }
-    if (months==1){
-        meses="month"
-    } if (dias==1){
-        dias="day"
-    } 
-
-    document.querySelector(".age").innerHTML=`${years} years, ${months} ${meses}, ${days} ${dias}`
-}
-age();
-
-
-
-
-
-// FORM
+//--------------------------------------------------------------------------------- MAIL FORM
 document.addEventListener("DOMContentLoaded", () => {
   
     // document.querySelector("#name").onkeyup=()=>{
@@ -141,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 );
 
 
-//COLOURS
+//---------------------------------------------------------------------------------COLOURS
 
 // document.addEventListener("DOMContentLoaded", ()=> {
 //     document.querySelector("#red").onclick=()=> {
@@ -174,7 +63,19 @@ document.addEventListener("DOMContentLoaded", ()=> {
     }
 });
 
-// SUPER LIST
+
+// CRONOMETER WEB TIME
+// document.addEventListener("DOMContentLoaded",()=>{
+//     let valor=0;
+//     let crono=()=>{
+//         valor++;
+//         document.querySelector(".cronometro").innerHTML=`Tiempo en la web:    ${valor}   segundos`;
+//     }
+//     setInterval(crono,1000);
+
+// })
+
+// ---------------------------------------------------------------------------------SUPER LIST
 
 document.addEventListener("DOMContentLoaded", ()=> {
     document.querySelector(".form2").onsubmit=()=>{
@@ -222,7 +123,7 @@ document.addEventListener("click", event=>{
 // });
 
 
-// COTIZACION CRYPTO
+// ---------------------------------------------------------------------------------COTIZACION CRYPTO
 // document.addEventListener("DOMContentLoaded", function(){
 
 //     document.querySelector(".formCurrency").onsubmit= function(){
@@ -251,7 +152,7 @@ document.addEventListener("click", event=>{
 //     };    
 // });
 
-// FIAT COTIZATION 
+// ---------------------------------------------------------------------------------FIAT COTIZATION 
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -266,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function(){
             // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
             if (rate !== undefined){
-                document.querySelector("#resultFiat").innerHTML=`1 USD are ${Number(rate).toFixed(2)} ${fiat}.`;
+                document.querySelector("#resultFiat").innerHTML=`1 USD are ${Number(rate).toFixed(2)} ${fiat}`;
                 }else {
                  document.querySelector("#resultFiat").innerHTML=`Moneda inválida.`;
                 }
@@ -291,8 +192,91 @@ document.addEventListener("DOMContentLoaded", function(){
     //         document.querySelector("body").style.background="white";
     //     }
     // }
+    
+// ---------------------------------------------------------------------------------JUST
+document.addEventListener("DOMContentLoaded",function(){
 
-// TEXTURAS
+    const $imagen = document.querySelector("#codigo"),
+		    $boton = document.querySelector("#btnDescargar");
+		new QRious({
+			element: $imagen,
+			value: "https://www.instagram.com/mariamartaw/", // La URL o el texto
+			size: 150,
+			backgroundAlpha: "", // 0 para fondo transparente
+			foreground: "#000", // Color del QR
+			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+		});
+		$boton.onclick = () => {
+			const enlace = document.createElement("a");
+			enlace.href = $imagen.src;
+			enlace.download = "Código QR instagram MMW.png";
+			enlace.click();
+}
+
+})
+
+// ---------------------------------------------------------------------------------CLOCKS
+
+const addZeros=n=>{
+    if (n.toString().length<2) return "0".concat(n);
+    return n; 
+}
+
+const actualizarHora=()=>{
+    const time= new Date();
+    let hora=addZeros(time.getHours());
+    let min=addZeros(time.getMinutes());
+    let seg=addZeros(time.getSeconds());
+    let todayDate = new Date().toLocaleDateString();
+
+
+    document.querySelector(".hora").textContent=`${hora}: `;
+    document.querySelector(".min").textContent=`${min}: `;
+    document.querySelector(".seg").textContent=`${seg} hs `;
+    document.querySelector(".reloj2").innerHTML=`Time v2: <br>${hora}:${min}:${seg} hs`;
+    document.querySelector(".bd").innerHTML=`My Age today ${todayDate} at ${hora}:${min}:${seg} hs:`;
+
+}
+actualizarHora();
+setInterval(actualizarHora,1000);
+
+
+const age=()=>{
+
+    let fecha1=new Date("7/15/1991");
+    let fecha2=new Date();
+
+    let years=Math.abs(fecha1.getFullYear()-fecha2.getFullYear());
+    let months=(fecha2.getMonth()-fecha1.getMonth());
+    let days=(fecha2.getDate()-fecha1.getDate());
+    let meses="months";
+    let dias="days";
+
+    if (months<0){
+        years=years-1;
+        months=months+12;
+    }
+    if (days<0){
+        months=months-1;
+        days=days+30;
+    }
+    if (months==1){
+        meses="month"
+    } if (dias==1){
+        dias="day"
+    } 
+
+    document.querySelector(".age").innerHTML=`${years} years, ${months} ${meses}, ${days} ${dias}`
+}
+age();
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------TEXTURES
 
 const zona=document.querySelector(".zona");
 zona.addEventListener("dragover",(e)=>{
@@ -313,7 +297,7 @@ const transferirTextura=(n,e)=>{
 
 
 
-// GEOLOCATION
+// ---------------------------------------------------------------------------------GEOLOCATION
 // const geolocation=navigator.geolocation;
 
 // const posicion=(pos)=>{
@@ -342,25 +326,43 @@ const transferirTextura=(n,e)=>{
 // };
 
 
+// ---------------------------------------------------------------------------------BUTTONS
+// CHANGE HEADER BUTTON
 
-// JUST
-document.addEventListener("DOMContentLoaded",function(){
 
-    const $imagen = document.querySelector("#codigo"),
-		    $boton = document.querySelector("#btnDescargar");
-		new QRious({
-			element: $imagen,
-			value: "https://www.instagram.com/mariamartaw/", // La URL o el texto
-			size: 150,
-			backgroundAlpha: "", // 0 para fondo transparente
-			foreground: "#000", // Color del QR
-			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
-		});
-		$boton.onclick = () => {
-			const enlace = document.createElement("a");
-			enlace.href = $imagen.src;
-			enlace.download = "Código QR instagram MMW.png";
-			enlace.click();
+document.addEventListener("DOMContentLoaded", function(){
+    const h1=document.querySelector(".header");
+    h1.style.animationPlayState="paused";
+
+    document.querySelector(".cambiar").onclick=()=>{
+        if (h1.style.animationPlayState=== "paused"){
+            h1.style.animationPlayState="running";
+        } else {
+            h1.style.animationPlayState="paused";
+        }
+    }
+});
+
+
+
+// COUNTER
+let contar=0;
+
+let cont=()=>{
+    contar++;
+    document.querySelector(".contador").innerHTML=contar;
+    if (contar%10===0){
+        alert(`Congratulations! You reach ${contar}!`)
+    }
+}
+// BACK TO ZERO
+let zero=()=>{
+    contar=0;
+    document.querySelector(".contador").innerHTML=contar;
 }
 
-})
+// con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
+
+document.querySelector(".contar").onclick=cont;
+document.querySelector(".cero").onclick=zero
+

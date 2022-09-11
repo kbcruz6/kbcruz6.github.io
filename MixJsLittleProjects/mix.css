@@ -65,109 +65,8 @@ h4{
     color: var(--color1);
     margin-bottom: 20px;
 }
-/* ------------------------------------------------------BOTONES CONT*/
-.botones-cont{
-    background-color: var(--color3);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    max-width: 300px;
-    margin: 20px;
-    padding: 20px;
-}
-.boton, .CV, .cronometro{
-    border: 3px solid transparent;
-    background-color: var(--color2);
-    color:var(--color1);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 4px;
-    margin: 10px auto;
-    padding: 4px 10px;
-    text-decoration: none;
 
-}
-.boton:hover, .CV:hover{
-    background-color: var(--color5);
-}
-
-/* --------------------------CONTADOR */
-.contador{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color3);
-    color:var(--color1);
-    border:3px solid var(--color2);
-    border-radius: 4px;
-    width: 100px;
-    margin:auto;
-}
-
-/* ----------------------------------------------------------------RELOJES CONT */
-.relojes-cont{
-    background-color: var(--color3);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    max-width: 300px;
-    margin: 20px;
-    padding: 20px;
-
-}
-/* --------------------------AGE */
-.bd-cont{
-    color:var(--color1);
-    border: 3px solid var(--color2);
-    border-radius: 4px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    margin: 18px 10px;
-    padding: 2px;
-}
-.bd,.age{
-    font-size: 15px;
-    margin: auto;
-}
-/* --------------------------RELOJ 1 */
-.reloj1-cont{
-    color:var(--color1);
-    padding: 5px 7px;
-    font-size: 20px;
-    font-family: monospace;
-    border: 3px solid var(--color2);
-    border-radius: 4px;
-    margin: 18px 10px;
-}
-.reloj1{
-    background:linear-gradient(var(--color2), var(--color5));
-    border:3px solid var(--color2);
-    display: inline-flex;
-    border-radius: 4px;
-    padding: 4px;
-    margin:auto;
-}
-
-
-/* --------------------------RELOJ 2*/
-.reloj2 {
-    color:var(--color1);
-    border: 3px solid var(--color2);
-    border-radius: 4px;
-    font-size: 15px;
-    font-family: monospace;
-    margin: 18px 10px;
-}
-
-
-
-/* ---------------------------------------------------------------FORMULARIO */
+/* ---------------------------------------------------------------MAIL FORM */
 .form-cont{
     background-color: var(--color3);
     text-align: center;
@@ -177,7 +76,9 @@ h4{
     max-width: 300px;
     margin: 20px;
     padding: 20px;
+    padding-bottom: 10px;
 }
+
 
 .form1 input{
     color: var(--color1);
@@ -211,8 +112,9 @@ h4{
     font-size: 20px;
     height: 40px;
     width: 100px;
-    margin: 20px 10px;
+    margin: 15px 10px;
     border-radius: 4px;
+    padding: 0px;
 }
 .form1 button:hover{
     background-color: var(--color5);
@@ -260,7 +162,6 @@ h4{
 select{
     cursor: pointer;
 }
-
 
 /* ---------------------------------------------------------LISTA SUPER */
 
@@ -429,10 +330,127 @@ select{
     color: var(--color3);
     background-color: var(--color4);
     text-align: center;
-    margin: auto 10px;
+    margin: auto 5px;
     margin-top: 10px;
+    padding: 0px;
+    font-size: 18px;
+}
+/* -----------------------------------------------------------------JUST */
+
+.just-cont{
+    background-color: var(--color3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 300px;
+    margin: 20px;;
+    padding: 20px;
+    padding-top: 20px;
+}
+.just-cont p{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: var(--color1);
+    font-size: 15px;
+}
+.just-cont a{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: var(--color1);   
+}
+.just-cont a:hover{
+    color: var(--color4);
 }
 
+#logoJust{
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+    border:2px solid var(--color2);
+    margin-bottom: 0px;
+}
+
+#codigo{
+    margin:10px auto;
+    border: 2px solid var(--color2);
+}
+
+#btnDescargar{
+    display: inline-block;
+    outline: none;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: none;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+#btnDescargar:hover{
+    background-color: var(--color5);
+}
+
+/* ----------------------------------------------------------------RELOJES CONT */
+.relojes-cont{
+    background-color: var(--color3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+}
+/* --------------------------AGE */
+.bd-cont{
+    color:var(--color1);
+    border: 3px solid var(--color2);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: 18px 10px;
+    padding: 2px;
+}
+.bd,.age{
+    font-size: 15px;
+    margin: auto;
+}
+/* --------------------------RELOJ 1 */
+.reloj1-cont{
+    color:var(--color1);
+    padding: 5px 7px;
+    font-size: 20px;
+    font-family: monospace;
+    border: 3px solid var(--color2);
+    border-radius: 4px;
+    margin: 18px 10px;
+}
+.reloj1{
+    background:linear-gradient(var(--color2), var(--color5));
+    border:3px solid var(--color2);
+    display: inline-flex;
+    border-radius: 4px;
+    padding: 4px;
+    margin:auto;
+}
+
+
+/* --------------------------RELOJ 2*/
+.reloj2 {
+    color:var(--color1);
+    border: 3px solid var(--color2);
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 18px 10px;
+}
 
 /* -----------------------------------------------------------------TEXTURAS */
 .texture-cont{
@@ -495,65 +513,50 @@ select{
     width: 250px;
     margin: 15px auto;
 }
-/* -----------------------------------------------------------------JUST */
 
-.just-cont{
+
+/* ------------------------------------------------------BOTONES CONT*/
+.botones-cont{
     background-color: var(--color3);
     text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    width: 300px;
-    margin: 20px;;
+    max-width: 300px;
+    margin: 20px;
     padding: 20px;
-    padding-top: 20px;
 }
-.just-cont p{
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    color: var(--color1);
-    font-size: 15px;
-}
-.just-cont a{
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    color: var(--color1);   
-}
-.just-cont a:hover{
-    color: var(--color4);
-}
-
-#logoJust{
-    width: 80px;
-    height: 60px;
-    float: left;
-    margin-right: 15px;
-    border:2px solid var(--color2);
-    margin-bottom: 0px;
-}
-
-#codigo{
-    margin:10px auto;
-    border: 2px solid var(--color2);
-}
-
-#btnDescargar{
-    display: inline-block;
-    outline: none;
+.boton, .CV, .cronometro{
+    border: 3px solid transparent;
     background-color: var(--color2);
-    color: var(--color1);
-    border: none;
-    font-family: monospace;
-    font-size: 15px;
+    color:var(--color1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: 4px;
-}
+    margin: 10px auto;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-size: 15px;
 
-#btnDescargar:hover{
+}
+.boton:hover, .CV:hover{
     background-color: var(--color5);
 }
 
+/* --------------------------CONTADOR */
+.contador{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color3);
+    color:var(--color1);
+    border:3px solid var(--color2);
+    border-radius: 4px;
+    width: 100px;
+    margin:auto;
+}
 
 /* ------------------------------------------ANIMACION BORRAR DE LISTA */
 li{
