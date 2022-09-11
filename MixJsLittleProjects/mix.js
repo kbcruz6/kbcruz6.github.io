@@ -13,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector(".form1").onsubmit= ()=> {
         let name = document.querySelector("#name").value;
-        let apellido = document.querySelector("#apellido").value;
-        alert(`Gracias por tu consulta ${name} ${apellido}!`);
-
+        alert(`Gracias por tu consulta ${name}!`);
         document.querySelectorAll(".fo1").forEach((input)=>{
             input.value="";})
         return false;
