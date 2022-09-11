@@ -78,9 +78,7 @@ h4{
     padding: 20px;
     padding-bottom: 10px;
 }
-
-
-.form1 input{
+.form1 input, .form1 textarea{
     color: var(--color1);
     margin: 7px 5px;
     outline: none;
@@ -89,21 +87,21 @@ h4{
     border-bottom: 1px solid var(--color1);
     width: 200px;
 }
-.form1 input::placeholder{
+.form1 input::placeholder, .form1 textarea::placeholder{
     color:var(--color1);
     opacity: 0.5;
 }
-.form1 input:hover{
+.form1 input:hover, .form1 textarea:hover{
     background-color: var(--color2);
     border-radius: 4px;
 }
-.form1 input:focus::placeholder{
+.form1 input:focus::placeholder, .form1 textarea:focus::placeholder{
     opacity: 0;
 }
-.form1 input:focus{
+.form1 input:focus, .form1 textarea:focus{
     background-color: var(--color2);
 }
-.form1 button{
+.form1 .enviar{
     outline: none;
     background-color: var(--color2);
     color: var(--color1);
@@ -116,7 +114,7 @@ h4{
     border-radius: 4px;
     padding: 0px;
 }
-.form1 button:hover{
+.form1 .enviar:hover{
     background-color: var(--color5);
 }
 
