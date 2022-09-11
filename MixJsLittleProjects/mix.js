@@ -14,12 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".form1").onsubmit= ()=> {
         let name = document.querySelector("#name").value;
         let apellido = document.querySelector("#apellido").value;
-        alert(`Gracias por tus datos ${name} ${apellido}`);
-
-        // document.querySelector("#name").value="";
-        // document.querySelector("#apellido").value="";
-        // document.querySelector("#mail").value="";
-        // document.querySelector("#password").value="";
+        alert(`Gracias por tu consulta ${name} ${apellido}!`);
 
         document.querySelectorAll(".fo1").forEach((input)=>{
             input.value="";})
@@ -192,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //         document.querySelector("body").style.background="white";
     //     }
     // }
-    
+
 // ---------------------------------------------------------------------------------JUST
 document.addEventListener("DOMContentLoaded",function(){
 
