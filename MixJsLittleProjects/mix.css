@@ -10,7 +10,8 @@ body{
     --color2:#00203F;
     --color3:#174f87;
     --color4:#6dc49b;
-    --color5:#02305d;
+    --color5:#012b54;
+    --color6:#033c75;
 } 
 .dark{
     --color1:#ECE2d0;
@@ -50,6 +51,10 @@ button:active {
     animation: mover infinite 1s ease;
     animation-play-state: paused;
     margin: 20px;
+    transition: all 0.5s;
+}
+.header:hover{
+    background-color: var(--color6);
 }
 @keyframes mover {
     0% {
@@ -78,6 +83,12 @@ h4{
     margin: 20px;
     padding: 20px;
     padding-bottom: 10px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+}
+.form-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .form1 input, .form1 textarea{
     color: var(--color1);
@@ -131,6 +142,13 @@ h4{
     margin: 20px;
     padding: 20px;
     padding-top: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+
+}
+.colores-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .color{
     margin: 10px 10px;
@@ -174,6 +192,13 @@ select{
     margin: 20px;
     padding: 20px;
     padding-top: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+
+}
+.list-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .form2 input{
     color: var(--color1);
@@ -258,6 +283,13 @@ select{
     margin: 20px;
     padding: 20px;
     padding-top: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+
+}
+.fiat-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .fiat-cont h4{
     font-size: 20px;
@@ -346,6 +378,13 @@ select{
     margin: 20px;;
     padding: 20px;
     padding-top: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+
+}
+.just-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .just-cont p{
     justify-content: center;
@@ -403,7 +442,13 @@ select{
     max-width: 300px;
     margin: 20px;
     padding: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
 
+}
+.relojes-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 /* --------------------------AGE */
 .bd-cont{
@@ -462,6 +507,13 @@ select{
     margin: 20px;
     padding: 20px;
     padding-top: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+
+}
+.texture-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .texture-cont h4{
     font-size: 20px;
@@ -524,6 +576,12 @@ select{
     max-width: 300px;
     margin: 20px;
     padding: 20px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+}
+.botones-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
 }
 .boton, .CV, .cronometro{
     border: 3px solid transparent;
