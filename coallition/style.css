@@ -40,11 +40,10 @@ body{
 }
 .nav{
     position: relative;
-    /* left: 1838px; */
     left: 1081px;
     top: -15px;
-    width: 1600px;
-    height: 9px;
+    /* width: 1600px; */
+    height: 20px;
     z-index: 200;
 
 }
@@ -206,9 +205,9 @@ body{
     opacity: 1;
     display: inline-block;
     color: rgb(65, 79, 107);
-    -moz-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
+    /* -moz-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
     -webkit-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
-    -ms-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
+    -ms-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0); */
  
 }
   
@@ -695,7 +694,11 @@ body{
       left: 690px;
       font-size: 20px;
     }
-    /* .text-cont2{
-    
-    } */
+    a{
+      z-index: 555;
+    }
+
+  }
+  .offscreen1b,.offscreen2{
+    visibility: hidden;
   }
