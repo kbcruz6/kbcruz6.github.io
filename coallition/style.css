@@ -1,6 +1,6 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     scroll-behavior: smooth;
 }
 :root{
@@ -19,20 +19,30 @@ body{
   flex-wrap: wrap;
   max-width: 1600px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+
 }
 
+.pag0,.nav2,.pag1,.pag2{
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo-footer:hover,.logo2:hover,.la-mont:hover,.losangeles-mountain:hover{
+  opacity: 0.8;
+}
 
 .pag0 {
     background-image: url("try/montaña.png");
     opacity: 1;
     position: relative;
     left: 0px;
+    top: 0px;
     /* top: 420px; */
     width: 1600px;
     height: 912px;
     z-index: 103;
+    display: block;
+    
   }
   
 .logo1{
@@ -102,11 +112,10 @@ body{
 .nav2{
     position: relative;
     height: 80px;
-    width: 100%;
-    background-color: #fff;
-    /* top: 810px; */
-    z-index: 110;
     width: 1600px;
+    background-color: #fff;
+    z-index: 110;
+    top: 0px;
   
 }
 .logo2{
@@ -145,7 +154,6 @@ body{
     text-transform: uppercase;
     line-height: 1.667;
     left: 920px;
-    /* font-size: 20px; */
     margin-right: 50px;
     margin-left: 0px;
     top: 5px;
@@ -156,18 +164,20 @@ body{
   /* ---------------------------------------------PAG1 */
 .pag1{
     position: relative;
-    background-color: transparent;
+    /* background-color: transparent; */
     background-image:url(try/peak.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position:cover;
-    background-origin: top;
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-position:cover; */
+    /* background-origin: top; */
     width: 1600px;
     /* height: 820px; */
     /* left: -757px;*/
     /* top: 890px;  */
     z-index: 160;
+    top: 0px;
     left: 0px;
+    display: block;
     /* top: -899px; */
     height: 975px;
 }
@@ -414,6 +424,9 @@ body{
 .mont-2,.mont-1b{
     cursor: pointer;
   }
+.mont-2:hover,.mont-1b:hover{
+    opacity: 0.8;
+}
   .mountain-2 {
     /* -moz-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
     -webkit-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
@@ -659,7 +672,7 @@ body{
     visibility: hidden;
   }
 
-  /* @media screen and (max-width:450px){
+  /* @media screen and (max-width:650px){
 
     body{
       display: flex;
