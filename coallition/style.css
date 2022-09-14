@@ -678,4 +678,15 @@ body{
     .copy{
       left: 860px;
     }
+    .nav{
+      left: 850px;
+    }
+    .nav li{
+      font-size: 20px;
+    }
+ 
+    .nav2 li{
+      left: 690px;
+      font-size: 20px;
+    }
   }
