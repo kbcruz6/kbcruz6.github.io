@@ -651,7 +651,7 @@ body{
     visibility: hidden;
   }
 
-  @media only screen and (max-width:450px){
+  /* @media only screen and (max-width:450px){
     
     body{
       left: 0px;
@@ -660,7 +660,7 @@ body{
       height: 550px;
       scale:0.4;
       position: absolute;
-      /* overflow-x:hidden; */
+      overflow-x:hidden;
     }
     .cont{
       justify-content: center;
@@ -698,7 +698,7 @@ body{
       z-index: 555;
     }
 
-  }
+  } */
   .offscreen1b,.offscreen2{
     visibility: hidden;
   }
