@@ -15,7 +15,7 @@ body{
   
 }
 .cont{
-  max-width: 1600px;
+  max-width: 100%;
 }
 
 
@@ -229,7 +229,7 @@ body{
    .carusel-cont {
     background-color: rgb(65, 79, 107,0.7);
     position: relative;
-    left: 20px;
+    left: 0px;
     top: 565px;
     width: 1600px;
     height: 190px;
@@ -238,7 +238,7 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    z-index: 130;
+    z-index: 30;
   }
   .carusel-cont li{
     position: relative;
@@ -374,7 +374,7 @@ body{
     top:-50px;
     width: 1600px;
     height: 40px;
-    z-index: 135;
+    z-index: 335;
   }
   .mountain-1 {
         /* -moz-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
@@ -390,7 +390,7 @@ body{
     position: relative;
     left: 345px;
     top:58px;
-    z-index: 39;
+    z-index: 339;
   }
   .mountain-1b {
     /* -moz-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
@@ -405,7 +405,7 @@ body{
     position: relative;
     left: 330px;
     top:33px;
-    z-index: 39;
+    z-index: 339;
   }
 .mont-2,.mont-1b{
     cursor: pointer;
@@ -423,7 +423,7 @@ body{
     position: relative;
     left: 470px;
     top: 7px;
-    z-index: 133;
+    z-index: 343;
   }
   .mountain-2b {
         /* -moz-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
@@ -439,7 +439,7 @@ body{
     position: relative;
     left: 485px;
     top: -20px;
-    z-index: 33;
+    z-index: 333;
 
   }
   .rect-m1 {
@@ -449,7 +449,7 @@ body{
     top: -50px;
     width: 140px;
     height: 40px;
-    z-index: 35;
+    z-index: 335;
   }
   .rect-m2 {
     background-color: var(--color2);
@@ -458,7 +458,7 @@ body{
     top: -90px;
     width: 140px;
     height: 40px;
-    z-index: 32;
+    z-index: 332;
   }
   .rect-2 {
     background-color: rgb(65, 79, 107);
@@ -467,7 +467,7 @@ body{
     top: -130px;
     width: 1600px;
     height: 40px;
-    z-index: 31;
+    z-index: 331;
   }
 
 /* ----------------------------------------TABS CONT */
@@ -602,13 +602,13 @@ body{
     left: 0px;
     top: -98px;
     width: 1600px;
-    z-index: 22;
+    z-index: 222;
   }
   .logo-footer {
     position: relative;
     left: 340px;
     top: 140px;
-    z-index: 199;
+    z-index: 299;
     font-size: 43px;
   }
 
@@ -622,7 +622,7 @@ body{
     position: relative;
     left: 390px;
     top: 92px;
-    z-index: 26;
+    z-index: 226;
   }
 
   .copy {
@@ -635,7 +635,7 @@ body{
     position: relative;
     left: 1016.937px;
     top: 55px;
-    z-index: 24;
+    z-index: 224;
   }
 
   .rect-5 {
@@ -645,7 +645,7 @@ body{
     /* top: 2560px; */
     width: 1600px;
     height: 88px;
-    z-index: 23;
+    z-index: 223;
 
   }
   .hidden{
@@ -657,16 +657,22 @@ body{
     body{
       left: 0px;
       top: 0px;
-      max-width: 400px;
-      height: 400px;
+      max-width: 1600px;
+      height: 550px;
       scale:0.4;
       position: absolute;
-      overflow-x:hidden;
+      /* overflow-x:hidden; */
     }
     .cont{
       justify-content: center;
       align-items: center;
-      margin: -300px;
+      width: 100%;
+      margin-right:3000px;
+      margin-top: -420px;
+
+    }
+    .carusel-cont{
+      left: -30px ;
     }
     .text-01{
       width: 650px;
@@ -689,4 +695,7 @@ body{
       left: 690px;
       font-size: 20px;
     }
+    /* .text-cont2{
+    
+    } */
   }
