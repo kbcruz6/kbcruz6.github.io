@@ -15,7 +15,12 @@ body{
   
 }
 .cont{
-  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -195,13 +200,13 @@ body{
 
 .history-01{
     position: relative;
-    font-size: 11.264px;
+    font-size: 30px;
     font-family: 'Oswald', sans-serif;
     font-weight:bolder;
     line-height: 1.2;
     text-align: left;
-    left: 8px;
-    top: -37px;
+    left: -25px;
+    top: -28px;
     opacity: 1;
     display: inline-block;
     color: rgb(65, 79, 107);
@@ -650,6 +655,31 @@ body{
   .hidden{
     visibility: hidden;
   }
+  .offscreen1b,.offscreen2{
+    visibility: hidden;
+  }
+
+  /* @media screen and (max-width:450px){
+
+    body{
+      display: flex;
+      justify-content: center;
+      overflow-x:hidden;
+      
+   }
+    .cont{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+ */
+
+
+
 
   /* @media only screen and (max-width:450px){
     
@@ -699,6 +729,3 @@ body{
     }
 
   } */
-  .offscreen1b,.offscreen2{
-    visibility: hidden;
-  }
