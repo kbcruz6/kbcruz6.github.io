@@ -666,6 +666,7 @@ body{
     .cont{
       justify-content: center;
       align-items: center;
+      margin: -300px;
     }
     .text-01{
       width: 650px;
