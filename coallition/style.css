@@ -11,15 +11,12 @@
 body{
   display: flex;
   justify-content: center;
-  /* overflow-x:hidden;
-  position: */
+  /* overflow-x:hidden; */
+  
 }
-/* .cont{
-  align-self: center;
-  align-items: center;
-  justify-content: center; */
-  /* text-align: center; */
-/* } */
+.cont{
+  max-width: 1600px;
+}
 
 
 .pag0 {
@@ -232,7 +229,7 @@ body{
    .carusel-cont {
     background-color: rgb(65, 79, 107,0.7);
     position: relative;
-    left: 0px;
+    left: 20px;
     top: 565px;
     width: 1600px;
     height: 190px;
@@ -653,4 +650,21 @@ body{
   }
   .hidden{
     visibility: hidden;
+  }
+
+  @media only screen and (max-width:450px){
+    
+    body{
+      left: 0px;
+      top: 0px;
+      max-width: 400px;
+      height: 400px;
+      scale:0.4;
+      position: absolute;
+      overflow-x:hidden;
+    }
+    .cont{
+      justify-content: center;
+      align-items: center;
+    }
   }
