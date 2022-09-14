@@ -32,6 +32,7 @@ paleta2.addEventListener("click",function(){
     body.classList.toggle("dark");
 });
 
+// EDAD
 const today=()=>{
     let todayDate = new Date().toLocaleDateString();
     let todayTime = new Date().toLocaleTimeString();
