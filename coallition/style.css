@@ -30,11 +30,13 @@
     z-index: 110;
 }
 .nav{
-    position: relative;
+    position: absolute;
     /* left: 1838px; */
     left: 1081px;
     top: 36px;
     height: 9px;
+    z-index: 200;
+
 }
   
 .nav li{
@@ -49,7 +51,6 @@
     color: rgb(254, 254, 255);
     font-style: italic;
     text-transform: uppercase;
-    z-index: 182;
     cursor: pointer;
 
 }
@@ -81,7 +82,7 @@
     top: 0px;
     width: 1600px;
     height: 912px;
-    z-index: 50;
+    z-index: 105;
   }
   
 .nav2{
@@ -542,7 +543,7 @@
     -ms-transform: matrix( 2.84103421435448,0,0,2.84103421435448,0,0);
     position: absolute;
     left: 430.397px;
-    top: 290px;
+    top: 260px;
     z-index: 5;
   }
   .dates-2 {
@@ -553,7 +554,7 @@
     text-align: left;
     position: absolute;
     left: 390.937px;
-    top: 350px;
+    top: 320px;
     width: 270px;
     height: 132px;
     z-index: 3;
@@ -563,7 +564,7 @@
     opacity: 0.702;
     position: absolute;
     left: 351px;
-    top: 265px;
+    top: 235px;
     width: 352px;
     height: 260px;
     z-index: 1;
