@@ -667,4 +667,14 @@ body{
       justify-content: center;
       align-items: center;
     }
+    .text-01{
+      width: 650px;
+      height: 300px;
+    }
+    .text-02{
+      width: 500px;
+    }
+    .copy{
+      left: 860px;
+    }
   }
