@@ -105,9 +105,9 @@ body{
     opacity: 0.2;
     position: relative;
     left: 0px;
-    top: -390px;
+    top: -190px;
     width: 1600px;
-    height: 912px;
+    height: 962px;
     z-index: 105;
   }
   
@@ -787,5 +787,8 @@ body{
     margin-left:-1100px ;
     opacity: 1;
     height: 50px;
+  }
+  .nieve{
+    top: -390px;
   }
 }
