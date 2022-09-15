@@ -166,12 +166,8 @@
 }
 #tea-01{
   margin-left: 5%;
+}
 
-}
-.nav li{
-  /* margin-right: 10px; */
-  display: inline-block;
-}
 .nav1 li a{
   text-decoration: none;
   color: rgb(254, 254, 255);
@@ -599,14 +595,115 @@
     background-repeat: no-repeat;
   }
   .pag2a,.pag2b{
-
     background-size: cover;
   }
 
 }
 
 @media screen and (max-width:800px) {
+  /* NAV 1 */
+  .logo1{
+    margin-left: 12%;
+  }
+  #his-01,#tea-01{
+    top: -55%;
+  }
+  #his-01{
+    margin-left: 27%;
+  }
+  #tea-01{
+    margin-left: 5%;
+  }
 
+  /* NAV2 */
+  .logo2{
+    margin-left: 12%;
+  }
+  .la-mont {
+   margin-left: 5px;
+  }
+  
+  /* .his-02,.tea-02{
+    
+  } */
+  .his-02{
+    margin-left: 7%;
+    margin-top: 0%;
+  }
+  .tea-02{
+    margin-left: 5%;
+  }
 
+  /* PAG1 */
+  .text-01{
+    font-size: 12px;
+  }
+
+  /* CARUSEL */
+  .carusel-cont{
+    flex-wrap: wrap;
+    height: 250px;
+    padding: 10px auto;
+  }
+  .carusel-cont li{
+    height: 50%;
+    width: 150px;
+    padding: 0;
+  }
+
+   /* PAG2 */
+   .text-02{
+    font-size: 12px;
+    text-align: justify;
+    margin: 20px 20px;
+    top: 0%;
+    left: 10%;
+    width: 70%;
+  }
+  .schedule-1,.schedule-2,.dates-1,.dates-2{
+    left: -5%;
+  }
+
+  /* FOOTER */
+  .logo-footer{
+    margin-left: 10%;
+  }
+  .copy{
+    top: -120%;
+    width:150px ;
+  }
+}
+
+@media screen and (max-width:450px) {
+  /* NAV 1 */
+  .logo1{
+    margin-left: 12%;
+    margin-top: 10px;
+  }
+  #his-01,#tea-01{
+    top: -60%;
+  }
+
+  /* NAV2 */
+
+  .his-02{
+    margin-left: 2%;
+    top:-20px;
+  }
+  .tea-02{
+    margin-left: 2%;
+    top:-20px;
+
+  }
+   /* PAG2 */
+  .schedule-1,.schedule-2,.dates-1,.dates-2{
+    left: -7%;
+  }
+  .dates-1,.dates-2{
+    font-size: 12px;
+  }
+  .schedule-1,.schedule-2{
+    padding-right: 96px;
+  }
 
 }
