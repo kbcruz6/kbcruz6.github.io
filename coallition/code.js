@@ -35,17 +35,3 @@ paleta2.addEventListener("click",function(event){
     event.preventDefault();
 });
 
-// $('html, body').css({
-//     overflow: 'hidden',
-//     height: '100%'
-// });
-
-// To restore:
-
-// $('html, body').css({
-//     overflow: 'auto',
-//     height: 'auto'
-// });
-
-//     --color1:rgb(65, 79, 107);
-// --color2:rgb(176, 180, 190);
