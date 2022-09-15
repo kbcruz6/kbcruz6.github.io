@@ -1,13 +1,7 @@
-*,
-*::before,
-*::after { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box; 
     scroll-behavior: smooth;
 }
 :root{
@@ -26,10 +20,9 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 2900;
 }
 
-.pag0,.nav2,.pag1,.pag2{
+.pag0,.nav2,.pag1,.pag2,.footer{
   justify-content: center;
   align-items: center;
   flex-grow: 1;
@@ -595,32 +588,25 @@ body{
   /* ---------------------------------------FOOTER */
   .footer {
     position: relative;
-    background-color: rgb(65, 79, 107);
-    justify-content: center;
-    align-items: center;
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: rgb(65, 79, 107);
     left: 0px;
     top: 20px;
     height: 90px;
     width: 1600px;
     z-index: 222;
+    padding: 0px;
+    margin: 0px;
   }
-
-  /* .nav2{
-    position: relative;
-    height: 80px;
-    width: 1600px;
-    background-color: #fff;
-    z-index: 110;
-    top: 0px;
-  
-} */
   .logo-footer {
     position: relative;
-    left: -200px;
+    /* left: -200px; */
     /* top: 340px; */
     z-index: 299;
     font-size: 43px;
+    margin-right: 10px;
   }
   .losangeles-mountain {
     font-size: 13.29px;
@@ -630,8 +616,10 @@ body{
     line-height: 1.079;
     text-align: left;
     position: relative;
-    left:-190px;
+    /* left:-190px; */
     z-index: 226;
+    margin-right: 500px;
+
   }
   .copy {
     position: relative;
@@ -641,9 +629,9 @@ body{
     font-style: italic;
     text-transform: uppercase;
     line-height: 1.667;
-    left: 350px;
+    /* left: 350px; */
     z-index: 224;
-    width: 400px;
+    width: 300px;
     margin-right: 0px;
   }
   /* .rect-5 {
@@ -662,12 +650,12 @@ body{
     visibility: hidden;
   }
 
-  @media screen and (max-width:650px){
+  @media screen and (max-width:450px){
+  
+  body{
+    display: flex; 
+    justify-content: center; 
 
-    body{
-      display: flex;
-      justify-content: center;
-      overflow-x:hidden;
 
   }
   .cont{
@@ -675,63 +663,29 @@ body{
     flex-wrap: wrap;
     max-width: 1600px;
     width: 100%;
-  
+    margin: 0;
+    padding: 0;
+    
+
   }
   
-  .pag0,.nav2,.pag1,.pag2{
-    justify-content: center;
+  /* .pag0,.nav2,.pag1,.pag2,.footer{
+    justify-content: center; 
     align-items: center;
     flex-grow: 1;
-  }
-}
-
-
-
-  /* @media only screen and (max-width:450px){
-    
-    body{
-      left: 0px;
-      top: 0px;
-      max-width: 1600px;
-      height: 550px;
-      scale:0.4;
-      position: absolute;
-      overflow-x:hidden;
-    }
-    .cont{
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-right:3000px;
-      margin-top: -420px;
-
-    }
-    .carusel-cont{
-      left: -30px ;
-    }
-    .text-01{
-      width: 650px;
-      height: 300px;
-    }
-    .text-02{
-      width: 500px;
-    }
-    .copy{
-      left: 860px;
-    }
-    .nav{
-      left: 850px;
-    }
-    .nav li{
-      font-size: 20px;
-    }
- 
-    .nav2 li{
-      left: 690px;
-      font-size: 20px;
-    }
-    a{
-      z-index: 555;
-    }
+    display: flex;
 
   } */
+
+  .logo-footer{
+    margin-left: 10px;
+  }
+  .losangeles-mountain{
+    margin-right: 0;
+  }
+  .copy{
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 120px;
+  }
+}
