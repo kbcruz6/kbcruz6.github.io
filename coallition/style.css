@@ -105,7 +105,7 @@ body{
     opacity: 0.2;
     position: relative;
     left: 0px;
-    top: -90px;
+    top: -390px;
     width: 1600px;
     height: 912px;
     z-index: 105;
@@ -649,7 +649,9 @@ body{
   .offscreen1b,.offscreen2{
     visibility: hidden;
   }
-
+  .resp{
+    opacity: 0;
+  }
   @media screen and (max-width:450px){
   
   body{
@@ -686,6 +688,104 @@ body{
   .copy{
     text-align: right;
     margin-right: 20px;
-    margin-left: 120px;
+    margin-left: 7px;
+  }
+  .content-1{
+    margin-left:-260px;
+  }
+  .content-2{
+    margin-left:-260px;
+  }
+  .tabs{
+    margin-left: -200px;
+  }
+  .text-cont2{
+    margin-left: -320px;
+    display: flex;
+  }
+  .text-02{
+    height: 100px;
+    width: 200px;
+    text-align:justify ;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    top: 0px;
+  }
+  .carusel-cont{
+    align-items: left;
+    justify-content: left;
+  }
+  .text-cont{
+    margin-left: -300px;
+    display: flex;
+  }
+  .text-01{
+    width: 300px;
+    text-align: justify;
+  }
+  .nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo2,.la-mont,.nav2 li{
+    top: 0px;
+    left: 0px;
+  }
+  .logo2{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .nav2 li{
+    width: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 15px;
+  }
+  #pag1{
+    margin-left: 100px;
+  }
+  .pag0{
+    background-image:url(try/montaña2.png) ;
+    /* scale: 0.8; */
+    /* margin-left: -400px; */
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    margin-left: -450px;
+  }
+  .nav li{
+    margin: 0;
+    left: 0;
+    top: -10px;
+    font-size: 15px;
+  }
+  #his-01{
+    margin-right: 50px;
+    color: var(--color1);
+    font-weight: 900;
+  }
+  #tea-02{
+    color: var(--color1);
+    font-weight: 900;
+  }
+  .logo1{
+    left: 20px;
+  }
+  .resp{
+    font-family: 'Oswald',sans-serif;
+    color: rgb(65, 79, 107);
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 50px;
+    text-align: center;
+    z-index: 500;
+    margin-top: 250px;
+    margin-left:-1100px ;
+    opacity: 1;
+    height: 50px;
   }
 }
