@@ -707,9 +707,8 @@
     padding: 0;
     width: 100%;
 
-    /* max-width: 450px; */
-   --bs-accordion-color: black;
-   --bs-accordion-btn-bg:var(--color1);
+    --bs-accordion-color: black;
+   --bs-accordion-btn-bg:var(--color4);
    --bs-accordion-btn-color:var(--color2);
    
    --bs-accordion-btn-padding-x:10% ;
