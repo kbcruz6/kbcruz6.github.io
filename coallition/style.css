@@ -404,12 +404,15 @@
     position: relative;
     background-color: var(--color2);
     background-size: 100%;
-    padding: 5px;
+    padding: 0px;
     z-index: 339;
-    margin-left: 17%;
-    top: 0%;
+    margin-left: 15%;
     height: 100%;
-    width: 130px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   .mountain-1 {
     font-size: 20px;
@@ -417,17 +420,22 @@
     color: var(--color1);
     font-weight: bold;
     line-height: 1.2;
+    margin: 0;
+    text-align: center;
   }
 .mont2-cont{
   position: relative;
   background-color: var(--color1);
   background-size: 100%;
-  padding: 5px;
+  padding: 0px;
+  margin: 0;
   z-index: 339;
-  margin-left:0%;
-  top: 0%;
   height: 100%;
-  width: 130px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .mountain-2 {
   font-size: 20px;
@@ -435,6 +443,8 @@
   color: var(--color2);
   font-weight: bold;
   line-height: 1.2;
+  margin: 0;
+  text-align: center;
 }
 .mont-2,.mont-1{
   cursor: pointer;
