@@ -7,22 +7,121 @@
 :root{
     --color1:rgb(65, 79, 107);
     --color2:rgb(176, 180, 190);
-
+    --color3:rgb(77, 77, 77);
+    --color4:rgb(99, 118, 157);
 }
-body{
-  display: flex;
-  justify-content: center; 
-}
+/* ----------------------------------------------------------------------------------- */
 .cont{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+  grid-template-rows: repeat(6,1fr);
+  height: 100vh;
+}
+.pag0{
+  grid-column: 1/span 2;
+  grid-row: 1/span 1;
+  margin: 0px auto;
   max-width: 1600px;
+  min-width: 280px;
+  height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  background-image: url("try/montaña.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
-.pag0,.nav2,.pag1,.pag2,.footer{
+.nav2{
+  grid-column: 1/span 2;
+  grid-row: 2/span 1;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 280px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+.pag1{
+  background-color: yellow;
+  grid-column: 1/span 2;
+  grid-row: 3/span 1;
+  margin: 0px auto;
+  max-width: 1600px;
+  min-width: 280px;
+  height: 960px;
+  width: 100%;
+  background-image: url(try/peak.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: relative;
+}
+
+
+.nav3{
+  grid-column: 1/span 2;
+  grid-row: 4/span 1;
+  background-color:#fff;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 280px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.tabs {
+  background-color:var(--color1);
+  grid-column: 1/span 2;
+  grid-row: 5/span 1;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 280px;
+  height: 40px;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.pag2a{
+  grid-column: 1/span 2;
+  grid-row: 6/span 1;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 280px;
+  width: 100%;
+  height: 620px;
+  position: relative;
+  background-image: url(try/content1.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.pag2b{
+  grid-column: 1/span 2;
+  grid-row: 6/span 1;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 280px;
+  width: 100%;
+  height: 620px;
+  position: relative;
+  background-image: url(try/content2.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.footer{
+  background-color: var(--color1);
+  grid-column: 1/span 2;
+  grid-row: 7/span 1 ;
+  margin: auto;
+  max-width: 1600px;
+  min-width: 280px;
+  height: 80px;
+  width: 100%;
+}
+/* ---------------------------------------------------------------------------------- */
+.pag0,.pag1,.pag2a,.pag2b,.footer{
   justify-content: center;
   align-items: center;
   flex-grow: 1;
@@ -30,327 +129,260 @@ body{
 .logo-footer:hover,.logo2:hover,.la-mont:hover,.losangeles-mountain:hover{
   opacity: 0.8;
 }
-
-.pag0 {
-    background-image: url("try/montaña.png");
-    opacity: 1;
+.nav1{
     position: relative;
-    left: 0px;
-    top: 0px;
-    /* top: 420px; */
-    width: 1600px;
-    height: 912px;
-    z-index: 103;
-    display: block;
-    
-  }
-  
-.logo1{
-    position: relative;
-    font-size:43px;
-    left: 343px;
-    top: 17px;
-    opacity: 1;
-    z-index: 110;
-}
-.nav{
-    position: relative;
-    left: 0px;
-    top: -15px;
-    width: 1600px;
+    width: 100%;
     height: 40px;
     z-index: 200;
-    margin-right:0px;
+    top: 0%;
 }
-
-  
-.nav li{
+.logo1{
+  position: relative;
+  display: inline-block;
+  font-size:43px;
+  opacity: 1;
+  z-index: 110;
+  margin-top: 17px;
+  margin-left: 20%;
+}
+#his-01,#tea-01{
     position: relative;
     list-style-type: none;
     text-decoration: underline;
     display: inline-block;
-    margin-right: 50px;
-    /* color: #FEFEFF; */
-    /* font-size: 20px; */
     font-size: 12px;
     font-family: 'Lato',sans-serif;
     color: rgb(254, 254, 255);
     font-style: italic;
     text-transform: uppercase;
     cursor: pointer;
-    left: 1081px;
+    height: 100%;
+    top:-15px;
 }
-.nav li a{
+#his-01{
+  margin-left: 42%;
+  margin-top: 0%;
+}
+#tea-01{
+  margin-left: 5%;
+}
+
+.nav1 li a{
   text-decoration: none;
   color: rgb(254, 254, 255);
 }
-.nav li a:visited{
+.nav1 li a:visited{
   color: rgb(254, 254, 255);
 }
-.nav li a:hover{
+.nav1 li a:hover{
   opacity: 0.8;  
 }
 .nav2 li a{
   text-decoration: none;
-  color: rgb(65, 79, 107);
+  color: var(--color1);
 }
 .nav2 li a:visited{
-  color: rgb(65, 79, 107);
+  color: var(--color1);
 }
 .nav2 li a:hover{
   opacity: 0.8;  
 }
 .nieve {
-    /* background-image: url("try/nieve.png"); */
     opacity: 0.2;
     position: relative;
     left: 0px;
-    top: -190px;
-    width: 1600px;
-    height: 962px;
+    top: -40px;
+    width:100%;
+    height: 100%;
     z-index: 105;
   }
-  
-.nav2{
-    position: relative;
-    height: 80px;
-    width: 1600px;
-    background-color: #fff;
-    z-index: 110;
-    top: 0px;
-  
-}
+
 .logo2{
     position: relative;
     font-size:43px;
-    left: 343px;
-    /* top: 841px; */
     opacity: 1;
     display: inline-block;
-    top:10px;
+    margin-top: 17px;
+    margin-left: 20%;
 }
 
 .la-mont {
     position: relative;
     display: inline-block;
-    left: 350px;
-    top: 15px;
     font-family:'Bebas',sans-serif;
-    color: rgb(77, 77, 77);
+    color: var(--color3);
     text-transform: uppercase;
     line-height: 1.079;
     text-align: left;
     z-index: 149;
-    margin-left: 0;
+    margin-left: 10px;
   }
   
-.nav2 li{
+.his-02,.tea-02{
     position: relative;
     list-style-type: none;
     display: inline-block;
     text-decoration: underline;
     font-style: italic;
-    color: rgb(65, 79, 107);
+    color: var(--color1);
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     line-height: 1.667;
-    left: 920px;
-    margin-right: 50px;
-    margin-left: 0px;
-    top: 5px;
     z-index: 150;
-    
+    height: 100%;
+    top:-10px;
+}
+.his-02{
+  margin-left: 32%;
+  margin-top: 0%;
+}
+.tea-02{
+  margin-left: 5%;
 }
 
   /* ---------------------------------------------PAG1 */
-.pag1{
-    position: relative;
-    display: flex;  
-    background-image:url(try/peak.png);
-    width: 1600px;
-    z-index: 160;
-    top: 0px;
-    left: 0px;
-    display: block;
-    height: 975px;
-}
-.text-cont{
-    position: relative;
-    display: flex;
-    width: 1600px;
-    height: 220px;
-    left: 0px;
-    top: 68px;
-    /* border: 2px solid black; */
-    padding: 0px;
-    margin-right: 0px;
-}
+
 .num-01{
     position: relative;
-    font-size: 144px;
+    font-size: 944%;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    left: 327px;
-    /* margin-top: 68px; */
-    top:0px;
-    padding: 0px;
-    margin: 0px;
-    margin-right: 0px;
     display: inline-block;
     color: rgba(65, 79, 107, 0.502);
     z-index: 111;
-}
+    margin-left: 18%;
 
+}
 .history-01{
     position: relative;
-    font-size: 30px;
+    font-size: 170%;
     font-family: 'Oswald', sans-serif;
     font-weight:bolder;
     line-height: 1.2;
-    text-align: left;
-    left: 305px;
-    top: 115px;
     opacity: 1;
     display: inline-block;
-    color: rgb(65, 79, 107);
+    color: var(--color1);
+    top: -25px;
+    margin-left:-1.8%;
 }
   
 .text-01{
     position: relative;
     font-size: 16px;
     font-family:'Lato',sans-serif;
-    left:150px;
-    top:180px;
     opacity: 1;
     color: rgb(0, 0, 0);
-    margin-top: 0px;
     line-height: 1.5;
-    text-align: left;
-    width: 850px;
-    height: 63px;
+    width: 60%;
+    margin-left:23.5%;
+    margin-top: -2%;
+
 }
    .carusel-cont {
+    position:absolute;
     background-color: rgb(65, 79, 107,0.7);
-    position: relative;
-    left: 0px;
-    top: 565px;
-    width: 1600px;
-    height: 190px;
+    max-width: 1600px;
+    min-width: 280px;
+    width: 100%;
     z-index: 154;
+    bottom: 0;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    z-index: 30;
+    height: 180px;
+    /* flex-wrap: wrap; */
+
   }
+
   .carusel-cont li{
     position: relative;
     list-style-type: none;
     display: inline-block;
     position: relative;
-    background-size: cover;
-    left: 0;
-    top: -5px;
-    width: 220px;
-    height: 135px;
-    z-index: 170;
-    margin-right: 10px;
+
+    /* height:100%; */
     opacity: 1;
-    z-index: 140;
+    margin: 1%;
+    padding-bottom: 1%;
   }
 .carusel-1, .carusel-3{
     background-image: url(try/carusel1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 135px;
+    width: 250px;
 }
 .carusel-2, .carusel-4{
     background-image: url(try/carusel2.jpg);
-}
-
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 135px;
+    width: 250px;
+  }
+/* 
 .e-cont{
-    position:relative;
-    display: block;
+    position:absolute;
+    display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    top: 75px;
-    left: -483px;
-}
+    margin-top: 0;
+    left: -50%;
+    padding: 0;
+    z-index:555;
+  }
    .elipse-1 {
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     z-index: 133;
-    display: inline-block;
-    margin-right: 5px;
+    display: inline-block;    
+    margin-bottom: 0%;
   }
 
-  .elipse-2{
+  .elipse-2,.elipse-3{
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     z-index: 133;
     display: inline-block;
-    margin-right: 5px;
     opacity: 0.2;
-  }
-  .elipse-3{
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    width: 6px;
-    height: 6px;
-    z-index: 133;
-    display: inline-block;
-    margin-right: 5px;
-    opacity: 0.2;
-  }
-  /* ---------------------------------------------PAG2 */
-  .pag2{
-    position: relative;
-    /* background-color: transparent; */
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-position:cover; */
-    /* background-origin: top; */
-    width: 1600px;
-    height: 820px;
-    z-index: 150;
-}
-  .text-cont2 {
-    position: relative;
-    display: flex;
-    left: 0px;
-    /* top: 60px; */
-    width: 1600px;
-    height: 180px;
-    z-index: 140;
-    background-color:#fff;
-  }
+    margin-left: 20%;
+    margin-bottom: 0%;
+  } */
+
+  /* ----------------------------------------NAV3 */
+  
   .num-02 {
     position: relative;
-    font-size: 140px;
+    display: inline-block;
+    font-size: 944%;
     font-family: 'Oswald',sans-serif;
     color: rgba(65, 79, 107, 0.502);
     font-weight: bold;
     line-height: 1.2;
-    left: 350px;
-    top: 0px;
+    margin-left: 18%;
     z-index: 139;
-    width: 200px;
   }
   .climb-02 {
-    font-size:30px;
+    font-size: 190%;
     font-family: 'Oswald',sans-serif;
-    color: rgb(65, 79, 107);
+    color: var(--color1);
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
     position: relative;
-    left:295px;
-    top:90px;
     z-index: 38;
-    width: 300px;
+    opacity: 1;
+    display: inline-block;
+    top: -14%;
+    margin-left: -1.8%;
   }
   .text-02 {
     font-size: 16px;
@@ -359,436 +391,323 @@ body{
     line-height: 1.5;
     text-align: left;
     position: relative;
-    left:90px;
-    top:65px;
-    width: 600px;
-    height: 39px;
+    display: inline-block;
     z-index: 37;
+    left: 1%;
+    width: 40%;
+    top: -25%;
   }
 
-/* --------------------------------tabs */
-  .tabs {
-    position: relative;
-    background-color: rgb(65, 79, 107);
+/* ---------------------------------------TABS */
 
-    display: flex;
-    left: 0px;
-    top:0px;
-    width: 1600px;
-    height: 40px;
-    z-index: 335;
+  .mont1-cont{
+    position: relative;
+    background-color: var(--color2);
+    background-size: 100%;
+    padding: 5px;
+    z-index: 339;
+    margin-left: 17%;
+    top: 0%;
+    height: 100%;
+    width: 130px;
   }
   .mountain-1 {
     font-size: 20px;
     font-family: 'Oswald',sans-serif;
     color: var(--color1);
     font-weight: bold;
-    text-decoration: underline;
     line-height: 1.2;
-    text-align: left;
-    position: relative;
-    left: 345px;
-    top:6px;
-    z-index: 339;
-    width: 300px;
   }
-  .mountain-1b {
-    font-size: 20px;
-    font-family: 'Oswald',sans-serif;
-    color: var(--color2);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    position: relative;
-    left: 0px;
-    top:6px;
-    z-index: 339;
-  }
-.mont-2,.mont-1b{
-    cursor: pointer;
-  }
-.mont-2:hover,.mont-1b:hover{
-    opacity: 0.8;
+.mont2-cont{
+  position: relative;
+  background-color: var(--color1);
+  background-size: 100%;
+  padding: 5px;
+  z-index: 339;
+  margin-left:0%;
+  top: 0%;
+  height: 100%;
+  width: 130px;
 }
-  .mountain-2 {
-    font-size: 20px;
+.mountain-2 {
+  font-size: 20px;
+  font-family: 'Oswald',sans-serif;
+  color: var(--color2);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.mont-2,.mont-1{
+  cursor: pointer;
+}
+.mont-2:hover,.mont-1:hover{
+  opacity: 0.8;
+}
+.colour1{
+  color: var(--color2);
+}
+.colour1c{
+  background-color: var(--color1);
+}
+.colour2{
+  color: var(--color1);
+}
+.colour2c{
+  background-color: var(--color2);
+
+}
+
+/* ---------------------------------------------PAG2 */
+
+/* ----------------------------------------TAB1*/
+
+  .schedule-1 {
+    font-size: 35px;
     font-family: 'Oswald',sans-serif;
-    color: var(--color2);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    position: relative;
-    left: 50px;
-    top: 7px;
-    z-index: 343;
-  }
-  .mountain-2b {
-    font-size: 20px;
-    font-family: 'Oswald',sans-serif;
-    text-decoration: underline;
+    background-color: rgb(255, 255, 255,0.702);
     color: var(--color1);
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
     position: relative;
-    left: -60px;
-    top: 6px;
-    z-index: 333;
-  }
-  .rect-m1 {
-    background-color: var(--color2);
-    position: relative;
-    left: -295px;
-    top: 0px;
-    width: 140px;
-    height: 40px;
-    z-index: 335;
-  }
-  .rect-m2 {
-    background-color: var(--color2);
-    position: relative;
-    left:-320px;
-    top:0px;
-    width: 140px;
-    height: 40px;
-    z-index: 332;
-  }
-  /* .rect-2 {
-    background-color: rgb(65, 79, 107);
-    position: relative;
-    left:0px;
-    top: -130px;
-    width: 1600px;
-    height: 40px;
-    z-index: 331;
-  } */
-
-/* ----------------------------------------TABS CONT */
-  .tabs-cont {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    width: 1600px;
-    height: 500px;
-    z-index: 129;
-  }
-  .tab-1 {
-    position: relative;
-    left: 0px;
-    top: -290px;
-    width: 1600px;
-    height: 1000px;
-    z-index: 128;
-    background-image: url(try/content1.png);
-    background-repeat: no-repeat;
-  }
-  .content-1 {
-    position: relative;
-    display: flex;
-    left: 0px;
-    top: 230px;
-    width: 1600px;
-    /* height: 20px; */
-    z-index: 27;
-  }
-  .schedule-1 {
-    font-size: 35px;
-    font-family: 'Oswald',sans-serif;
-    color: rgb(65, 79, 107);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    position: relative;
-    left: 370px;
-    top:180px;
     z-index: 130;
-    width: 300px;
+    margin-left: 18%;
+    margin-top:10%;
+    margin-bottom: 0%;
+    padding-bottom: 0;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 162px;
+    padding-top: 30px;
   }
+
   .dates-1 {
     font-size: 16px;
     font-family: 'Lato',sans-serif;
+    background-color: rgb(255, 255, 255,0.702);
     color: rgb(0, 0, 0);
     line-height: 1.5;
     text-align: left;
     position: relative;
-    left: 70px;
-    top:230px;
-    width: 270px;
-    height: 132px;
     z-index: 25;
+    padding: 30px;
+    padding-top: 5px;
+    width: fit-content;
+    margin-left: 18%;
+    margin-top: 0%;
   }
-  .rect-3 {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.702;
-    position: relative;
-    left: -240px;
-    top: 150px;
-    width: 352px;
-    height: 240px;
-    z-index: 24;
-  }
-
 
   /* ------------------------------------TAB 2 */
-  .tab-2 {
-    position: relative;
-    left: 0px;
-    width: 1600px;
-    height: 800px;
-    z-index: 9;
-    top: -1160px;
-  }
-  .content-2 {
-    position: relative;
-    display: flex;
-    left: 0px;
-    width: 1600px;
-    height: 780px;
-    z-index: 7;
-    background-image: url(try/content2.png);
-    background-repeat: no-repeat;
-  }
   .schedule-2 {
     font-size: 35px;
     font-family: 'Oswald',sans-serif;
-    color: rgb(65, 79, 107);
+    background-color: rgb(255, 255, 255,0.702);
+    color: var(--color1);
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
     position: relative;
-    left: 370px;
-    top:280px;
-    height: 100px;
-    z-index: 5;
+    z-index: 130;
+    margin-left: 18%;
+    margin-top:10%;
+    margin-bottom: 0%;
+    padding-bottom: 0;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 162px;
+    padding-top: 30px;
   }
+
   .dates-2 {
     font-size: 16px;
     font-family: 'Lato',sans-serif;
+    background-color: rgb(255, 255, 255,0.702);
     color: rgb(0, 0, 0);
     line-height: 1.5;
     text-align: left;
     position: relative;
-    left: 235px;
-    top: 330px;
-    width: 270px;
-    height: 132px;
-    z-index: 3;
-  }
-  .rect-4 {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.502;
-    position: relative;
-    left:-75px;
-    top: 250px;
-    width: 352px;
-    height: 240px;
-    z-index: 1;
+    z-index: 25;
+    padding: 30px;
+    padding-top: 5px;
+    width: fit-content;
+    margin-left: 18%;
+    margin-top: 0%;
   }
   
   /* ---------------------------------------FOOTER */
-  .footer {
-    position: relative;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    background-color: rgb(65, 79, 107);
-    left: 0px;
-    top: 20px;
-    height: 90px;
-    width: 1600px;
-    z-index: 222;
-    padding: 0px;
-    margin: 0px;
-  }
+
   .logo-footer {
     position: relative;
-    /* left: -200px; */
-    /* top: 340px; */
-    z-index: 299;
-    font-size: 43px;
-    margin-right: 10px;
+    font-size:43px;
+    opacity: 1;
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 20%;
   }
   .losangeles-mountain {
-    font-size: 13.29px;
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(99, 118, 157);
+    color: var(--color4);
+    position: relative;
+    display: inline-block;
+    font-family:'Bebas',sans-serif;
     text-transform: uppercase;
     line-height: 1.079;
-    text-align: left;
-    position: relative;
-    /* left:-190px; */
-    z-index: 226;
-    margin-right: 500px;
-
-  }
+    z-index: 149;
+    margin-left: 24%;
+    top: -60%;
+    }
   .copy {
     position: relative;
     font-size: 12px;
     font-family: 'Lato',sans-serif;
-    color: rgb(99, 118, 157);
+    color: var(--color4);
     font-style: italic;
     text-transform: uppercase;
     line-height: 1.667;
-    /* left: 350px; */
     z-index: 224;
-    width: 300px;
-    margin-right: 0px;
+    margin-left: 60%;
+    top: -80px;
   }
-  /* .rect-5 {
-    position: relative;
-    background-color: rgb(65, 79, 107);
-    left: 0px;
-    top: 20px;
-    width: 1600px;
-    height: 88px;
-    z-index: 223;
-  } */
+
   .hidden{
+    animation:mont1o2 2s forwards;
+  }
+  .offscreen1,.offscreen2{
     visibility: hidden;
   }
-  .offscreen1b,.offscreen2{
-    visibility: hidden;
+
+@keyframes mont1o2 {
+  from{
+    opacity: 1;
   }
-  .resp{
+  to{
     opacity: 0;
   }
-  @media screen and (max-width:450px){
-  
-  body{
-    display: flex; 
-    justify-content: center; 
+}
 
+/* -------------------------------------------------1280px */
 
-  }
-  .cont{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1600px;
+@media screen and (max-width:1280px) {
+  .pag1{
+    height: 960px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    
-
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  
-  /* .pag0,.nav2,.pag1,.pag2,.footer{
-    justify-content: center; 
-    align-items: center;
-    flex-grow: 1;
-    display: flex;
-
-  } */
-
-  .logo-footer{
-    margin-left: 10px;
-  }
-  .losangeles-mountain{
-    margin-right: 0;
-  }
-  .copy{
-    text-align: right;
-    margin-right: 20px;
-    margin-left: 7px;
-  }
-  .content-1{
-    margin-left:-260px;
-  }
-  .content-2{
-    margin-left:-260px;
-  }
-  .tabs{
-    margin-left: -200px;
-  }
-  .text-cont2{
-    margin-left: -320px;
-    display: flex;
-  }
-  .text-02{
-    height: 100px;
-    width: 200px;
-    text-align:justify ;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    top: 0px;
-  }
-  .carusel-cont{
-    align-items: left;
-    justify-content: left;
-  }
-  .text-cont{
-    margin-left: -300px;
-    display: flex;
-  }
-  .text-01{
-    width: 300px;
-    text-align: justify;
-  }
-  .nav2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logo2,.la-mont,.nav2 li{
-    top: 0px;
-    left: 0px;
-  }
-  .logo2{
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-  .nav2 li{
-    width: 100px;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-size: 15px;
-  }
-  #pag1{
-    margin-left: 100px;
+  .pag2a,.pag2b{
+    background-size: cover;
   }
   .pag0{
-    background-image:url(try/montaña2.png) ;
-    /* scale: 0.8; */
-    /* margin-left: -400px; */
+    background-size: cover;
+    height: 760px;
   }
-  .nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    margin-left: -450px;
+
+}
+
+/* -------------------------------------------------800px */
+
+@media screen and (max-width:800px) {
+
+  .pag0{
+    height: 560px;
   }
-  .nav li{
-    margin: 0;
-    left: 0;
-    top: -10px;
-    font-size: 15px;
+  /* NAV 1 */
+  .logo1{
+    margin-left: 12%;
+  }
+  #his-01,#tea-01{
+    top: -55%;
   }
   #his-01{
-    margin-right: 50px;
-    color: var(--color1);
-    font-weight: 900;
+    margin-left: 27%;
   }
-  #tea-02{
-    color: var(--color1);
-    font-weight: 900;
+  #tea-01{
+    margin-left: 5%;
   }
+
+  /* NAV2 */
+  .logo2{
+    margin-left: 12%;
+  }
+  .la-mont {
+   margin-left: 5px;
+  }
+  .his-02{
+    margin-left: 7%;
+    margin-top: 0%;
+  }
+  .tea-02{
+    margin-left: 5%;
+  }
+
+  /* PAG1 */
+  .text-01{
+    font-size: 12px;
+  }
+
+  /* CARUSEL */
+  .carusel-cont{
+    flex-wrap: wrap;
+    height: 250px;
+    padding: 10px auto;
+  }
+  .carusel-cont li{
+    height: 50%;
+    width: 150px;
+    padding: 0;
+  }
+
+   /* PAG2 */
+   .text-02{
+    font-size: 12px;
+    text-align: justify;
+    margin: 20px 20px;
+    top: 0%;
+    left: 10%;
+    width: 70%;
+  }
+  .schedule-1,.schedule-2,.dates-1,.dates-2{
+    left: -5%;
+  }
+
+  /* FOOTER */
+  .logo-footer{
+    margin-left: 10%;
+  }
+  .copy{
+    top: -120%;
+    width:150px ;
+  }
+}
+
+/* -------------------------------------------------450px */
+
+@media screen and (max-width:450px) {
+  /* NAV 1 */
   .logo1{
-    left: 20px;
+    margin-left: 12%;
+    margin-top: 10px;
   }
-  .resp{
-    font-family: 'Oswald',sans-serif;
-    color: rgb(65, 79, 107);
-    font-weight: bold;
-    line-height: 1.2;
-    font-size: 50px;
-    text-align: center;
-    z-index: 500;
-    margin-top: 250px;
-    margin-left:-1100px ;
-    opacity: 1;
-    height: 50px;
+  #his-01,#tea-01{
+    top: -60%;
   }
-  .nieve{
-    top: -390px;
+
+  /* NAV2 */
+  .his-02{
+    margin-left: 2%;
+    top:-20px;
   }
+  .tea-02{
+    margin-left: 2%;
+    top:-20px;
+  }
+   /* PAG2 */
+  .schedule-1,.schedule-2,.dates-1,.dates-2{
+    left: -7%;
+  }
+  .dates-1,.dates-2{
+    font-size: 12px;
+  }
+  .schedule-1,.schedule-2{
+    padding-right: 96px;
+  }
+
 }
