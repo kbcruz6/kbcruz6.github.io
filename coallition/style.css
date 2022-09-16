@@ -46,7 +46,6 @@
   height: 80px;
 }
 .pag1{
-  background-color: yellow;
   grid-column: 1/span 2;
   grid-row: 3/span 1;
   margin: 0px auto;
@@ -664,6 +663,12 @@
   .his-02{
    margin-left: 0px;
   }
+  
+  /* FOOTER */
+  .copy{
+    margin-top: 12px;
+  }
+
    /* PAG2 */
    .pag2a{
     height: 450px;
