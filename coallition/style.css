@@ -545,6 +545,9 @@
     opacity: 0;
   }
 }
+.off{
+  visibility: hidden;
+}
 
 /* -------------------------------------------------1280px */
 
@@ -576,7 +579,7 @@
   .logo1{
     margin-left: 12%;
   }
-  #his-01,#tea-01{
+  /* #his-01,#tea-01{
     top: -55%;
   }
   #his-01{
@@ -584,7 +587,7 @@
   }
   #tea-01{
     margin-left: 5%;
-  }
+  } */
 
   /* NAV2 */
   .logo2{
@@ -594,7 +597,7 @@
    margin-left: 5px;
   }
   .his-02{
-    margin-left: 7%;
+    margin-left: 15%;
     margin-top: 0%;
   }
   .tea-02{
@@ -650,17 +653,21 @@
     margin-top: 10px;
   }
   #his-01,#tea-01{
-    top: -60%;
+    top: 20%;
+  }
+  #his-01{
+    margin-left: 20%;
   }
 
   /* NAV2 */
-  .his-02{
-    margin-left: 2%;
-    top:-20px;
+  .logo2{
+    margin-left: 5%;
   }
-  .tea-02{
-    margin-left: 2%;
-    top:-20px;
+  /* #his-01,#tea-01{
+  } */
+
+  .his-02{
+   margin-left: 0px;
   }
    /* PAG2 */
   .schedule-1,.schedule-2,.dates-1,.dates-2{
@@ -672,5 +679,19 @@
   .schedule-1,.schedule-2{
     padding-right: 96px;
   }
-
+  .off{
+    visibility: visible;
+  }
+  .on{
+    display:none;
+  }
+  /* .accordion-button{
+    position:relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 450px;
+  } */
 }

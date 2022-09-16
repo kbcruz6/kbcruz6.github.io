@@ -99,7 +99,7 @@
     </div>
 
     <!-- TABS -->
-    <div class="tabs" id="tabs">
+    <div class="tabs on" id="tabs">
         <div class="mont1-cont ">
             <input type="checkbox" id="toggle1" class="offscreen1">
             <label for="toggle1" class=" mont-1 mountain-1">MOUNTAIN 1</label>
@@ -111,7 +111,7 @@
     </div>
 
     <!-- PAG 2a -->
-    <div class="pag2a">
+    <div class="pag2a on">
         <div class="schedule-1">SCHEDULE</div>
         <div class="dates-1">
             <p>25 Nov 2016_______Vestibulum viverra</p>
@@ -124,7 +124,7 @@
     </div>
 
     <!-- PAG 2b -->
-    <div class="pag2b hidden">
+    <div class="pag2b hidden on">
         <div class="schedule-2">SCHEDULE</div>
         <div class="dates-2">
             <p>17 Nov 2016_______Vestibulum viverra</p>
@@ -144,6 +144,38 @@
         <p class="copy"><b>COPYRIGHT 2016. ALL RIGHTS RESERVED.</b></p>
         <div class="rect-5"></div>
     </div>
+
+    <!-- TABS ACCORDION -->
+    <div class="accordion off" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              MOUNTAIN 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              MOUNTAIN 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <!--  -->
   </div><!-- END OF CONT-->
 
 <!-- SCRIPT -->
