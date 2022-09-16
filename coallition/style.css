@@ -511,7 +511,7 @@
     text-transform: uppercase;
     line-height: 1.079;
     z-index: 149;
-    margin-left: 23%;
+    margin-left: 24%;
     top: -45px;
     }
   .copy {
@@ -633,7 +633,7 @@
     margin-left: 10%;
   }
   .copy{
-    top: -120%;
+    top: -80px;
     width:150px ;
   }
 }
@@ -686,7 +686,12 @@
 
   /* FOOTER */
   .copy{
-    margin-top: 12px;
+    margin-top: 0px;
+  }
+  .losangeles-mountain{
+    margin-top: 0;
+    top: -40px;
+    margin-left: 25%;
   }
 
    /* PAG2 */
