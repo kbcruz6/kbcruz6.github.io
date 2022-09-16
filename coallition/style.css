@@ -425,45 +425,40 @@
 /* ---------------------------------------------PAG2 */
 
 /* ----------------------------------------TAB1*/
-
-  .schedule-1 {
+  .sch-cont1,.sch-cont2{
+    height:300px;
+    width: 320px;
+    background-color: rgb(255, 255, 255,0.702);
+    padding: 25px;
+    padding-bottom: 10px;
+    margin-left: 18%;
+    margin-top: 10%;
+  }
+  .schedule-1,.schedule-2 {
     font-size: 35px;
     font-family: 'Oswald',sans-serif;
-    background-color: rgb(255, 255, 255,0.702);
     color: var(--color1);
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
     position: relative;
     z-index: 130;
-    margin-left: 18%;
-    margin-top:10%;
-    margin-bottom: 0%;
-    padding-bottom: 0;
     width: fit-content;
-    padding-left: 30px;
-    padding-right: 162px;
-    padding-top: 30px;
+    margin-bottom: 10px;
   }
-
-  .dates-1 {
+  .dates-1,.dates-2 {
     font-size: 16px;
     font-family: 'Lato',sans-serif;
-    background-color: rgb(255, 255, 255,0.702);
     color: rgb(0, 0, 0);
     line-height: 1.5;
     text-align: left;
     position: relative;
     z-index: 25;
-    padding: 30px;
-    padding-top: 5px;
     width: fit-content;
-    margin-left: 18%;
-    margin-top: 0%;
   }
 
   /* ------------------------------------TAB 2 */
-  .schedule-2 {
+  /* .schedule-2 {
     font-size: 35px;
     font-family: 'Oswald',sans-serif;
     background-color: rgb(255, 255, 255,0.702);
@@ -497,7 +492,7 @@
     width: fit-content;
     margin-left: 18%;
     margin-top: 0%;
-  }
+  } */
   
   /* ---------------------------------------FOOTER */
 
@@ -633,9 +628,6 @@
     left: 10%;
     width: 70%;
   }
-  .schedule-1,.schedule-2,.dates-1,.dates-2{
-    left: -5%;
-  }
 
   /* FOOTER */
   .logo-footer{
@@ -674,26 +666,22 @@
   }
    /* PAG2 */
    .pag2a{
-    height: 400px;
+    height: 450px;
    }
    .pag2b{
-    height: 400px;
+    height: 450px;
    }
-  .schedule-1,.schedule-2,.dates-1,.dates-2{
-    left: -7%;
-  }
-  .dates-1,.dates-2{
-    font-size: 12px;
-  }
-  .schedule-1,.schedule-2{
-    padding-right: 96px;
-    /* margin-top: 20px; */
-  }
+
   .off{
     visibility: visible;
   }
   .on{
     display:none;
+  }
+
+  .sch-cont1,.sch-cont2{
+    margin: auto;
+    margin-top: 20px;
   }
   .accordion-button{
     font-size: 20px;
@@ -701,6 +689,12 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .accordion-button:active{
+
+    margin-bottom: 12px;
+    margin-top: 12px;
   }
   .accordion{
     grid-column: 1/span 2;
@@ -712,6 +706,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+
     /* max-width: 450px; */
    --bs-accordion-color: black;
    --bs-accordion-btn-bg:var(--color1);
