@@ -278,116 +278,36 @@
     width: 60%;
     margin-left:23.5%;
     margin-top: -2%;
-
 }
-   .carusel-cont {
-    position:absolute;
-    background-color: rgb(65, 79, 107,0.7);
+
+/* ------------------------------------------------CAROUSEL */
+  .carousel{
+    position: absolute;
     max-width: 1600px;
     min-width: 280px;
     width: 100%;
-    z-index: 154;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 180px;
-    /* flex-wrap: wrap; */
-
+    background-color: rgb(65, 79, 107,0.7);
   }
-
-  .carusel-cont li{
+  .carousel-inner{
     position: relative;
-    list-style-type: none;
-    display: inline-block;
-    position: relative;
-    opacity: 1;
-    margin: 1%;
-    padding-bottom: 1%;
-  }
-  .carusel-1:hover,.carusel-2:hover,.carusel-3:hover,.carusel-4:hover{
-    animation: carusel 0.5s forwards;
-  }
-  .carusel-1:active,.carusel-2:active,.carusel-3:active,.carusel-4:active{
-    animation: resize 0.5s forwards;
-    
-  }
-  @keyframes carusel {
-    from{
-      
-    }
-    to{
-      /* scale: 2; */
-      z-index: 600;
-      height: 270px;
-      width:500px;
-      border-radius: 5px;
-    }
-    
-  }
-  @keyframes resize {
-    from{
-      
-    }
-    to{
-      /* scale: 2; */
-      z-index: 600;
-      height: 120vh;
-      width:120vw;
-      border-radius: 5px;
-    }
-    
-  }
-.carusel-1, .carusel-3{
-    background-image: url(try/carusel1.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 1;
-    height: 135px;
-    width: 250px;
-}
-.carusel-2, .carusel-4{
-    background-image: url(try/carusel2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 1;
     height: 135px;
     width: 250px;
   }
-/* 
-.e-cont{
-    position:absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 0;
-    left: -50%;
-    padding: 0;
-    z-index:555;
+  .carousel-item{
+    height: 135px;
+    width: 250px;
+    position: relative;
   }
-   .elipse-1 {
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 10px;
-    z-index: 133;
-    display: inline-block;    
-    margin-bottom: 0%;
+  .carousel-indicators{
+    top: 165px;
   }
 
-  .elipse-2,.elipse-3{
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 10px;
-    z-index: 133;
-    display: inline-block;
-    opacity: 0.2;
-    margin-left: 20%;
-    margin-bottom: 0%;
-  } */
 
   /* ----------------------------------------NAV3 */
   
