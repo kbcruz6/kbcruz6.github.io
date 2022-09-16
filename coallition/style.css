@@ -197,6 +197,7 @@
     z-index: 105;
   }
 
+  /* ---------------------------------------------NAV2 */
 .logo2{
     position: relative;
     font-size:43px;
@@ -231,7 +232,7 @@
     line-height: 1.667;
     z-index: 150;
     height: 100%;
-    top:-10px;
+    top:-16px;
 }
 .his-02{
   margin-left: 32%;
@@ -301,11 +302,42 @@
     list-style-type: none;
     display: inline-block;
     position: relative;
-
-    /* height:100%; */
     opacity: 1;
     margin: 1%;
     padding-bottom: 1%;
+  }
+  .carusel-1:hover,.carusel-2:hover,.carusel-3:hover,.carusel-4:hover{
+    animation: carusel 0.5s forwards;
+  }
+  .carusel-1:active,.carusel-2:active,.carusel-3:active,.carusel-4:active{
+    animation: resize 0.5s forwards;
+    
+  }
+  @keyframes carusel {
+    from{
+      
+    }
+    to{
+      /* scale: 2; */
+      z-index: 600;
+      height: 270px;
+      width:500px;
+      border-radius: 5px;
+    }
+    
+  }
+  @keyframes resize {
+    from{
+      
+    }
+    to{
+      /* scale: 2; */
+      z-index: 600;
+      height: 120vh;
+      width:120vw;
+      border-radius: 5px;
+    }
+    
   }
 .carusel-1, .carusel-3{
     background-image: url(try/carusel1.jpg);
