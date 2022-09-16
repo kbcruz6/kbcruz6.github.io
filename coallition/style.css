@@ -9,7 +9,10 @@
     --color2:rgb(176, 180, 190);
     --color3:rgb(77, 77, 77);
     --color4:rgb(99, 118, 157);
+
+    
 }
+
 /* ----------------------------------------------------------------------------------- */
 .cont{
   display: grid;
@@ -670,6 +673,12 @@
    margin-left: 0px;
   }
    /* PAG2 */
+   .pag2a{
+    height: 400px;
+   }
+   .pag2b{
+    height: 400px;
+   }
   .schedule-1,.schedule-2,.dates-1,.dates-2{
     left: -7%;
   }
@@ -678,6 +687,7 @@
   }
   .schedule-1,.schedule-2{
     padding-right: 96px;
+    /* margin-top: 20px; */
   }
   .off{
     visibility: visible;
@@ -685,13 +695,61 @@
   .on{
     display:none;
   }
-  /* .accordion-button{
+  .accordion-button{
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .accordion{
+    grid-column: 1/span 2;
+    grid-row: 6/span 1;
     position:relative;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    max-width: 450px;
-  } */
+    /* max-width: 450px; */
+   --bs-accordion-color: black;
+   --bs-accordion-btn-bg:var(--color1);
+   --bs-accordion-btn-color:var(--color2);
+   
+   --bs-accordion-btn-padding-x:10% ;
+   --bs-accordion-btn-padding-y:5%;
+
+   --bs-accordion-active-color: var(--color1);
+   --bs-accordion-active-bg: var(--color2);
+
+   --bs-accordion-border-width:0;
+   --bs-accordion-body-padding-x:0;
+   --bs-accordion-body-padding-y:0;
+
+  }
+  /* 
+  --bs-accordion-color: #{$accordion-color};
+  --bs-accordion-bg: #{$accordion-bg};
+  --bs-accordion-transition: #{$accordion-transition};
+  --bs-accordion-border-color: #{$accordion-border-color};
+  --bs-accordion-border-width: #{$accordion-border-width};
+  --bs-accordion-border-radius: #{$accordion-border-radius};
+  --bs-accordion-inner-border-radius: #{$accordion-inner-border-radius};
+  --bs-accordion-btn-padding-x: #{$accordion-button-padding-x};
+  --bs-accordion-btn-padding-y: #{$accordion-button-padding-y};
+  --bs-accordion-btn-color: #{$accordion-button-color};
+  --bs-accordion-btn-bg: #{$accordion-button-bg};
+  --bs-accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+  --bs-accordion-btn-icon-width: #{$accordion-icon-width};
+  --bs-accordion-btn-icon-transform: #{$accordion-icon-transform};
+  --bs-accordion-btn-icon-transition: #{$accordion-icon-transition};
+  --bs-accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)};
+  --bs-accordion-btn-focus-border-color: #{$accordion-button-focus-border-color};
+  --bs-accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow};
+  --bs-accordion-body-padding-x: #{$accordion-body-padding-x};
+  --bs-accordion-body-padding-y: #{$accordion-body-padding-y};
+  --bs-accordion-active-color: #{$accordion-button-active-color};
+  --bs-accordion-active-bg: #{$accordion-button-active-bg}; */
+
 }
