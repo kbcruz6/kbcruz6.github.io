@@ -672,9 +672,12 @@
    /* PAG2 */
    .pag2a{
     height: 450px;
+    background-image: none;
+    
    }
    .pag2b{
     height: 450px;
+    
    }
 
   .off{
@@ -687,6 +690,7 @@
   .sch-cont1,.sch-cont2{
     margin: auto;
     margin-top: 20px;
+    
   }
   .accordion-button{
     font-size: 20px;
@@ -695,13 +699,14 @@
     justify-content: center;
     margin-bottom: 10px;
     font-weight: bold;
+    
   }
   .accordion-button:active{
-
-    margin-bottom: 12px;
-    margin-top: 12px;
+    opacity: 0.9;;
   }
+
   .accordion{
+    
     grid-column: 1/span 2;
     grid-row: 6/span 1;
     position:relative;
@@ -711,6 +716,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    background-image: url(try/content1.png);
 
     --bs-accordion-color: black;
    --bs-accordion-btn-bg:var(--color4);
@@ -725,6 +731,8 @@
    --bs-accordion-border-width:0;
    --bs-accordion-body-padding-x:0;
    --bs-accordion-body-padding-y:0;
+   /* --bs-accordion-bg:; */
+
 
   }
   /* 
