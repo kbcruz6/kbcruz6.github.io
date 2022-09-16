@@ -642,12 +642,17 @@
 
 @media screen and (max-width:450px) {
   /* NAV 1 */
+  .pag0{
+    background-size: cover;
+    height: 400px;
+  }
   .logo1{
     margin-left: 12%;
     margin-top: 10px;
   }
   #his-01,#tea-01{
     top: 20%;
+    font-size: 15px;
   }
   #his-01{
     margin-left: 20%;
@@ -657,13 +662,28 @@
   .logo2{
     margin-left: 5%;
   }
-  /* #his-01,#tea-01{
-  } */
+  .his-02,.tea-02{
+    font-size: 15px;
+  }
 
   .his-02{
-   margin-left: 0px;
+   margin-left: 12%;
   }
-  
+  .la-mont{
+    display: none;
+  }
+
+  /* PAG1 */
+  .pag1{
+    height: 850px;
+  }
+  .text-01{
+    width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+    padding: 10px;
+  }
+
   /* FOOTER */
   .copy{
     margin-top: 12px;
@@ -731,8 +751,6 @@
    --bs-accordion-border-width:0;
    --bs-accordion-body-padding-x:0;
    --bs-accordion-body-padding-y:0;
-   /* --bs-accordion-bg:; */
-
 
   }
   /* 
