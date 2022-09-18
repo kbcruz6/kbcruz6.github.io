@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className='contenedor-principal'>
-        <h1>Testimonios de alumnos</h1>
+        <h1>Testimonios de alumnos, Primeros pasos React</h1>
         <Testimonio 
           nombre="Agustin Cruz"
           pais="Argentina"
