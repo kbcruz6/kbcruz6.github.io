@@ -53,7 +53,7 @@
   min-width: 280px;
   height: 960px;
   width: 100%;
-  background-image: url(try/peak.png);
+  background-image: url("try/peak.png");
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 1;
