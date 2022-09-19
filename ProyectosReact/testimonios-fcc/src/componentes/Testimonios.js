@@ -1,7 +1,7 @@
 import React from "react";
 import "../hojas-de-estilo/Testimonios.css";
 
-export function Testimonio(props){
+function Testimonio(props){
   return(
     <div className="contenedor-testimonio">
       <img className="imagen-testimonio" src={require(`../imagenes/testimonio-${props.imagen}.jpg`)} alt={`Foto de ${props.nombre}`} title={`Foto de ${props.nombre}`} />
@@ -13,4 +13,4 @@ export function Testimonio(props){
     </div>
   );
 }
-
+export default Testimonio;
