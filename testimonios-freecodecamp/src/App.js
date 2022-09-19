@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+import logo from "./logo.svg";
 import './App.css';
 import {Testimonio} from "./componentes/Testimonios";
-import { logRoles } from '@testing-library/react';
 
 function App() {
   return (
