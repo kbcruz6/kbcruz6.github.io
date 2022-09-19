@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import {Testimonio} from "./componentes/Testimonios";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+        <h1>Testimonios de alumnos, Primeros pasos React</h1>
+        <Testimonio 
+          nombre="Agustin Cruz"
+          pais="Argentina"
+          imagen="agus"
+          cargo="Ingeniero Industrial"
+          empresa="Google"
+          testimonio={<text>`Lorem ipsum dolor <strong> sit amet</strong> consectetur adipisicing elit. Nobis esse quaerat qui repudiandae illo dolore placeat accusantium eligendi facere? Ipsum vero molestias quo illum dolores assumenda temporibus, veniam molestiae culpa.`</text>} />
+        <Testimonio 
+          nombre="Gonzalo Blotta"
+          pais="Argentina"
+          imagen="gonza"
+          cargo="Full Stack Developer"
+          empresa="XOOR"
+          testimonio={<text>`Lorem ipsum <b> dolor sit amet</b> consectetur adipisicing elit. Nobis esse quaerat qui repudiandae illo dolore placeat accusantium eligendi facere? Ipsum vero molestias quo illum dolores assumenda temporibus, veniam molestiae culpa.`</text>} />
+        <Testimonio 
+          nombre="Maria Fernanda Cruz"
+          pais="Argentina"
+          imagen="fer"
+          cargo="Tatuadora"
+          empresa="Waldorf Astoria"
+          testimonio={<text>`Lorem ipsum <b>dolor sit amet consectetur adipisicing</b> elit. Nobis esse quaerat qui repudiandae illo dolore placeat accusantium eligendi facere? Ipsum vero molestias quo illum dolores assumenda temporibus, veniam molestiae culpa.`</text>} />
+      </div>
     </div>
   );
 }
