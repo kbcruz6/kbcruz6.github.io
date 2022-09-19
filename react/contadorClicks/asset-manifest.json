@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/contadorClicks/static/css/main.91861dbb.css",
-    "main.js": "/contadorClicks/static/js/main.b7d3175e.js",
-    "index.html": "/contadorClicks/index.html",
-    "main.91861dbb.css.map": "/contadorClicks/static/css/main.91861dbb.css.map",
-    "main.b7d3175e.js.map": "/contadorClicks/static/js/main.b7d3175e.js.map"
+    "main.css": "/react/contadorClicks/static/css/main.91861dbb.css",
+    "main.js": "/react/contadorClicks/static/js/main.b7d3175e.js",
+    "index.html": "/react/contadorClicks/index.html",
+    "main.91861dbb.css.map": "/react/contadorClicks/static/css/main.91861dbb.css.map",
+    "main.b7d3175e.js.map": "/react/contadorClicks/static/js/main.b7d3175e.js.map"
   },
   "entrypoints": [
     "static/css/main.91861dbb.css",
