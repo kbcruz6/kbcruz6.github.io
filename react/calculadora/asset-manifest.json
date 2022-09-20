@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react/calculadora/static/css/main.812a839f.css",
+    "main.js": "/react/calculadora/static/js/main.e8c0ddc7.js",
+    "static/media/calcu.png": "/react/calculadora/static/media/calcu.f79cbaf93ec527db706d.png",
+    "index.html": "/react/calculadora/index.html",
+    "main.812a839f.css.map": "/react/calculadora/static/css/main.812a839f.css.map",
+    "main.e8c0ddc7.js.map": "/react/calculadora/static/js/main.e8c0ddc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.812a839f.css",
+    "static/js/main.e8c0ddc7.js"
+  ]
+}

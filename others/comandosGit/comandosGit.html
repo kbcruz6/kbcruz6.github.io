@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comandos GitHub</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="git.css">
+        <style>
+            h1{
+                color:#fff;
+                background-color: blue;
+            }
+            h2{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Comandos GitHubb</h1>
+        <h2>Agregamos desde la web de GitHub, para usar el comando git pull y que se actualice en la pc!</h2>
+        <ul>
+            <li> git clone url   | te trae el repositorio que creaste en la web de GitHub, en este caso "Primero"</li>
+            <li>pwd | me muestra el directorio donde estoy</li>
+            <li>ls   | te muestra archivos de adentro</li>
+            <li>cd Primero   | entra a la carpeta Primero, no movemos de directorio</li>
+            <li>touch comandosGit.html   | crea el archivo html</li>
+            <li>git add comandosGit.html  |   agrega el archivo al repositorio para tenerlo en cuenta</li>
+            <li>git commit -m "mensaje"  |   se guarda un snapshot del archivo en ese momento, con el mensaje que le pongas, para saber que modificaciones guardaste</li>
+            <li>git status  |   no se bien para que es</li>
+            <li>git push  |   te lo sincroniza con la nube, online en el url del repositorio</li>
+            <li> con el git status ves si se modifico algo y no se guardo o no se commitio, figura en rojito</li>
+            <li>git commit -am "mensaje" | con este tenes el add y el commit 2 en 1, entonces se guarda todo lo editado para dsp pushearlo</li>
+            <li>y si agrego uno mas para probar bien el git -am ""</li>
+            <li>git reset --hard <commit> | me vuelve a la version que le indico</li>
+            <li>git reset --hard origin/master | me vuelve a la version que haya en GitHub</li>
+            <li>git log | te indica las modificaciones y quien las hizo</li>
+            
+        </ul>
+        <ul><h2>Branch</h2>           
+            <li>git branch | te indica en que branch estas, si no hay ninguno va a figurar master</li>    
+            <li>git checkout -b style | me crea un branch nuevo que se llame style y me lleva a trabajar ahi</li>
+            <li>git checkout main | me lleva al branch main</li>
+            <li>git merge styyle | me une el main con el branch styyle que hice aparte</li>
+            <li>en caso de que me tire error porque se modifico la misma linea en ambas versiones, tengo que fixear el error y dsp poner "git commit -am "fixed merge"" y chau</li>
+        </ul>
+    </body>
+</html>

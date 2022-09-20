@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+	<title>Generar códigos QR</title>
+</head>
+
+<body>
+	<h1>Generando códigos QR</h1>
+	<a href="https://kbcruz6.github.io">KBcruz6 GitHub</a>
+	<br><br>
+	<img alt="Código QR" id="codigo" title="Este QR te lleva a kbcruz6.github.io">
+	<br><br>
+	<button id="btnDescargar">Descargar imagen del QR</button>
+	<script>
+		const $imagen = document.querySelector("#codigo"),
+		    $boton = document.querySelector("#btnDescargar");
+		new QRious({
+			element: $imagen,
+			value: "https://www.instagram.com/mariamartaw/", // La URL o el texto
+			size: 200,
+			backgroundAlpha: 0, // 0 para fondo transparente
+			foreground: "#000", // Color del QR
+			level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+		});
+		$boton.onclick = () => {
+			const enlace = document.createElement("a");
+			enlace.href = $imagen.src;
+			enlace.download = "Código QR generado por KBcruz.png";
+			enlace.click();
+		}
+	</script>
+</body>
+
+</html>

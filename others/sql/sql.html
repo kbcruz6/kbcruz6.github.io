@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SQL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pruebaGit.css">
+    </head>
+    <body>
+        <div class="divCont">
+            <h1>SQL</h1>
+                <h4>PARA CREAR TABLA</h4>
+            <ul>
+                <li>touch flight.sql | crea el archivo sql</li>
+                <li>CREATE TABLE flight () | creando tabla de nombre vuelos</li>
+                <li>id INTEGER PRIMARY KEY AUTO_INCREMENT, | primera columna tipo ID, y automatico</li>
+                <li>origin TEXT NOT NULL, | primera columna, tipo texto y no puede estar vacia</li>
+                <li>destination TEXT NOT NULL, | segunda columna, tipo texto y no puede estar vacia</li>
+                <li>duration INTEGER NOT NULL); | tercera columna, tipo integer y no puede estar vacia</li>
+                <li>luego se le da click derecho y run selected sql y se crea la tabla </li>
+                <li></li>
+            </ul>
+            <h4>PARA AGREGAR DATA A LA TABLA o VERLOS</h4>
+            <ul>
+                <li>INSERT INTO flight (origin, destination, duration) | se selecciona la tabla y parametros a los que le vamos a agregar</li>
+                <li>VALUES ("New york", "London", 356);  |   se le da valores a las celdas en el orden de las columnas</li>
+                <li>nuevamente click derecho, run selected SQL</li>
+                <li>SELECT * FROM flight;  |   muestra la info de la tabla flight de todas (*) las columnas, ( SIEMPRE CLICK DERECHO Y RUN SELECTED SQL)</li>
+                <li>SELECT * FROM flight WHERE origin="Brasilia"; |  muestra unicamente las filas de la tabla que tienen como origen Brasilia</li>
+                <li>UPDATE flight SET origin="Buenos Aires" WHERE id=3; | cambia un dato del id 3 y columna origin, por el que le damos</li>
+                <li>SELECT * FROM flight WHERE duration > 400;  |   podemos poner condiciones tambien</li>
+                <li>SELECT * FROM flight WHERE origin LIKE "%a%";   |   el "%a%" se usa para buscar lo que hay entre % en esa columna</li>
+                <li>DELETE FROM flight WHERE origin != "Mexico";  |   elimina las filas que cumplen con el criterio mencionado</li>
+                <li>LIMIT, ORDER BY, GROUP BY, HAVING  | devuelve resultado filtrado</li>
+                <li>SELECT * FROM flight WHERE origin LIKE "%a%" ORDER BY duration;</li>
+                <li>SELECT nombre,origin_id,destination_id FROM vuelo A INNER JOIN pasajero B
+                    ON A.flight_id=B.flight_id;  |   aca tenemos 2 tablas que tienen flight_id, entonces mostramos un resultado que las une</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+
+CREATE TABLE flight (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    origin TEXT NOT NULL,
+    destination TEXT NOT NULL,
+    duration INTEGER NOT NULL,
+);
