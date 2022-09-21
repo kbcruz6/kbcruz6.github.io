@@ -1,7 +1,6 @@
 *{
   padding: 0;
   margin: 0;
-  /* font-family: Lato,sans-serif; */
   font-family: monospace, courier;
 }
 
@@ -25,7 +24,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(70px + 10vmin);
 }
 
 .h1-title{
@@ -34,7 +33,7 @@ body{
 }
 
 .logo {
-  height: 10vmin;
+  height: 8vmin;
   pointer-events: none;
   animation: logo-spin infinite 5s linear;
 }
