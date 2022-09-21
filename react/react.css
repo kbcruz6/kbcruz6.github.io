@@ -19,23 +19,33 @@ body{
   justify-content: center;
   align-items: center;
 }
-.h1-cont{
+.title-cont{
+  width: 100%;
+  margin: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;  
-  text-align: center;
-  box-sizing: border-box;
-  height: 100px;
-  margin: 20px;
-  color: aqua;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
-h1{
-  font-size: 45px;
+
+.h1-title{
+  margin: 0px 10px;
+  color: white;
 }
-.logo{
-  width: 80px;
-  margin-right:20px;
-  margin-left: 0;
+
+.logo {
+  height: 10vmin;
+  pointer-events: none;
+  animation: logo-spin infinite 5s linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .card{
   width: 25rem;
@@ -68,55 +78,3 @@ h1{
   --bs-btn-hover-bg: #0b5ed7;
   --bs-btn-active-bg: #0a58ca;
 }
-
-
-@media screen and (max-width:500px){
-  h1{
-    font-size: 30px;
-    margin: 0;
-  }
-  .logo{
-    width: 45px;
-    margin:0px;
-    margin-right:10px;
-  }
-  .h1-cont{
-    margin: 5px;
-    padding: 0px;
-    height: 50px;
-  }
-}
-
-@media screen and (min-width:1600px){
-  h1{
-    font-size: 100px;
-    margin: 0;
-  }
-  .logo{
-    width: 100px;
-    margin:0px;
-    margin-right:10px;
-  }
-  .h1-cont{
-    margin: 100px;
-    padding: 0px;
-    height: 50px;
-  }
-}
-
-
-
-
-
-/* 
-<div class="card" style="width: 18rem;">
-  <img src="testi.png" class="card-img-top" alt="Testimonials">
-  <div class="card-body">
-    <h5 class="card-title">Testimonials</h5>
-    <p class="card-text">Here you will see an example of testimonial cards made with React</p>
-    <a href="https://kbcruz6.github.io/react/testimonios" class="btn btn-primary">Go check it!</a>
-  </div>
-</div>
-
-
-*/
