@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react/clicksCounter/static/css/main.227b36bc.css",
+    "main.js": "/react/clicksCounter/static/js/main.39267490.js",
+    "index.html": "/react/clicksCounter/index.html",
+    "main.227b36bc.css.map": "/react/clicksCounter/static/css/main.227b36bc.css.map",
+    "main.39267490.js.map": "/react/clicksCounter/static/js/main.39267490.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.227b36bc.css",
+    "static/js/main.39267490.js"
+  ]
+}
