@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react/clicksCounter/static/css/main.2daacaae.css",
-    "main.js": "/react/clicksCounter/static/js/main.6b0cd33e.js",
+    "main.css": "/react/clicksCounter/static/css/main.b167e78a.css",
+    "main.js": "/react/clicksCounter/static/js/main.2be33a14.js",
     "static/media/saludo.png": "/react/clicksCounter/static/media/saludo.bd0991825bf70cdd1efb.png",
     "index.html": "/react/clicksCounter/index.html",
-    "main.2daacaae.css.map": "/react/clicksCounter/static/css/main.2daacaae.css.map",
-    "main.6b0cd33e.js.map": "/react/clicksCounter/static/js/main.6b0cd33e.js.map"
+    "main.b167e78a.css.map": "/react/clicksCounter/static/css/main.b167e78a.css.map",
+    "main.2be33a14.js.map": "/react/clicksCounter/static/js/main.2be33a14.js.map"
   },
   "entrypoints": [
-    "static/css/main.2daacaae.css",
-    "static/js/main.6b0cd33e.js"
+    "static/css/main.b167e78a.css",
+    "static/js/main.2be33a14.js"
   ]
 }
