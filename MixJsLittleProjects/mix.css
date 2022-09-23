@@ -13,13 +13,13 @@ body{
     --color5:#012b54;
     --color6:#033c75;
 } 
-.dark{
+/* .dark{
     --color1:#ECE2d0;
     --color2:#6E0D25;
     --color3:#a42f27;
     --color4:#fe7167;
     --color5:#820d2a;
-}
+} */
 button {
     cursor:pointer;
 }
@@ -70,6 +70,44 @@ button:active {
 h4{
     color: var(--color1);
     margin-bottom: 20px;
+}
+/* --------------------------------------------------------------React Apps */
+.react-cont{
+    background-color: var(--color3);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    border: 3px solid var(--color6);
+    min-width: 250px;
+}
+.react-cont:hover{
+    background-color: var(--color6);
+    border-color: var(--color3);
+}
+
+.react-cont button{
+    outline: none;
+    background-color: var(--color2);
+    color: var(--color1);
+    border: none;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 15px 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.react-cont button:hover{
+    background-color: var(--color5);
+}
+.react-cont a{
+    text-decoration: none;
+    color: white;
 }
 
 /* ---------------------------------------------------------------MAIL FORM */
@@ -144,6 +182,8 @@ h4{
     padding-top: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
+
 
 }
 .colores-cont:hover{
@@ -194,6 +234,7 @@ select{
     padding-top: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
 
 }
 .list-cont:hover{
@@ -285,6 +326,7 @@ select{
     padding-top: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
 
 }
 .fiat-cont:hover{
@@ -380,6 +422,7 @@ select{
     padding-top: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
 
 }
 .just-cont:hover{
@@ -444,6 +487,7 @@ select{
     padding: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
 
 }
 .relojes-cont:hover{
@@ -509,6 +553,7 @@ select{
     padding-top: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
 
 }
 .texture-cont:hover{
@@ -578,6 +623,8 @@ select{
     padding: 20px;
     transition: all 0.5s;
     border: 3px solid var(--color6);
+    min-width: 250px;
+
 }
 .botones-cont:hover{
     background-color: var(--color6);
