@@ -79,6 +79,19 @@
 		}
 	});
 
+	document.addEventListener("DOMContentLoaded", () => {
+  	
+		document.querySelector(".form1").onsubmit= ()=> {
+			let name = document.querySelector("#name").value;
+			alert(`Thank you for your reservation ${name}!`);
+			document.querySelectorAll(".fo1").forEach((input)=>{
+				input.value="";})
+			// return false;
+		}
+		}
+	);
+
+
 	// Initialize scripts that require a finished document
 	$(function () {
 		isNoviBuilder = window.xMode;
