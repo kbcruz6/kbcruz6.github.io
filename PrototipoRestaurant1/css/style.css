@@ -208,7 +208,15 @@ h1,
 .form1 .enviar:hover{
     background-color: var(--color5);
 } */
-/* ---------------------------------------------------------- */
+/* ----------------------------------------------------------FOOTER 1 */
+.footer1{
+	display: flex;
+	justify-content: center;
+}
+.footer1a,.footer1b{
+	justify-content: center;
+	text-align: left;
+}
 
 @media (min-width: 768px) {
 	h1,
