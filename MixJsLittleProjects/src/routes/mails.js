@@ -8,12 +8,13 @@ router.post("/send-email", async (req,res)=>{
     console.log(req.body);
 
     contentHTML=`
-        <h1>Informacion de usuario:</h1>
+        <h2>You have a new message from:</h2>
         <ul>
-            <li>User name: ${name}</li>
-            <li>User email: ${email}</li>
-            <li>User phone: ${phone}</li>
+            <li><h3>Name: ${name}</h3></li>
+            <li><h3>Email: ${email}</h3></li>
+            <li><h3>Phone: ${phone}</h3></li>
         </ul>
+        <h3>Message:</h3>
         <p>${message}</p>
     `;
 
