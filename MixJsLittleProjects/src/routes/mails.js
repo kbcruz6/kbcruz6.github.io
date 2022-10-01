@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { contentType } = require("express/lib/response");
+// const { contentType } = require("express/lib/response");
 const router = Router ();
 const nodemailer=require("nodemailer");
 
@@ -25,8 +25,8 @@ router.post("/send-email", async (req,res)=>{
         port:465,
         secure:true,
         auth:{
-            user:"yu.yamamoto.1981@gmail.com",
-            pass: "ajtesfssecwofiml"
+            user:"amustino30@gmail.com",
+            pass: "smrlocisaknpkklm"
         },
         tls:{
             rejectUnauthorized:false
@@ -34,7 +34,7 @@ router.post("/send-email", async (req,res)=>{
     });
 
     const info=await transporter.sendMail({
-        from:'"JS projects 👻" <yu.yamamoto.1981@gmail.com',
+        from:'"Amustino projects 👻" <amustino30@gmail.com',
         to: "agustintcruz@gmail.com, yu.yamamoto.1981@gmail.com",
         subject:'Formulario de contacto',
         html:contentHTML
