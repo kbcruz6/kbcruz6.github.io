@@ -35,7 +35,7 @@ router.post("/send-email", async (req,res)=>{
 
     const info=await transporter.sendMail({
         from:'"Amustino projects 👻" <amustino30@gmail.com',
-        to: "agustintcruz@gmail.com, yu.yamamoto.1981@gmail.com",
+        to: "agustintcruz@gmail.com, amustino30@gmail.com",
         subject:'Formulario de contacto',
         html:contentHTML
     });
