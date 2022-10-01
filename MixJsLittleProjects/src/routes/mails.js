@@ -1,5 +1,5 @@
 const { Router } = require("express");
-// const { contentType } = require("express/lib/response");
+const { contentType } = require("express/lib/response");
 const router = Router ();
 const nodemailer=require("nodemailer");
 
