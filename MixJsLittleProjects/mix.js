@@ -196,7 +196,7 @@ zona.addEventListener("dragover",(e)=>{
 });
 zona.addEventListener("drop",(e)=>{
     let n=e.dataTransfer.getData("textura");
-    zona.style.background=`url("textura${n}.jpg")`;
+    zona.style.background=`url("/src/images/textura${n}.jpg")`;
 });
 
 for (let i=1; i < document.querySelector(".texturas").children.length + 1; i++){
