@@ -583,17 +583,17 @@ select{
     opacity: 0.55;
 }
 .textura1{
-    background: url("/src/images/textura1.jpg");
+    background: url("textura1.jpg");
     border: 1px solid var(--color1);
 
 }
 .textura2{
-    background: url("/src/images/textura2.jpg");
+    background: url("textura2.jpg");
     border: 1px solid var(--color1);
 
 }
 .textura3{
-    background: url("/src/images/textura3.jpg");
+    background: url("textura3.jpg");
     border: 1px solid var(--color1);
 
 }
