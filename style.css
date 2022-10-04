@@ -83,7 +83,7 @@ h1{
 .card-title{
   margin: 10px auto 15px auto;
   font-size: 25px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .link-primary {
@@ -117,12 +117,12 @@ h1{
   }
   
 }
-
+/* 
 @media screen and (max-width:400px) {
 
   h1,.card-title{
-    font-weight: 100;
+
     font-family: 'Bebas Neue', cursive;
   }
 
-}
+} */
