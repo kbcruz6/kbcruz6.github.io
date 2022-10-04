@@ -20,7 +20,8 @@ font-family: 'Oswald', sans-serif;
   --colorVerdeClaro:#ADF0D1;
   --colorVerdeOscuro:#6dc49b;
   --colorBordo:#6E0D25;
-  --colorNaranja:#ffa6a0;
+  --colorNaranja:#fe7167;
+  --colorNaranjaClaro:#ff928a;
   --colorNaranjaOscuro:#a42f27;
   --colorHueso:#ECE2d0;
 }
@@ -126,7 +127,7 @@ h1{
   text-decoration: none;
 }
 .card.psd:hover{
-  background-color: var(--colorHueso);
+  background-color: var(--colorNaranjaClaro);
 }
 
 /* ----------------------------------------------- */
@@ -147,9 +148,7 @@ h1{
 .card-title{
   margin: 10px auto 15px auto;
   font-size: 25px;
-  /* font-weight: bold; */
   display: inline-block;
-
 }
 img{
   width: 20px;
