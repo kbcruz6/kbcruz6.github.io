@@ -177,3 +177,9 @@ img{
     scale: 1;
   }
 }
+
+@media  screen and (max-width:400px) {
+  h1{
+    text-shadow: none;
+  }
+}
