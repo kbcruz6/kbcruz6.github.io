@@ -13,7 +13,12 @@ font-family: 'Oswald', sans-serif;
 
 :root{
   --colorGrisClaro:#eae9e9;
-  --colorAzul:#0d6efd;
+  --colorAzul1:#3777d7;
+  --colorAzul2:#2068af;
+  --colorAzul3:#013568;
+  --colorAzul4:#00203F;
+  --colorVerdeClaro:#ADF0D1;
+  --colorVerdeOscuro:#6dc49b;
   --colorBordo:#6E0D25;
   --colorNaranja:#ffa6a0;
   --colorNaranjaOscuro:#a42f27;
@@ -65,8 +70,67 @@ h1{
   align-items: center;
   justify-content: center;
   padding: 0px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
+/* ---------------------------------------------CV */
+.card.cv{
+  background-color: var(--colorBordo);
+}
+.card.cv .link-primary {
+  color: var(--colorHueso) ;
+  text-decoration: none;
+}
+.card.cv .link-primary:hover, .card.cv .link-primary:focus {
+  background-color:var(--colorNaranjaOscuro);
+
+}
+
+/* ----------------------------------------------- */
+
+/* ---------------------------------------------React */
+.card.react{
+  background-color: var(--colorAzul4);
+  color: var(--colorVerdeClaro);
+}
+.card.react .link-primary {
+  color: var(--colorVerdeClaro);
+  text-decoration: none;
+}
+.card.react:hover{
+  background-color: var(--colorAzul3);
+}
+
+/* ----------------------------------------------- */
+
+/* ---------------------------------------------Mix */
+.card.mix{
+  background-color: var(--colorAzul2);
+  color: var(--colorVerdeClaro);
+}
+.card.mix .link-primary {
+  color: var(--colorVerdeClaro);
+  text-decoration: none;
+}
+.card.mix:hover{
+  background-color: var(--colorAzul1);
+}
+
+/* ----------------------------------------------- */
+/* ---------------------------------------------psd */
+.card.psd{
+  background-color: var(--colorNaranja);
+  color: var(--colorBordo);
+}
+.card.psd .link-primary {
+  color: var(--colorBordo);
+  text-decoration: none;
+}
+.card.psd:hover{
+  background-color: var(--colorHueso);
+}
+
+/* ----------------------------------------------- */
+
 .card:hover{
   animation: sca forwards 0.8s;
 }
@@ -84,27 +148,25 @@ h1{
   margin: 10px auto 15px auto;
   font-size: 25px;
   /* font-weight: bold; */
+  display: inline-block;
+
+}
+img{
+  width: 20px;
+  display: inline-block;
+  margin: 10px auto 15px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.link-primary {
-  color: black ;
-  text-decoration: none;
-}
-.link-primary:hover, .link-primary:focus {
-  color: var(--colorNaranjaOscuro);
-}
 
 @keyframes sca {
   from{
     scale: 1;
-    opacity: 0.9;
   }
   to{
     scale: 1.1;
-    opacity: 1;
-    background-color: #f4efe6;
-    box-shadow: 0 1px 10px rgb(255, 0, 0);
-
   }
   
 }
@@ -115,14 +177,4 @@ h1{
   to{
     scale: 1;
   }
-  
 }
-/* 
-@media screen and (max-width:400px) {
-
-  h1,.card-title{
-
-    font-family: 'Bebas Neue', cursive;
-  }
-
-} */
