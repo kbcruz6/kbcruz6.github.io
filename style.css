@@ -118,67 +118,11 @@ h1{
   
 }
 
-/* ------------------------------------------------------- */
-/* 
-.link-primary {
-  color: #0d6efd !important;
-}
-.link-primary:hover, .link-primary:focus {
-  color: #0a58ca !important;
-}
-/*
-.link-secondary {
-  color: #6c757d !important;
-}
-.link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
-}
+@media screen and (max-width:400px) {
 
-.link-success {
-  color: #198754 !important;
-}
-.link-success:hover, .link-success:focus {
-  color: #146c43 !important;
-}
+  h1,.card-title{
+    font-weight: 100;
+    font-family: 'Bebas Neue', cursive;
+  }
 
-.link-info {
-  color: #0dcaf0 !important;
 }
-.link-info:hover, .link-info:focus {
-  color: #3dd5f3 !important;
-}
-
-.link-warning {
-  color: #ffc107 !important;
-}
-.link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
-}
-
-.link-danger {
-  color: #dc3545 !important;
-}
-.link-danger:hover, .link-danger:focus {
-  color: #b02a37 !important;
-}
-
-.link-light {
-  color: #f8f9fa !important;
-}
-.link-light:hover, .link-light:focus {
-  color: #f9fafb !important;
-}
-
-.link-dark {
-  color: #212529 !important;
-}
-.link-dark:hover, .link-dark:focus {
-  color: #1a1e21 !important;
-}
-
-.link-custom-color {
-  color: #900 !important;
-}
-.link-custom-color:hover, .link-custom-color:focus {
-  color: #7a0000 !important;
-} */
