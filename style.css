@@ -117,6 +117,21 @@ h1{
 }
 
 /* ----------------------------------------------- */
+/* ---------------------------------------------nxt */
+.card.nxt{
+  background-color: black;
+  color: var(--colorAzul1);
+}
+.card.nxt .link-primary {
+  color: var(--colorAzul1);
+  text-decoration: none;
+}
+.card.nxt:hover{
+  opacity: 0.9;
+}
+
+
+/* ----------------------------------------------- */
 /* ---------------------------------------------psd */
 .card.psd{
   background-color: var(--colorNaranja);
