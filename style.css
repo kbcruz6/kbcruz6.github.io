@@ -73,6 +73,19 @@ h1{
   padding: 0px;
   /* opacity: 0.9; */
 }
+/* ---------------------------------------------NEW PORTFOLIO */
+.card.newportfolio{
+  background-color: #0a192f;
+}
+.card.newportfolio .link-primary {
+  color:rgb(249, 119, 184) ;
+  text-decoration: none;
+}
+.card.newportfolio .link-primary:hover, .card.newportfolio .link-primary:focus {
+  background-color:rgb(16, 39, 73);  
+}
+
+/* ----------------------------------------------- */
 /* ---------------------------------------------CV */
 .card.cv{
   background-color: var(--colorBordo);
@@ -90,15 +103,15 @@ h1{
 
 /* ---------------------------------------------React */
 .card.react{
-  background-color: var(--colorAzul4);
-  color: var(--colorVerdeClaro);
+  background-color: rgb(17, 57, 17);
+  color:white ;
 }
 .card.react .link-primary {
-  color: var(--colorVerdeClaro);
+  color: white;
   text-decoration: none;
 }
 .card.react:hover{
-  background-color: var(--colorAzul3);
+  background-color: rgb(22, 75, 22);
 }
 
 /* ----------------------------------------------- */
