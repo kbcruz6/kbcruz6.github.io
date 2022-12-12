@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------- FORM
+//!-------------------------------------------------------------------------------- FORM
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".form1").onsubmit = () => {
     let name = document.querySelector("#name").value;
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
-//--------------------------------------------------------------------------------- COLOURS
+//!--------------------------------------------------------------------------------- COLOURS
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".color").forEach((button) => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// COLOR LIST
+//! COLOR LIST
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("select").onchange = function () {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
-// ---------------------------------------------------------------------------------SUPER LIST
+//! ---------------------------------------------------------------------------------SUPER LIST
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".form2").onsubmit = () => {
@@ -60,7 +60,7 @@ document.addEventListener("click", (event) => {
   return false;
 });
 
-// ---------------------------------------------------------------------------------FIAT COTIZATION
+//! ---------------------------------------------------------------------------------FIAT COTIZATION
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".formFiat").onsubmit = function () {
@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         const fiat = document.querySelector("#fiat").value.toUpperCase();
         const rate = data.rates[fiat];
-        // document.querySelector("#valor").innerHTML=`el ${rate}`;
 
         if (rate !== undefined) {
           document.querySelector("#resultFiat").innerHTML = `1 USD are ${Number(
@@ -91,17 +90,17 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-// ---------------------------------------------------------------------------------JUST
+//! ---------------------------------------------------------------------------------JUST
 document.addEventListener("DOMContentLoaded", function () {
   const $imagen = document.querySelector("#codigo"),
     $boton = document.querySelector("#btnDescargar");
   new QRious({
     element: $imagen,
-    value: "https://www.instagram.com/mariamartaw/", // La URL o el texto
+    value: "https://www.instagram.com/mariamartaw/", //! URL
     size: 150,
-    backgroundAlpha: "", // 0 para fondo transparente
-    foreground: "#000", // Color del QR
-    level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+    backgroundAlpha: "", //! 0 para fondo transparente
+    foreground: "#000", //! Color del QR
+    level: "H", //! Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
   });
   $boton.onclick = () => {
     const enlace = document.createElement("a");
@@ -111,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-// ---------------------------------------------------------------------------------CLOCKS
+//! ---------------------------------------------------------------------------------CLOCKS
 
 const addZeros = (n) => {
   if (n.toString().length < 2) return "0".concat(n);
@@ -169,7 +168,7 @@ const age = () => {
 };
 age();
 
-// ---------------------------------------------------------------------------------TEXTURES
+//! ---------------------------------------------------------------------------------TEXTURES
 
 const zona = document.querySelector(".zona");
 zona.addEventListener("dragover", (e) => {
@@ -194,8 +193,8 @@ const transferirTextura = (n, e) => {
   e.dataTransfer.setData("textura", n);
 };
 
-// ---------------------------------------------------------------------------------BUTTONS
-// CHANGE HEADER BUTTON
+//! ---------------------------------------------------------------------------------BUTTONS
+//! CHANGE HEADER BUTTON
 
 document.addEventListener("DOMContentLoaded", function () {
   const h1 = document.querySelector(".header");
@@ -210,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-// COUNTER
+//! COUNTER
 let contar = 0;
 
 let cont = () => {
@@ -220,13 +219,13 @@ let cont = () => {
     alert(`Congratulations! You reach ${contar}!`);
   }
 };
-// BACK TO ZERO
+//! BACK TO ZERO
 let zero = () => {
   contar = 0;
   document.querySelector(".contador").innerHTML = contar;
 };
 
-// con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
+//! con este addEventListener se esta diciendo que se cargue todo el documento y dsp ejecute la funcion. La otra variante es poner <script> abajo del todo y listo, asi carga primero el doc y dsp ejecuta, porque siempre lee para arriba
 
 document.querySelector(".contar").onclick = cont;
 document.querySelector(".cero").onclick = zero;
