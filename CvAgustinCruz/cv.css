@@ -482,7 +482,7 @@ a:hover{
     justify-content: center;
     margin: auto;
 }
-img{
+.cvpicture{
     width: 80%;
     margin: auto;
     border-radius: 50%;
